@@ -1,0 +1,2 @@
+go run client.go app numvideo,e.g. go run server.go 0 400
+go run server.go app numvideo [prefetchbufsize], e.g., go run client.go 0 400

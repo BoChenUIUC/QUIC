@@ -1,0 +1,10 @@
+quic vs dumbprefetch vs drop vs prefetch
+0. run all 5x
+
+1.change interval from 11ms to 15ms and run drop/prefetch 5x
+
+2. change the buffer to 3,6,10 and run prefetch 5x
+
+
+
+
