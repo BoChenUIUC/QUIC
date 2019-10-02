@@ -1,0 +1,336 @@
+streaming based on HTTP/2 request
+
+streaming based on a protocol designed over UDP
+
+05/26/2019
+How the client and server make sure the data is safe?
+
+05/28/2019
+sent_packet_handler.go
+handles all packets sent, process ack, detect loss, 
+detect loss:packet not acked in a period of time
+
+seems like the receiver keeps reading until a predefined amount of data is read, maybe we should look at how data is written into the stream
+
+
+solution 1: the sender sends a give up bit to the receiver, the receiver use empty bits to fill a gap.
+
+solution 2: the receiver automatically fills overdue gap and notifies the sender
+
+05/29/2019
+in every single stream, every frame in it has an offset and a length.
+
+Every time a new frame arrives, we can set a timer for the previous frames according to their priority. If the time is up, the receiver should just fill nul bytes to the stream
+
+The sender should also stop tracking overdue packets.
+
+Or we can send also the expire time such that when a frame arrives, we can stop accepting packets with lower sequence num after the expire time.
+
+05/30/2019
+Every time a client receives a packet, it checks if this packet is overdue and if nul bytes have been written for this packet.
+
+CLient:
+If it's not overdue, it will be written out to the buffer for reading and we update the overdue time for packets before it.
+
+If it's overdue and nul bytes haven't been written, it will be written out and we update the overdue time for packets before it (ack the range 0 to current). We also send acks for all packets before it to avoid retransmission
+
+If it's overdue and nul bytes have been written, we perform no action.
+
+Server:
+The server retransmits packets based on their priority before their ddls. Packets with low pri can be retransmitted with low frequency. Intuitively, we can push out a buffer to the client when a ddl for a group of packets arrives and those with high priority are retransmitted more and more likely to arrive safely.
+
+05/31/2019
+
+a whole frame should be divided into 18 data shards and compute 6 parity shards.
+
+of these data shards, the one having the last byte of frame should be sent reliably. How to achieve this with the packet history?
+
+the reader should only push out data when a larger range from 0 is created.
+
+basically, the sender needs to attach a priority to every packet. internally, the highest priority will cause the sender to attach a monotonically increasing number in each frame to be sent. These numbers help deliver these data relibly
+
+what if size of the shard is larger than the size of a packet?
+the shim layer will divide and merge shards, but only one shard containing the last byte of a frame will be transmitted reliably.
+
+the sender maintains a counter that increments when a reliable packet is to be transmitted.
+
+06/01/2019
+
+if reliable packet history only has one range, all data up to this frame can be pushed out.
+
+when receiving a reliable packet push out the highest range, though they might not be immediately popped.
+
+need to implemenet a way to force zero bytes in a range like {0,5000}
+
+need to stop sender from retransmit some pkts
+
+
+There seems to be a problem with reliability of some packets. its related to pushupto op
+
+06/02/2019
+
+Before transmitting a chunk or several chunks, negotiate a FEC scheme.
+
+determine whether each frame is i or p frame
+
+06/05/2019
+
+need a mechanism to omit overdue frames
+
+06/06/2019
+
+after receiving a frame, an alarm should be set that when the next frame is not arrived, it is automatically filled with empty bytes, as long as it is not an I frame. If it is an I frame, we will wait for it and reset the timer after it arrives.
+
+also need a module to keep track of the receiving intervals.
+
+alarm should be sounded if the real interval is larger than (the receving interval + )
+
+06/10/2019
+
+make a fake frame in case of an overdue frame
+
+what variable should we control
+1) receiving interval: this is tied to the size of each frame
+2) bandwidth: we can predict the expected arrival time of each frame based on the smoothed bandwidth and the size of the future frame. But we need a way to let the receiver know the size of a frame before it arrives and the function of pacing deadline relies on successful delivery of this information.
+
+
+use previous latency(filesize) to predict future latency(filesize)
+
+what to discard? the whole frame? discard p frame only?
+
+the server should tell the client about how many I frames there are in the future
+
+PushUp should consider the frame type/size of lost frames before discarding it.
+
+its not likely to set a ddl more than 1 packet ahead
+
+two decisions:1) when ddl comes, whether to trigger push out
+2) when new frame comes, whether to push out because this can deliver the packets faster to clients
+
+
+06/11/2019
+
+keep a list of info of packets arriving after push line, push should remove packets before (not including) the push line. e.g., push before 5 will keep 5 but discard 4
+
+see if the arrival of nack reflects the network
+
+a pure tcp-based streaming v.s. QUIC
+
+
+06/13/2019
+
+make NACK for tcp too
+
+06/14/2019
+
+use channel to grab all data every 50 ms and report average
+
+negotiate filename before streaming
+
+reduce setup by the server, let it all running
+
+
+06/18/2019
+
+modified fec:add fec 3:1 but push out the frame when 3/4 of it is received.
+
+
+06/22/2019
+let the algorithm learn the best way to adapt in a certain network environment.
+like the best prefetch duration, the prefetch timing and 
+
+
+06/25/2019
+
+two adaptations: divide into small packets, prefetch
+
+tosolve: how to detect latency in small window. can we reduce the window?
+
+
+06/26/2019
+
+need to determine the granularity of events. say if in this RTT we do action A is good, would it still be good to do the same in the next RTT
+
+what if the server gets a probability of new ins before it actually happens, what should it do?
+prefetch too many can cause latency, prefetch too few many be useless.
+
+1.find if nack is useful? how about ack? is it linked to latency of transmission?
+not
+
+2.can we use rittwik's paper to deal with this prediction problem?
+
+3. if we can predict, can we use prefetch or unreliable protocol or split packets to solve it?
+
+
+what is the best measure/prediction interval in our case?
+use ack to send throughput/latency
+
+
+6/29
+
+realize unreliable quic. ?
+
+7/1
+
+see if there is aggregate behavior from server to client by tcp/udp? see if receive 1 every 10ms
+
+let the server sends file continuously and display everything in one screen according to time.
+
+use unreliable quic to deliver all data
+
+see how many frames can be delayed by a jitter.
+
+what might be the aggregating behavior? every 30ms or every 3 frames?
+
+*****try larger frames.
+
+
+****baseline: NACK when data not avaiable at expected time, how much time does it cost to receive this notification? Ticker
+
+can ping do better?
+
+
+how to design an interface that gives a prob
+
+7/3
+confirm what link is affected most by jitter? uplink or downlink?downlink
+
+server pings client every 10ms, client sends nack every 30ms because it cannot send faster than this.
+
+client analyze pings and aggregate in one nack
+
+a noval transport protocol for delay sensitive applications
+
+configurable ping
+
+7/5
+how many frames a jitter affect? up to 30
+consecutive increase of lag or hearing no ping in a nack period are good indicators of throughput under 1mbps
+
+the likelyhood of detecting a indicator and the next few frames are experiencing jitters.
+let net recover faster
+
+7/8
+Cloud gaming has been gaining popularity these days. However, it requires a sufficient bandwidth to stream a large volume of video data over the Internet. If there is a jitter in the network, some video data cannot arrive at the client in time and the player will experience significant delays. Existing transport protocols can only let the server know there is a jitter in the network after an ACK is received from the client or a timeout, which is too slow to deal with jitters in LTE networks. In fact, by the time the server is aware of the jitter and tries to do some adaptation, the jitter might have affected many frames and created a significant latency. Our goal is to design a transport protocol on top of QUIC that enables latency-sensitive applications, e.g., cloud gaming, to react promptly and properly to jitters in LTE networks to reduce latency.
+
+existing  works adapt parameters/bitrate either when it receives an ack after sometime or it reaches a timeout after sending a packet. This is useful when the network does not involve a lot of jitters and is slowly changing. However, in lte networks, there is a lot of jitters making the downlink bw 10x smaller compared to the average bw. Existing methdo cannot adapt swiftly to these jitters
+
+
+
+7/9
+
+use drop frame and compare TCP,QUIC,ours.
+put instruction into nacks.
+
+prefetch and flushing, compare TCP,QUIC,ours, set a prefetch buffer,compare different buffer size. how to fetch for a buffer of 10? Fetch all at once and add another at next sending loop?
+When an instruction is received, the buffer is emptied, fetch starts again. 
+The client tells which exact frame to flush.
+
+compare client miss rate, transmitted data size.
+
+create a measure of the network (average ping latency)
+draw a measure-miss rate/data size graph
+
+
+1. fetch all then steady
+2. client tell exact frame to flush
+
+drop frame:
+1. send frame index with frames and drop certain frames
+2. client records received frames
+
+prefetch frame:
+1. servers sends frames equal to the size of buffer
+2. client stops when the last frame is received and no action is produced for it
+
+
+wrap nack, ping, receiver; 
+the nack constantly sends ping info, when receiver gets something, it tells nacker, nacker updates lag
+
+7/11
+design a ping test
+
+
+7/29
+test h264 encoding on a video real-time
+
+read go-quic and add the ping feature
+
+test how often a frame is broken to parts and the distribution of the arrival ratio
+
+how often jitter happens in commercial LTE, how long it lasts, how it affects the packets
+
+
+9/19
+
+The delay of frames can also be detected in commercial network.
+we need to find a way to better evaluate this.
+
+
+9/20
+the uplink is not always stabler than the downlink
+
+the client can take OneTrip + T(XACK period) to detect a jitter, but the uplink can delay XACK by 60ms before it reaches the server. So the delay can take downlink+T+uplink delay to be detected, which in worst case can be 10ms+33ms+60ms
+
+How does uplink and downlink of probe and data change over time? How about draw a figure of them change wrt time?
+
+How long does a jitter lasts?
+
+
+Can a packet be broken by jitter in middle?
+
+
+todo:record traces include the uplink/downlink time for data and probing packets and see how they changes; find jitter based on that.
+
+
+9/26
+compare the detection time of ack and xack, show them on figure.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

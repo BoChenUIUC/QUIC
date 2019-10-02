@@ -1,0 +1,2111 @@
+QUIC server listening at 172.31.16.7:8080
+Tstp server listening at 172.31.16.7:8084
+Inst server listening at 172.31.16.7:8081
+Probe server listening at 172.31.16.7:8086
+QUIC open
+Sent 1 at Aug 21 18:33:25.045020
+Sent 2 at Aug 21 18:33:25.077975
+Inst client connected
+Tstp client connected
+                                               Analyze frame #1	1287bytes	0.491Mbps	0.020965s	0.043443s
+Sent 3 at Aug 21 18:33:25.110939
+                                               Analyze frame #2	151bytes	0.066Mbps	0.018400s	0.042722s
+Sent 4 at Aug 21 18:33:25.143943
+Sent 5 at Aug 21 18:33:25.177052
+Probe server is up
+                                               Analyze frame #3	178bytes	0.071Mbps	0.020172s	0.057032s
+                                               Analyze frame #4	188bytes	0.084Mbps	0.017988s	0.028360s
+Sent 6 at Aug 21 18:33:25.209949
+                                               Analyze frame #5	2244bytes	0.753Mbps	0.023831s	0.041124s
+Sent 7 at Aug 21 18:33:25.243001
+Sent 8 at Aug 21 18:33:25.276050
+                                               Analyze frame #6	6286bytes	1.837Mbps	0.027373s	0.054038s
+                                               Analyze frame #7	3224bytes	1.089Mbps	0.023681s	0.035387s
+Sent 9 at Aug 21 18:33:25.308953
+Sent 10 at Aug 21 18:33:25.341961
+                                               Analyze frame #8	3314bytes	1.095Mbps	0.024222s	0.059510s
+                                               Analyze frame #9	2386bytes	0.849Mbps	0.022493s	0.039820s
+Instruction
+Sent 11 at Aug 21 18:33:25.374961
+Instruction
+                                               Analyze frame #10	3294bytes	1.086Mbps	0.024271s	0.042575s
+Sent 12 at Aug 21 18:33:25.407967
+                                               Analyze frame #11	4823bytes	1.456Mbps	0.026508s	0.038709s
+Sent 13 at Aug 21 18:33:25.440957
+                                               Analyze frame #12	5158bytes	1.197Mbps	0.034464s	0.035915s
+Sent 14 at Aug 21 18:33:25.473958
+Sent 15 at Aug 21 18:33:25.506916
+                                               Analyze frame #13	4039bytes	1.160Mbps	0.027867s	0.047604s
+                                               Analyze frame #14	3990bytes	1.109Mbps	0.028777s	0.039639s
+Sent 16 at Aug 21 18:33:25.539942
+                                               Analyze frame #15	5279bytes	1.559Mbps	0.027094s	0.036308s
+Sent 17 at Aug 21 18:33:25.572961
+Sent 18 at Aug 21 18:33:25.606002
+                                               Analyze frame #16	5879bytes	1.460Mbps	0.032223s	0.056251s
+Sent 19 at Aug 21 18:33:25.638982
+                                               Analyze frame #17	4251bytes	1.135Mbps	0.029964s	0.044111s
+Sent 20 at Aug 21 18:33:25.671945
+                                               Analyze frame #18	4553bytes	1.232Mbps	0.029561s	0.043408s
+Sent 21 at Aug 21 18:33:25.704955
+                                               Analyze frame #19	5328bytes	1.039Mbps	0.041031s	0.036484s
+Sent 22 at Aug 21 18:33:25.737997
+                                               Analyze frame #20	6100bytes	1.394Mbps	0.034999s	0.038204s
+                                               Analyze frame #21	5889bytes	1.795Mbps	0.026241s	0.027719s
+Sent 23 at Aug 21 18:33:25.770958
+                                               Analyze frame #22	6210bytes	1.935Mbps	0.025677s	0.032343s
+Sent 24 at Aug 21 18:33:25.803956
+                                               Analyze frame #23	5924bytes	1.686Mbps	0.028103s	0.031682s
+Sent 25 at Aug 21 18:33:25.836977
+Sent 26 at Aug 21 18:33:25.869964
+                                               Analyze frame #24	6270bytes	0.938Mbps	0.053452s	0.029897s
+                                               Analyze frame #25	6914bytes	1.857Mbps	0.029782s	0.028692s
+Sent 27 at Aug 21 18:33:25.902943
+Sent 28 at Aug 21 18:33:25.935985
+                                               Analyze frame #26	7737bytes	1.784Mbps	0.034699s	0.040893s
+Sent 29 at Aug 21 18:33:25.969003
+                                               Analyze frame #27	6602bytes	1.392Mbps	0.037944s	0.053772s
+                                               Analyze frame #28	7703bytes	2.004Mbps	0.030743s	0.028638s
+Sent 30 at Aug 21 18:33:26.001992
+Sent 31 at Aug 21 18:33:26.034994
+                                               Analyze frame #29	7000bytes	1.365Mbps	0.041033s	0.042268s
+Instruction
+                                               Analyze frame #30	7901bytes	2.158Mbps	0.029284s	0.037066s
+Sent 32 at Aug 21 18:33:26.068006
+                                               Analyze frame #31	7973bytes	2.290Mbps	0.027856s	0.036459s
+Sent 33 at Aug 21 18:33:26.100946
+                                               Analyze frame #32	7213bytes	1.836Mbps	0.031430s	0.037388s
+Sent 34 at Aug 21 18:33:26.133968
+                                               Analyze frame #33	7563bytes	2.033Mbps	0.029756s	0.027549s
+Sent 35 at Aug 21 18:33:26.167006
+                                               Analyze frame #34	8880bytes	1.676Mbps	0.042382s	0.031415s
+Sent 36 at Aug 21 18:33:26.199936
+                                               Analyze frame #35	8797bytes	2.188Mbps	0.032162s	0.035221s
+Sent 37 at Aug 21 18:33:26.232937
+Sent 38 at Aug 21 18:33:26.265991
+                                               Analyze frame #36	8732bytes	1.522Mbps	0.045907s	0.037733s
+                                               Analyze frame #37	9528bytes	2.443Mbps	0.031197s	0.033367s
+Sent 39 at Aug 21 18:33:26.299011
+Sent 40 at Aug 21 18:33:26.331946
+                                               Analyze frame #38	10323bytes	2.468Mbps	0.033461s	0.056147s
+                                               Analyze frame #39	10418bytes	2.383Mbps	0.034980s	0.038487s
+Sent 41 at Aug 21 18:33:26.364947
+Sent 42 at Aug 21 18:33:26.397951
+                                               Analyze frame #40	11606bytes	2.594Mbps	0.035790s	0.051494s
+Sent 43 at Aug 21 18:33:26.430972
+                                               Analyze frame #41	10113bytes	1.923Mbps	0.042073s	0.037403s
+                                               Analyze frame #42	11594bytes	2.624Mbps	0.035352s	0.028664s
+Instruction
+Sent 44 at Aug 21 18:33:26.463993
+                                               Analyze frame #43	11657bytes	2.887Mbps	0.032302s	0.039095s
+Sent 45 at Aug 21 18:33:26.496970
+                                               Analyze frame #44	12590bytes	2.834Mbps	0.035537s	0.037863s
+Sent 46 at Aug 21 18:33:26.529920
+Sent 47 at Aug 21 18:33:26.562942
+                                               Analyze frame #45	11459bytes	2.598Mbps	0.035286s	0.047932s
+Sent 48 at Aug 21 18:33:26.595960
+                                               Analyze frame #46	15401bytes	2.518Mbps	0.048934s	0.043613s
+                                               Analyze frame #47	11376bytes	2.852Mbps	0.031914s	0.034399s
+Sent 49 at Aug 21 18:33:26.628928
+Sent 50 at Aug 21 18:33:26.661940
+                                               Analyze frame #48	13127bytes	3.227Mbps	0.032538s	0.051168s
+                                               Analyze frame #49	13326bytes	2.646Mbps	0.040290s	0.035107s
+Sent 51 at Aug 21 18:33:26.694940
+Sent 52 at Aug 21 18:33:26.727948
+                                               Analyze frame #50	16195bytes	3.423Mbps	0.037849s	0.044705s
+Sent 53 at Aug 21 18:33:26.760958
+                                               Analyze frame #51	14211bytes	3.242Mbps	0.035067s	0.047390s
+Sent 54 at Aug 21 18:33:26.793948
+                                               Analyze frame #52	16240bytes	3.379Mbps	0.038450s	0.045564s
+Sent 55 at Aug 21 18:33:26.826975
+                                               Analyze frame #53	10173bytes	1.904Mbps	0.042740s	0.033540s
+                                               Analyze frame #54	11335bytes	2.798Mbps	0.032414s	0.039778s
+Sent 56 at Aug 21 18:33:26.859953
+Sent 57 at Aug 21 18:33:26.892980
+                                               Analyze frame #55	10486bytes	2.209Mbps	0.037983s	0.056230s
+Instruction
+                                               Analyze frame #56	11092bytes	2.252Mbps	0.039403s	0.034943s
+Sent 58 at Aug 21 18:33:26.925955
+                                               Analyze frame #57	10684bytes	2.599Mbps	0.032887s	0.030672s
+Sent 59 at Aug 21 18:33:26.958945
+Sent 60 at Aug 21 18:33:26.991949
+                                               Analyze frame #58	10330bytes	2.070Mbps	0.039918s	0.043374s
+                                               Analyze frame #59	10428bytes	2.641Mbps	0.031586s	0.031440s
+Sent 61 at Aug 21 18:33:27.024940
+                                               Analyze frame #60	10099bytes	2.427Mbps	0.033292s	0.038351s
+Sent 62 at Aug 21 18:33:27.057940
+Sent 63 at Aug 21 18:33:27.090955
+                                               Analyze frame #61	19304bytes	4.160Mbps	0.037123s	0.048939s
+Sent 64 at Aug 21 18:33:27.123997
+                                               Analyze frame #62	6140bytes	1.792Mbps	0.027416s	0.063008s
+Instruction
+                                               Analyze frame #63	8413bytes	1.942Mbps	0.034659s	0.032781s
+Sent 65 at Aug 21 18:33:27.156935
+                                               Analyze frame #64	9590bytes	2.580Mbps	0.029739s	0.036584s
+Sent 66 at Aug 21 18:33:27.189969
+Sent 67 at Aug 21 18:33:27.222959
+                                               Analyze frame #65	10834bytes	2.934Mbps	0.029539s	0.050665s
+Sent 68 at Aug 21 18:33:27.255966
+                                               Analyze frame #66	10438bytes	2.127Mbps	0.039268s	0.038498s
+Sent 69 at Aug 21 18:33:27.288940
+                                               Analyze frame #67	11228bytes	2.181Mbps	0.041191s	0.047423s
+Sent 70 at Aug 21 18:33:27.321929
+                                               Analyze frame #68	10788bytes	2.751Mbps	0.031367s	0.062116s
+                                               Analyze frame #69	11183bytes	2.868Mbps	0.031198s	0.032426s
+Sent 71 at Aug 21 18:33:27.354935
+                                               Analyze frame #70	10981bytes	2.028Mbps	0.043316s	0.028079s
+Sent 72 at Aug 21 18:33:27.387959
+Sent 73 at Aug 21 18:33:27.420974
+                                               Analyze frame #71	10863bytes	1.961Mbps	0.044327s	0.059890s
+Sent 74 at Aug 21 18:33:27.453959
+                                               Analyze frame #72	10682bytes	2.563Mbps	0.033342s	0.059097s
+                                               Analyze frame #73	10097bytes	2.067Mbps	0.039075s	0.036305s
+Sent 75 at Aug 21 18:33:27.486964
+Sent 76 at Aug 21 18:33:27.519878
+Sent 77 at Aug 21 18:33:27.552960
+                                               Analyze frame #74	13830bytes	2.062Mbps	0.053645s	0.104793s
+                                               Analyze frame #75	10032bytes	2.052Mbps	0.039109s	0.090667s
+                                               Analyze frame #76	15177bytes	2.772Mbps	0.043795s	0.055028s
+Sent 78 at Aug 21 18:33:27.612221
+Sent 79 at Aug 21 18:33:27.627019
+Sent 80 at Aug 21 18:33:27.651948
+                                               Analyze frame #77	10580bytes	0.995Mbps	0.085063s	0.034615s
+Sent 81 at Aug 21 18:33:27.684945
+                                               Analyze frame #78	10953bytes	2.394Mbps	0.036601s	0.050779s
+                                               Analyze frame #79	11112bytes	2.448Mbps	0.036320s	0.046951s
+                                               Analyze frame #80	10925bytes	2.426Mbps	0.036029s	0.040437s
+Sent 82 at Aug 21 18:33:27.717953
+Instruction
+Sent 83 at Aug 21 18:33:27.750967
+                                               Analyze frame #81	10202bytes	2.025Mbps	0.040307s	0.046185s
+                                               Analyze frame #82	10718bytes	1.862Mbps	0.046055s	0.029081s
+Sent 84 at Aug 21 18:33:27.783989
+Sent 85 at Aug 21 18:33:27.816954
+                                               Analyze frame #83	10758bytes	2.153Mbps	0.039966s	0.041987s
+                                               Analyze frame #84	10619bytes	2.472Mbps	0.034367s	0.041715s
+Sent 86 at Aug 21 18:33:27.850003
+Sent 87 at Aug 21 18:33:27.882962
+                                               Analyze frame #85	11108bytes	2.251Mbps	0.039477s	0.037978s
+Sent 88 at Aug 21 18:33:27.915937
+                                               Analyze frame #86	10973bytes	2.008Mbps	0.043707s	0.038600s
+                                               Analyze frame #87	10506bytes	1.842Mbps	0.045628s	0.029499s
+Sent 89 at Aug 21 18:33:27.948943
+                                               Analyze frame #88	11027bytes	2.010Mbps	0.043895s	0.031661s
+Sent 90 at Aug 21 18:33:27.981969
+Sent 91 at Aug 21 18:33:28.014968
+                                               Analyze frame #89	10764bytes	2.509Mbps	0.034324s	0.058156s
+Sent 92 at Aug 21 18:33:28.047939
+                                               Analyze frame #90	11354bytes	2.145Mbps	0.042351s	0.039891s
+Sent 93 at Aug 21 18:33:28.080953
+                                               Analyze frame #91	13861bytes	2.728Mbps	0.040647s	0.043633s
+Sent 94 at Aug 21 18:33:28.113957
+                                               Analyze frame #92	10595bytes	1.614Mbps	0.052501s	0.037031s
+                                               Analyze frame #93	11106bytes	2.286Mbps	0.038873s	0.028568s
+Sent 95 at Aug 21 18:33:28.146966
+Sent 96 at Aug 21 18:33:28.179949
+                                               Analyze frame #94	11453bytes	1.994Mbps	0.045943s	0.059578s
+Sent 97 at Aug 21 18:33:28.212973
+                                               Analyze frame #95	10701bytes	2.124Mbps	0.040307s	0.041742s
+Instruction
+                                               Analyze frame #96	11406bytes	2.744Mbps	0.033249s	0.046270s
+Sent 98 at Aug 21 18:33:28.245966
+Sent 99 at Aug 21 18:33:28.278941
+                                               Analyze frame #97	10335bytes	2.332Mbps	0.035460s	0.045808s
+Sent 100 at Aug 21 18:33:28.311942
+                                               Analyze frame #98	14344bytes	3.273Mbps	0.035057s	0.057088s
+                                               Analyze frame #99	10672bytes	1.970Mbps	0.043328s	0.030048s
+Sent 101 at Aug 21 18:33:28.344949
+                                               Analyze frame #100	10660bytes	2.930Mbps	0.029110s	0.043426s
+Sent 102 at Aug 21 18:33:28.377970
+                                               Analyze frame #101	11847bytes	2.626Mbps	0.036085s	0.039385s
+Sent 103 at Aug 21 18:33:28.410964
+Sent 104 at Aug 21 18:33:28.444000
+                                               Analyze frame #102	10821bytes	2.663Mbps	0.032503s	0.044953s
+Sent 105 at Aug 21 18:33:28.476968
+                                               Analyze frame #103	10147bytes	2.633Mbps	0.030826s	0.057510s
+                                               Analyze frame #104	11220bytes	2.162Mbps	0.041518s	0.031882s
+Sent 106 at Aug 21 18:33:28.509988
+                                               Analyze frame #105	10347bytes	2.646Mbps	0.031286s	0.042183s
+Sent 107 at Aug 21 18:33:28.542964
+Sent 108 at Aug 21 18:33:28.575981
+                                               Analyze frame #106	14429bytes	3.150Mbps	0.036643s	0.054897s
+Instruction
+Sent 109 at Aug 21 18:33:28.608957
+                                               Analyze frame #107	9881bytes	1.936Mbps	0.040831s	0.042406s
+Instruction
+Sent 110 at Aug 21 18:33:28.641965
+                                               Analyze frame #108	11700bytes	2.975Mbps	0.031460s	0.051760s
+                                               Analyze frame #109	10676bytes	2.185Mbps	0.039084s	0.036426s
+Sent 111 at Aug 21 18:33:28.674954
+Instruction
+                                               Analyze frame #110	11781bytes	2.888Mbps	0.032631s	0.044605s
+Sent 112 at Aug 21 18:33:28.707959
+                                               Analyze frame #111	10487bytes	2.257Mbps	0.037168s	0.036997s
+Sent 113 at Aug 21 18:33:28.740935
+                                               Analyze frame #112	11230bytes	2.804Mbps	0.032038s	0.036970s
+Sent 114 at Aug 21 18:33:28.773934
+Sent 115 at Aug 21 18:33:28.806952
+                                               Analyze frame #113	10521bytes	2.686Mbps	0.031338s	0.047933s
+                                               Analyze frame #114	11482bytes	2.635Mbps	0.034863s	0.030677s
+Sent 116 at Aug 21 18:33:28.839919
+Sent 117 at Aug 21 18:33:28.872945
+Sent 118 at Aug 21 18:33:28.905944
+                                               Analyze frame #115	10627bytes	2.363Mbps	0.035977s	0.073675s
+                                               Analyze frame #116	11453bytes	2.144Mbps	0.042736s	0.036595s
+Sent 119 at Aug 21 18:33:28.938963
+                                               Analyze frame #117	10591bytes	1.771Mbps	0.047852s	0.034551s
+Sent 120 at Aug 21 18:33:28.971955
+                                               Analyze frame #118	11029bytes	1.358Mbps	0.064995s	0.028189s
+                                               Analyze frame #119	9765bytes	1.820Mbps	0.042928s	0.035768s
+Sent 121 at Aug 21 18:33:29.004929
+Sent 122 at Aug 21 18:33:29.037947
+                                               Analyze frame #120	11641bytes	2.625Mbps	0.035476s	0.046040s
+Sent 123 at Aug 21 18:33:29.070946
+                                               Analyze frame #121	27290bytes	3.718Mbps	0.058722s	0.030788s
+                                               Analyze frame #122	9532bytes	2.231Mbps	0.034178s	0.036948s
+Sent 124 at Aug 21 18:33:29.103935
+Sent 125 at Aug 21 18:33:29.136962
+                                               Analyze frame #123	8624bytes	1.195Mbps	0.057715s	0.036351s
+Sent 126 at Aug 21 18:33:29.169949
+                                               Analyze frame #124	9354bytes	1.631Mbps	0.045893s	0.036307s
+Sent 127 at Aug 21 18:33:29.202950
+                                               Analyze frame #125	9778bytes	2.118Mbps	0.036940s	0.066955s
+Sent 128 at Aug 21 18:33:29.235966
+Sent 129 at Aug 21 18:33:29.268959
+                                               Analyze frame #126	11268bytes	1.578Mbps	0.057143s	0.064072s
+                                               Analyze frame #127	10403bytes	1.885Mbps	0.044142s	0.045742s
+Instruction
+Sent 130 at Aug 21 18:33:29.301939
+                                               Analyze frame #128	11116bytes	1.500Mbps	0.059298s	0.030772s
+Sent 131 at Aug 21 18:33:29.334825
+                                               Analyze frame #129	10333bytes	1.561Mbps	0.052966s	0.030496s
+Sent 132 at Aug 21 18:33:29.367977
+                                               Analyze frame #130	11064bytes	2.166Mbps	0.040870s	0.043490s
+                                               Analyze frame #131	10779bytes	1.963Mbps	0.043938s	0.026219s
+Sent 133 at Aug 21 18:33:29.400952
+Sent 134 at Aug 21 18:33:29.433938
+                                               Analyze frame #132	11019bytes	2.034Mbps	0.043338s	0.049035s
+Sent 135 at Aug 21 18:33:29.466934
+                                               Analyze frame #133	10199bytes	1.462Mbps	0.055823s	0.038234s
+Sent 136 at Aug 21 18:33:29.500013
+Sent 137 at Aug 21 18:33:29.532985
+                                               Analyze frame #134	10572bytes	1.742Mbps	0.048542s	0.076056s
+Instruction
+                                               Analyze frame #135	10476bytes	1.498Mbps	0.055957s	0.047603s
+Sent 138 at Aug 21 18:33:29.565966
+                                               Analyze frame #136	12711bytes	1.804Mbps	0.056379s	0.040038s
+Sent 139 at Aug 21 18:33:29.598962
+                                               Analyze frame #137	10463bytes	2.274Mbps	0.036802s	0.043661s
+                                               Analyze frame #138	10825bytes	1.949Mbps	0.044431s	0.030762s
+Sent 140 at Aug 21 18:33:29.631937
+Sent 141 at Aug 21 18:33:29.664955
+                                               Analyze frame #139	10092bytes	2.398Mbps	0.033662s	0.065844s
+Sent 142 at Aug 21 18:33:29.697987
+                                               Analyze frame #140	11346bytes	1.349Mbps	0.067292s	0.036140s
+Sent 143 at Aug 21 18:33:29.730993
+                                               Analyze frame #141	10464bytes	1.428Mbps	0.058625s	0.029990s
+Sent 144 at Aug 21 18:33:29.763987
+                                               Analyze frame #142	10777bytes	1.683Mbps	0.051223s	0.037487s
+Sent 145 at Aug 21 18:33:29.796962
+                                               Analyze frame #143	10207bytes	1.657Mbps	0.049277s	0.034112s
+                                               Analyze frame #144	10873bytes	2.052Mbps	0.042386s	0.032081s
+Sent 146 at Aug 21 18:33:29.829941
+Sent 147 at Aug 21 18:33:29.862943
+                                               Analyze frame #145	8909bytes	1.532Mbps	0.046513s	0.045081s
+Sent 148 at Aug 21 18:33:29.895953
+Sent 149 at Aug 21 18:33:29.928959
+                                               Analyze frame #146	13442bytes	1.775Mbps	0.060597s	0.061025s
+                                               Analyze frame #147	9439bytes	1.569Mbps	0.048142s	0.040539s
+Instruction
+Sent 150 at Aug 21 18:33:29.961969
+Sent 151 at Aug 21 18:33:29.994941
+Sent 152 at Aug 21 18:33:30.027976
+                                               Analyze frame #148	10289bytes	1.736Mbps	0.047418s	0.101709s
+                                               Analyze frame #149	8822bytes	1.985Mbps	0.035559s	0.085058s
+Sent 153 at Aug 21 18:33:30.060970
+Sent 154 at Aug 21 18:33:30.093963
+                                               Analyze frame #150	10320bytes	1.503Mbps	0.054927s	0.223339s
+                                               Analyze frame #151	10373bytes	2.148Mbps	0.038630s	0.213250s
+                                               Analyze frame #152	10142bytes	1.918Mbps	0.042293s	0.180217s
+                                               Analyze frame #153	9746bytes	2.081Mbps	0.037469s	0.157262s
+Sent 155 at Aug 21 18:33:30.239129
+Instruction
+Sent 156 at Aug 21 18:33:30.258996
+                                               Analyze frame #154	10594bytes	0.485Mbps	0.174575s	0.032811s
+Sent 157 at Aug 21 18:33:30.291920
+Sent 158 at Aug 21 18:33:30.324945
+                                               Analyze frame #155	9614bytes	1.799Mbps	0.042743s	0.076605s
+                                               Analyze frame #156	11079bytes	1.436Mbps	0.061740s	0.055615s
+Sent 159 at Aug 21 18:33:30.357946
+Sent 160 at Aug 21 18:33:30.390954
+                                               Analyze frame #157	9800bytes	1.747Mbps	0.044866s	0.075471s
+                                               Analyze frame #158	11003bytes	2.076Mbps	0.042394s	0.067932s
+Sent 161 at Aug 21 18:33:30.423924
+                                               Analyze frame #159	10654bytes	1.781Mbps	0.047859s	0.046073s
+Instruction
+                                               Analyze frame #160	11160bytes	2.186Mbps	0.040838s	0.037817s
+Sent 162 at Aug 21 18:33:30.456954
+Sent 163 at Aug 21 18:33:30.489944
+                                               Analyze frame #161	10289bytes	2.111Mbps	0.038995s	0.056574s
+                                               Analyze frame #162	11523bytes	2.338Mbps	0.039424s	0.034930s
+Sent 164 at Aug 21 18:33:30.522978
+Sent 165 at Aug 21 18:33:30.555951
+                                               Analyze frame #163	10372bytes	2.417Mbps	0.034327s	0.047212s
+                                               Analyze frame #164	11979bytes	2.108Mbps	0.045452s	0.032885s
+Sent 166 at Aug 21 18:33:30.588961
+Sent 167 at Aug 21 18:33:30.621951
+Sent 168 at Aug 21 18:33:30.654947
+Sent 169 at Aug 21 18:33:30.687964
+                                               Analyze frame #165	10468bytes	2.444Mbps	0.034267s	0.110392s
+                                               Analyze frame #166	11442bytes	2.697Mbps	0.033938s	0.083738s
+                                               Analyze frame #167	9754bytes	2.075Mbps	0.037602s	0.050506s
+Sent 170 at Aug 21 18:33:30.720950
+                                               Analyze frame #168	11204bytes	2.797Mbps	0.032047s	0.053044s
+Sent 171 at Aug 21 18:33:30.753935
+                                               Analyze frame #169	10013bytes	2.219Mbps	0.036096s	0.045199s
+Sent 172 at Aug 21 18:33:30.786935
+                                               Analyze frame #170	13796bytes	2.318Mbps	0.047617s	0.043641s
+                                               Analyze frame #171	8956bytes	1.579Mbps	0.045376s	0.029716s
+Sent 173 at Aug 21 18:33:30.819936
+Sent 174 at Aug 21 18:33:30.852944
+                                               Analyze frame #172	10480bytes	2.023Mbps	0.041453s	0.049478s
+Instruction
+Sent 175 at Aug 21 18:33:30.885952
+                                               Analyze frame #173	8669bytes	2.224Mbps	0.031187s	0.056190s
+                                               Analyze frame #174	10078bytes	2.216Mbps	0.036389s	0.038066s
+Sent 176 at Aug 21 18:33:30.918952
+Instruction
+Sent 177 at Aug 21 18:33:30.951966
+                                               Analyze frame #175	8374bytes	1.765Mbps	0.037946s	0.055549s
+                                               Analyze frame #176	10288bytes	1.970Mbps	0.041774s	0.028272s
+Sent 178 at Aug 21 18:33:30.984946
+Sent 179 at Aug 21 18:33:31.017978
+                                               Analyze frame #177	8598bytes	2.058Mbps	0.033422s	0.072787s
+Sent 180 at Aug 21 18:33:31.050963
+                                               Analyze frame #178	9905bytes	2.443Mbps	0.032441s	0.045071s
+                                               Analyze frame #179	9173bytes	2.459Mbps	0.029840s	0.040477s
+Sent 181 at Aug 21 18:33:31.083966
+                                               Analyze frame #180	10150bytes	2.558Mbps	0.031740s	0.066817s
+Sent 182 at Aug 21 18:33:31.116928
+Sent 183 at Aug 21 18:33:31.149959
+                                               Analyze frame #181	30773bytes	4.466Mbps	0.055123s	0.052084s
+Sent 184 at Aug 21 18:33:31.182943
+Instruction
+Sent 185 at Aug 21 18:33:31.215985
+Sent 186 at Aug 21 18:33:31.248937
+                                               Analyze frame #182	10313bytes	1.542Mbps	0.053500s	0.131177s
+Sent 187 at Aug 21 18:33:31.281944
+                                               Analyze frame #183	10339bytes	2.482Mbps	0.033331s	0.121418s
+                                               Analyze frame #184	8775bytes	1.832Mbps	0.038309s	0.087312s
+Instruction
+Sent 188 at Aug 21 18:33:31.314958
+Sent 189 at Aug 21 18:33:31.347967
+                                               Analyze frame #185	8859bytes	2.077Mbps	0.034121s	0.158505s
+Sent 190 at Aug 21 18:33:31.380943
+                                               Analyze frame #186	9370bytes	2.022Mbps	0.037081s	0.125837s
+Instruction
+                                               Analyze frame #187	10125bytes	1.963Mbps	0.041264s	0.090881s
+                                               Analyze frame #188	10229bytes	1.752Mbps	0.046707s	0.054266s
+Sent 191 at Aug 21 18:33:31.413926
+Instruction
+Sent 192 at Aug 21 18:33:31.446975
+                                               Analyze frame #189	11020bytes	2.493Mbps	0.035359s	0.081039s
+Instruction
+                                               Analyze frame #190	11293bytes	1.313Mbps	0.068826s	0.039259s
+Sent 193 at Aug 21 18:33:31.479955
+                                               Analyze frame #191	11669bytes	2.108Mbps	0.044291s	0.044997s
+Sent 194 at Aug 21 18:33:31.512918
+                                               Analyze frame #192	11796bytes	2.587Mbps	0.036483s	0.049197s
+Sent 195 at Aug 21 18:33:31.545950
+                                               Analyze frame #193	12922bytes	2.312Mbps	0.044714s	0.046889s
+                                               Analyze frame #194	12564bytes	2.495Mbps	0.040291s	0.033115s
+Sent 196 at Aug 21 18:33:31.578942
+Instruction
+Sent 197 at Aug 21 18:33:31.611993
+                                               Analyze frame #195	11089bytes	2.118Mbps	0.041887s	0.050574s
+Sent 198 at Aug 21 18:33:31.644947
+                                               Analyze frame #196	10400bytes	2.042Mbps	0.040739s	0.045585s
+Sent 199 at Aug 21 18:33:31.677939
+                                               Analyze frame #197	10546bytes	2.225Mbps	0.037911s	0.058622s
+                                               Analyze frame #198	11740bytes	2.334Mbps	0.040246s	0.033115s
+Sent 200 at Aug 21 18:33:31.710951
+Instruction
+                                               Analyze frame #199	10460bytes	2.608Mbps	0.032085s	0.037375s
+Sent 201 at Aug 21 18:33:31.743979
+Sent 202 at Aug 21 18:33:31.776943
+                                               Analyze frame #200	10583bytes	2.592Mbps	0.032662s	0.047517s
+Sent 203 at Aug 21 18:33:31.809929
+                                               Analyze frame #201	9993bytes	2.323Mbps	0.034417s	0.050598s
+                                               Analyze frame #202	10317bytes	2.721Mbps	0.030332s	0.043675s
+Sent 204 at Aug 21 18:33:31.842946
+Sent 205 at Aug 21 18:33:31.875931
+                                               Analyze frame #203	9351bytes	2.130Mbps	0.035125s	0.044070s
+                                               Analyze frame #204	10361bytes	2.688Mbps	0.030841s	0.044684s
+Sent 206 at Aug 21 18:33:31.908958
+Sent 207 at Aug 21 18:33:31.941972
+                                               Analyze frame #205	9540bytes	1.686Mbps	0.045274s	0.038063s
+                                               Analyze frame #206	10048bytes	2.663Mbps	0.030183s	0.045071s
+Sent 208 at Aug 21 18:33:31.974947
+Instruction
+Sent 209 at Aug 21 18:33:32.007987
+                                               Analyze frame #207	9756bytes	2.145Mbps	0.036386s	0.053161s
+                                               Analyze frame #208	10152bytes	2.520Mbps	0.032226s	0.030165s
+Sent 210 at Aug 21 18:33:32.040951
+                                               Analyze frame #209	10322bytes	2.561Mbps	0.032246s	0.035136s
+Sent 211 at Aug 21 18:33:32.073936
+Sent 212 at Aug 21 18:33:32.106964
+                                               Analyze frame #210	10602bytes	2.050Mbps	0.041365s	0.036985s
+                                               Analyze frame #211	10082bytes	2.250Mbps	0.035843s	0.031386s
+Sent 213 at Aug 21 18:33:32.139941
+Sent 214 at Aug 21 18:33:32.172945
+                                               Analyze frame #212	11148bytes	2.244Mbps	0.039740s	0.041612s
+                                               Analyze frame #213	10555bytes	2.170Mbps	0.038914s	0.035147s
+Sent 215 at Aug 21 18:33:32.205920
+                                               Analyze frame #214	11210bytes	2.727Mbps	0.032883s	0.033667s
+Sent 216 at Aug 21 18:33:32.238967
+Sent 217 at Aug 21 18:33:32.271982
+                                               Analyze frame #215	10609bytes	2.079Mbps	0.040817s	0.043038s
+                                               Analyze frame #216	11281bytes	2.732Mbps	0.033039s	0.043179s
+Sent 218 at Aug 21 18:33:32.304939
+                                               Analyze frame #217	9934bytes	2.306Mbps	0.034459s	0.040971s
+Sent 219 at Aug 21 18:33:32.337945
+Sent 220 at Aug 21 18:33:32.370944
+                                               Analyze frame #218	13203bytes	3.151Mbps	0.033521s	0.051964s
+Sent 221 at Aug 21 18:33:32.403941
+                                               Analyze frame #219	10479bytes	2.514Mbps	0.033340s	0.048312s
+Sent 222 at Aug 21 18:33:32.436936
+                                               Analyze frame #220	11018bytes	1.768Mbps	0.049855s	0.035504s
+                                               Analyze frame #221	11504bytes	2.726Mbps	0.033763s	0.035672s
+Sent 223 at Aug 21 18:33:32.469944
+Sent 224 at Aug 21 18:33:32.502949
+                                               Analyze frame #222	12059bytes	2.147Mbps	0.044931s	0.049070s
+Sent 225 at Aug 21 18:33:32.535951
+                                               Analyze frame #223	12580bytes	2.146Mbps	0.046891s	0.032610s
+                                               Analyze frame #224	13230bytes	3.009Mbps	0.035177s	0.042045s
+Sent 226 at Aug 21 18:33:32.568985
+                                               Analyze frame #225	12932bytes	3.105Mbps	0.033324s	0.041524s
+Sent 227 at Aug 21 18:33:32.601963
+Sent 228 at Aug 21 18:33:32.634947
+                                               Analyze frame #226	11731bytes	2.348Mbps	0.039971s	0.050246s
+                                               Analyze frame #227	14936bytes	2.769Mbps	0.043147s	0.034270s
+Sent 229 at Aug 21 18:33:32.667947
+Instruction
+                                               Analyze frame #228	16313bytes	2.954Mbps	0.044181s	0.032186s
+Sent 230 at Aug 21 18:33:32.700959
+                                               Analyze frame #229	15886bytes	3.565Mbps	0.035644s	0.032845s
+Sent 231 at Aug 21 18:33:32.733937
+                                               Analyze frame #230	15951bytes	2.780Mbps	0.045898s	0.033233s
+Sent 232 at Aug 21 18:33:32.766952
+Sent 233 at Aug 21 18:33:32.799964
+                                               Analyze frame #231	15334bytes	3.449Mbps	0.035566s	0.050767s
+Instruction
+Sent 234 at Aug 21 18:33:32.832956
+                                               Analyze frame #232	15864bytes	2.364Mbps	0.053686s	0.035882s
+Instruction
+                                               Analyze frame #233	12985bytes	2.783Mbps	0.037320s	0.039161s
+Sent 235 at Aug 21 18:33:32.865987
+Sent 236 at Aug 21 18:33:32.898975
+                                               Analyze frame #234	13432bytes	2.279Mbps	0.047158s	0.032982s
+Sent 237 at Aug 21 18:33:32.931972
+                                               Analyze frame #235	11882bytes	2.420Mbps	0.039281s	0.036954s
+Sent 238 at Aug 21 18:33:32.964956
+                                               Analyze frame #236	11626bytes	2.815Mbps	0.033036s	0.046925s
+Instruction
+Sent 239 at Aug 21 18:33:32.997976
+                                               Analyze frame #237	10526bytes	2.025Mbps	0.041580s	0.051845s
+Instruction
+                                               Analyze frame #238	10121bytes	2.525Mbps	0.032069s	0.034237s
+Sent 240 at Aug 21 18:33:33.030955
+                                               Analyze frame #239	9983bytes	2.662Mbps	0.030007s	0.049189s
+Sent 241 at Aug 21 18:33:33.063960
+                                               Analyze frame #240	10354bytes	2.694Mbps	0.030744s	0.039004s
+Sent 242 at Aug 21 18:33:33.099966
+Sent 243 at Aug 21 18:33:33.139465
+Sent 244 at Aug 21 18:33:33.162937
+                                               Analyze frame #241	40207bytes	4.010Mbps	0.080211s	0.043253s
+                                               Analyze frame #242	10591bytes	1.369Mbps	0.061907s	0.028678s
+Instruction
+Sent 245 at Aug 21 18:33:33.195976
+Sent 246 at Aug 21 18:33:33.228965
+                                               Analyze frame #243	9928bytes	2.167Mbps	0.036650s	0.067222s
+Sent 247 at Aug 21 18:33:33.261955
+                                               Analyze frame #244	11364bytes	1.661Mbps	0.054724s	0.074528s
+                                               Analyze frame #245	9120bytes	1.758Mbps	0.041493s	0.058834s
+Sent 248 at Aug 21 18:33:33.294949
+                                               Analyze frame #246	9787bytes	2.566Mbps	0.030510s	0.050936s
+Instruction
+Sent 249 at Aug 21 18:33:33.327969
+                                               Analyze frame #247	9629bytes	2.043Mbps	0.037705s	0.041803s
+Sent 250 at Aug 21 18:33:33.360958
+                                               Analyze frame #248	9533bytes	2.506Mbps	0.030431s	0.054031s
+                                               Analyze frame #249	9486bytes	2.060Mbps	0.036830s	0.030205s
+                                               Analyze frame #250	9646bytes	2.495Mbps	0.030930s	0.037689s
+Sent 251 at Aug 21 18:33:33.393964
+Sent 252 at Aug 21 18:33:33.613198
+Sent 253 at Aug 21 18:33:33.624934
+Sent 254 at Aug 21 18:33:33.657940
+Sent 255 at Aug 21 18:33:33.690963
+                                               Analyze frame #251	160535bytes	4.984Mbps	0.257656s	0.055657s
+                                               Analyze frame #252	5693bytes	1.048Mbps	0.043449s	0.050654s
+                                               Analyze frame #253	7380bytes	1.730Mbps	0.034125s	0.052470s
+                                               Analyze frame #254	9243bytes	2.240Mbps	0.033016s	0.040469s
+Sent 256 at Aug 21 18:33:33.723948
+                                               Analyze frame #255	8780bytes	2.370Mbps	0.029633s	0.035619s
+Sent 257 at Aug 21 18:33:33.756943
+Sent 258 at Aug 21 18:33:33.789945
+                                               Analyze frame #256	10373bytes	2.064Mbps	0.040199s	0.036687s
+                                               Analyze frame #257	8775bytes	2.526Mbps	0.027791s	0.032636s
+Instruction
+Sent 259 at Aug 21 18:33:33.822966
+                                               Analyze frame #258	9990bytes	2.755Mbps	0.029009s	0.040492s
+Sent 260 at Aug 21 18:33:33.855963
+                                               Analyze frame #259	8065bytes	2.116Mbps	0.030489s	0.043025s
+Sent 261 at Aug 21 18:33:33.888944
+Instruction
+Sent 262 at Aug 21 18:33:33.921976
+                                               Analyze frame #260	9797bytes	2.701Mbps	0.029013s	0.055038s
+Instruction
+                                               Analyze frame #261	9193bytes	1.870Mbps	0.039334s	0.033809s
+Sent 263 at Aug 21 18:33:33.954954
+                                               Analyze frame #262	9042bytes	2.668Mbps	0.027115s	0.032226s
+Sent 264 at Aug 21 18:33:33.987965
+                                               Analyze frame #263	9679bytes	2.795Mbps	0.027705s	0.037932s
+Sent 265 at Aug 21 18:33:34.020818
+                                               Analyze frame #264	9395bytes	2.684Mbps	0.028006s	0.038341s
+Sent 266 at Aug 21 18:33:34.053946
+Sent 267 at Aug 21 18:33:34.086951
+                                               Analyze frame #265	8849bytes	2.234Mbps	0.031691s	0.047637s
+Sent 268 at Aug 21 18:33:34.119961
+                                               Analyze frame #266	11354bytes	2.513Mbps	0.036140s	0.037437s
+Instruction
+Sent 269 at Aug 21 18:33:34.152958
+                                               Analyze frame #267	8441bytes	1.882Mbps	0.035882s	0.049619s
+                                               Analyze frame #268	8639bytes	2.479Mbps	0.027877s	0.040515s
+Sent 270 at Aug 21 18:33:34.185960
+                                               Analyze frame #269	7978bytes	2.314Mbps	0.027581s	0.036694s
+Instruction
+Sent 271 at Aug 21 18:33:34.218961
+Sent 272 at Aug 21 18:33:34.251957
+                                               Analyze frame #270	8565bytes	2.187Mbps	0.031328s	0.043006s
+                                               Analyze frame #271	7653bytes	1.890Mbps	0.032387s	0.029173s
+Sent 273 at Aug 21 18:33:34.284913
+Sent 274 at Aug 21 18:33:34.317955
+                                               Analyze frame #272	8106bytes	2.087Mbps	0.031071s	0.051986s
+Sent 275 at Aug 21 18:33:34.350942
+                                               Analyze frame #273	7551bytes	1.568Mbps	0.038537s	0.044191s
+                                               Analyze frame #274	9634bytes	2.414Mbps	0.031926s	0.043460s
+Sent 276 at Aug 21 18:33:34.383950
+                                               Analyze frame #275	9513bytes	2.646Mbps	0.028760s	0.039698s
+Sent 277 at Aug 21 18:33:34.416950
+Sent 278 at Aug 21 18:33:34.449953
+                                               Analyze frame #276	10056bytes	2.648Mbps	0.030384s	0.045733s
+Sent 279 at Aug 21 18:33:34.482973
+                                               Analyze frame #277	9877bytes	2.090Mbps	0.037804s	0.053504s
+Sent 280 at Aug 21 18:33:34.515961
+                                               Analyze frame #278	9358bytes	2.107Mbps	0.035534s	0.044864s
+Sent 281 at Aug 21 18:33:34.548957
+                                               Analyze frame #279	10700bytes	2.707Mbps	0.031617s	0.058840s
+                                               Analyze frame #280	9684bytes	2.202Mbps	0.035180s	0.033829s
+Sent 282 at Aug 21 18:33:34.581981
+                                               Analyze frame #281	11642bytes	2.812Mbps	0.033119s	0.039829s
+Sent 283 at Aug 21 18:33:34.614929
+                                               Analyze frame #282	13032bytes	3.173Mbps	0.032859s	0.044644s
+Sent 284 at Aug 21 18:33:34.647945
+Instruction
+Sent 285 at Aug 21 18:33:34.680964
+                                               Analyze frame #283	15414bytes	2.427Mbps	0.050812s	0.037363s
+Sent 286 at Aug 21 18:33:34.713945
+                                               Analyze frame #284	14891bytes	3.296Mbps	0.036138s	0.055475s
+                                               Analyze frame #285	16072bytes	2.543Mbps	0.050555s	0.037834s
+                                               Analyze frame #286	9243bytes	2.057Mbps	0.035947s	0.034307s
+Sent 287 at Aug 21 18:33:34.746938
+Sent 288 at Aug 21 18:33:34.923794
+Sent 289 at Aug 21 18:33:34.944977
+Sent 290 at Aug 21 18:33:34.977939
+                                               Analyze frame #287	155098bytes	5.760Mbps	0.215408s	0.035904s
+                                               Analyze frame #288	2127bytes	0.441Mbps	0.038608s	0.044125s
+                                               Analyze frame #289	3879bytes	1.219Mbps	0.025449s	0.036624s
+Sent 291 at Aug 21 18:33:35.010932
+Sent 292 at Aug 21 18:33:35.043953
+                                               Analyze frame #290	5675bytes	1.654Mbps	0.027455s	0.061631s
+Sent 293 at Aug 21 18:33:35.076955
+                                               Analyze frame #291	6029bytes	1.206Mbps	0.039992s	0.051694s
+Sent 294 at Aug 21 18:33:35.109938
+                                               Analyze frame #292	6967bytes	1.963Mbps	0.028400s	0.061453s
+Sent 295 at Aug 21 18:33:35.142960
+                                               Analyze frame #293	7266bytes	1.952Mbps	0.029778s	0.053979s
+Sent 296 at Aug 21 18:33:35.175955
+                                               Analyze frame #294	7447bytes	1.507Mbps	0.039526s	0.034006s
+                                               Analyze frame #295	7656bytes	2.095Mbps	0.029241s	0.040003s
+Sent 297 at Aug 21 18:33:35.208957
+Sent 298 at Aug 21 18:33:35.241953
+                                               Analyze frame #296	7628bytes	2.176Mbps	0.028048s	0.047537s
+Sent 299 at Aug 21 18:33:35.274976
+                                               Analyze frame #297	7695bytes	1.701Mbps	0.036190s	0.048343s
+                                               Analyze frame #298	8042bytes	2.462Mbps	0.026132s	0.031027s
+Sent 300 at Aug 21 18:33:35.307945
+                                               Analyze frame #299	7764bytes	2.208Mbps	0.028135s	0.033478s
+Sent 301 at Aug 21 18:33:35.340943
+                                               Analyze frame #300	8070bytes	2.315Mbps	0.027885s	0.043404s
+Sent 302 at Aug 21 18:33:35.373950
+                                               Analyze frame #301	8031bytes	2.304Mbps	0.027888s	0.020194s
+Sent 303 at Aug 21 18:33:35.406984
+                                               Analyze frame #302	7695bytes	2.301Mbps	0.026752s	0.030319s
+Sent 304 at Aug 21 18:33:35.439933
+Sent 305 at Aug 21 18:33:35.472947
+                                               Analyze frame #303	8136bytes	1.360Mbps	0.047872s	0.030320s
+Sent 306 at Aug 21 18:33:35.505942
+                                               Analyze frame #304	8521bytes	2.411Mbps	0.028275s	0.051024s
+                                               Analyze frame #305	8339bytes	2.441Mbps	0.027331s	0.045232s
+Sent 307 at Aug 21 18:33:35.538946
+Sent 308 at Aug 21 18:33:35.571939
+                                               Analyze frame #306	8912bytes	2.461Mbps	0.028971s	0.053393s
+Sent 309 at Aug 21 18:33:35.604944
+                                               Analyze frame #307	8128bytes	2.321Mbps	0.028014s	0.044483s
+Sent 310 at Aug 21 18:33:35.637948
+                                               Analyze frame #308	8947bytes	2.051Mbps	0.034903s	0.057919s
+                                               Analyze frame #309	8453bytes	2.091Mbps	0.032344s	0.033680s
+Sent 311 at Aug 21 18:33:35.671016
+                                               Analyze frame #310	8846bytes	2.438Mbps	0.029023s	0.034441s
+Sent 312 at Aug 21 18:33:35.703948
+Sent 313 at Aug 21 18:33:35.736951
+                                               Analyze frame #311	8479bytes	2.018Mbps	0.033607s	0.040380s
+Sent 314 at Aug 21 18:33:35.769994
+                                               Analyze frame #312	9030bytes	2.422Mbps	0.029827s	0.045536s
+                                               Analyze frame #313	8935bytes	2.429Mbps	0.029424s	0.037071s
+Sent 315 at Aug 21 18:33:35.802944
+                                               Analyze frame #314	10193bytes	2.637Mbps	0.030927s	0.037921s
+Sent 316 at Aug 21 18:33:35.835949
+Sent 317 at Aug 21 18:33:35.868953
+                                               Analyze frame #315	8567bytes	1.421Mbps	0.048238s	0.038451s
+                                               Analyze frame #316	9042bytes	2.398Mbps	0.030162s	0.031127s
+Sent 318 at Aug 21 18:33:35.901973
+                                               Analyze frame #317	8236bytes	2.388Mbps	0.027596s	0.034470s
+Sent 319 at Aug 21 18:33:35.934951
+Sent 320 at Aug 21 18:33:35.967999
+                                               Analyze frame #318	9503bytes	2.429Mbps	0.031299s	0.050969s
+Sent 321 at Aug 21 18:33:36.000975
+                                               Analyze frame #319	8806bytes	2.013Mbps	0.034997s	0.049078s
+                                               Analyze frame #320	8988bytes	1.830Mbps	0.039283s	0.034112s
+Sent 322 at Aug 21 18:33:36.033979
+                                               Analyze frame #321	8872bytes	2.451Mbps	0.028961s	0.028555s
+Sent 323 at Aug 21 18:33:36.066969
+                                               Analyze frame #322	9178bytes	2.680Mbps	0.027395s	0.038616s
+Sent 324 at Aug 21 18:33:36.100026
+Sent 325 at Aug 21 18:33:36.132960
+                                               Analyze frame #323	9171bytes	1.860Mbps	0.039441s	0.037890s
+Sent 326 at Aug 21 18:33:36.165970
+                                               Analyze frame #324	9994bytes	2.637Mbps	0.030321s	0.051492s
+                                               Analyze frame #325	8804bytes	2.137Mbps	0.032951s	0.038450s
+Sent 327 at Aug 21 18:33:36.198945
+                                               Analyze frame #326	9735bytes	2.739Mbps	0.028429s	0.036810s
+Sent 328 at Aug 21 18:33:36.231962
+Sent 329 at Aug 21 18:33:36.264931
+                                               Analyze frame #327	9210bytes	1.720Mbps	0.042845s	0.031316s
+                                               Analyze frame #328	9916bytes	2.533Mbps	0.031323s	0.035143s
+Sent 330 at Aug 21 18:33:36.297940
+Sent 331 at Aug 21 18:33:36.330949
+                                               Analyze frame #329	8791bytes	2.560Mbps	0.027468s	0.047056s
+                                               Analyze frame #330	9759bytes	2.698Mbps	0.028934s	0.040253s
+Sent 332 at Aug 21 18:33:36.363949
+Sent 333 at Aug 21 18:33:36.396946
+                                               Analyze frame #331	9079bytes	2.404Mbps	0.030213s	0.051363s
+Sent 334 at Aug 21 18:33:36.429960
+                                               Analyze frame #332	9178bytes	1.798Mbps	0.040845s	0.041698s
+Sent 335 at Aug 21 18:33:36.462936
+                                               Analyze frame #333	9509bytes	2.677Mbps	0.028412s	0.052181s
+                                               Analyze frame #334	9951bytes	2.700Mbps	0.029480s	0.039713s
+Sent 336 at Aug 21 18:33:36.495948
+                                               Analyze frame #335	9501bytes	2.649Mbps	0.028692s	0.044868s
+Sent 337 at Aug 21 18:33:36.528987
+Sent 338 at Aug 21 18:33:36.561944
+                                               Analyze frame #336	10368bytes	1.851Mbps	0.044816s	0.038423s
+                                               Analyze frame #337	9909bytes	2.215Mbps	0.035784s	0.037485s
+Sent 339 at Aug 21 18:33:36.594946
+                                               Analyze frame #338	11056bytes	2.852Mbps	0.031010s	0.033539s
+Instruction
+Sent 340 at Aug 21 18:33:36.627977
+Sent 341 at Aug 21 18:33:36.660926
+                                               Analyze frame #339	9704bytes	2.713Mbps	0.028611s	0.049399s
+Sent 342 at Aug 21 18:33:36.693996
+                                               Analyze frame #340	10018bytes	2.196Mbps	0.036494s	0.042392s
+                                               Analyze frame #341	9063bytes	2.395Mbps	0.030271s	0.041034s
+Sent 343 at Aug 21 18:33:36.726949
+Sent 344 at Aug 21 18:33:36.759944
+                                               Analyze frame #342	9657bytes	2.421Mbps	0.031908s	0.048674s
+                                               Analyze frame #343	9089bytes	1.945Mbps	0.037392s	0.032294s
+Sent 345 at Aug 21 18:33:36.792952
+Sent 346 at Aug 21 18:33:36.825969
+                                               Analyze frame #344	9732bytes	1.844Mbps	0.042223s	0.032217s
+                                               Analyze frame #345	9069bytes	1.853Mbps	0.039144s	0.026478s
+Sent 347 at Aug 21 18:33:36.858919
+                                               Analyze frame #346	9451bytes	2.155Mbps	0.035091s	0.031278s
+Sent 348 at Aug 21 18:33:36.891923
+Sent 349 at Aug 21 18:33:36.924946
+                                               Analyze frame #347	32691bytes	5.514Mbps	0.047426s	0.027915s
+Sent 350 at Aug 21 18:33:36.957947
+                                               Analyze frame #348	11743bytes	2.981Mbps	0.031515s	0.047975s
+Instruction
+Sent 351 at Aug 21 18:33:36.991000
+                                               Analyze frame #349	11373bytes	1.907Mbps	0.047708s	0.042900s
+                                               Analyze frame #350	10234bytes	2.818Mbps	0.029057s	0.028594s
+Instruction
+Sent 352 at Aug 21 18:33:37.023959
+                                               Analyze frame #351	9228bytes	2.650Mbps	0.027856s	0.040643s
+Sent 353 at Aug 21 18:33:37.056950
+                                               Analyze frame #352	9298bytes	2.081Mbps	0.035741s	0.036835s
+Sent 354 at Aug 21 18:33:37.089991
+Sent 355 at Aug 21 18:33:37.122963
+                                               Analyze frame #353	9236bytes	2.595Mbps	0.028469s	0.055245s
+Sent 356 at Aug 21 18:33:37.155944
+                                               Analyze frame #354	9198bytes	1.670Mbps	0.044063s	0.031681s
+Sent 357 at Aug 21 18:33:37.188922
+                                               Analyze frame #355	8990bytes	1.958Mbps	0.036738s	0.037614s
+                                               Analyze frame #356	8973bytes	2.305Mbps	0.031148s	0.032385s
+Sent 358 at Aug 21 18:33:37.221938
+Instruction
+                                               Analyze frame #357	8970bytes	2.510Mbps	0.028594s	0.038630s
+Sent 359 at Aug 21 18:33:37.255011
+Sent 360 at Aug 21 18:33:37.287950
+                                               Analyze frame #358	9536bytes	2.209Mbps	0.034536s	0.044050s
+                                               Analyze frame #359	9126bytes	2.095Mbps	0.034850s	0.036645s
+Sent 361 at Aug 21 18:33:37.320939
+                                               Analyze frame #360	9419bytes	2.043Mbps	0.036881s	0.031359s
+Sent 362 at Aug 21 18:33:37.353961
+Sent 363 at Aug 21 18:33:37.386983
+                                               Analyze frame #361	9354bytes	1.743Mbps	0.042924s	0.038422s
+                                               Analyze frame #362	9653bytes	2.434Mbps	0.031728s	0.030648s
+Sent 364 at Aug 21 18:33:37.419955
+                                               Analyze frame #363	9192bytes	2.625Mbps	0.028010s	0.038677s
+Sent 365 at Aug 21 18:33:37.452944
+                                               Analyze frame #364	9439bytes	2.009Mbps	0.037596s	0.028544s
+Sent 366 at Aug 21 18:33:37.485922
+Instruction
+                                               Analyze frame #365	9425bytes	2.793Mbps	0.026993s	0.039342s
+Sent 367 at Aug 21 18:33:37.518975
+Sent 368 at Aug 21 18:33:37.551951
+                                               Analyze frame #366	9860bytes	2.003Mbps	0.039390s	0.034861s
+Sent 369 at Aug 21 18:33:37.584992
+                                               Analyze frame #367	9122bytes	1.862Mbps	0.039187s	0.035286s
+Sent 370 at Aug 21 18:33:37.618000
+                                               Analyze frame #368	9969bytes	2.800Mbps	0.028483s	0.046012s
+                                               Analyze frame #369	9425bytes	2.759Mbps	0.027333s	0.039197s
+Sent 371 at Aug 21 18:33:37.650949
+Sent 372 at Aug 21 18:33:37.683950
+                                               Analyze frame #370	9302bytes	2.610Mbps	0.028515s	0.052981s
+Sent 373 at Aug 21 18:33:37.716958
+                                               Analyze frame #371	9393bytes	1.534Mbps	0.048996s	0.038514s
+Sent 374 at Aug 21 18:33:37.749980
+                                               Analyze frame #372	10190bytes	1.491Mbps	0.054670s	0.020585s
+                                               Analyze frame #373	9264bytes	1.462Mbps	0.050708s	0.022463s
+Sent 375 at Aug 21 18:33:37.782947
+                                               Analyze frame #374	9772bytes	2.142Mbps	0.036500s	0.029699s
+Sent 376 at Aug 21 18:33:37.815916
+Sent 377 at Aug 21 18:33:37.848948
+                                               Analyze frame #375	8999bytes	2.098Mbps	0.034322s	0.041253s
+                                               Analyze frame #376	9983bytes	2.126Mbps	0.037574s	0.036621s
+Sent 378 at Aug 21 18:33:37.881952
+Sent 379 at Aug 21 18:33:37.914953
+                                               Analyze frame #377	9223bytes	2.418Mbps	0.030518s	0.051770s
+                                               Analyze frame #378	10136bytes	2.071Mbps	0.039162s	0.034205s
+                                               Analyze frame #379	10229bytes	2.875Mbps	0.028466s	0.033010s
+Sent 380 at Aug 21 18:33:37.947949
+Sent 381 at Aug 21 18:33:37.980932
+Sent 382 at Aug 21 18:33:38.013980
+Sent 383 at Aug 21 18:33:38.046952
+                                               Analyze frame #380	41099bytes	3.782Mbps	0.086929s	0.035579s
+                                               Analyze frame #381	1008bytes	0.147Mbps	0.054686s	0.035336s
+                                               Analyze frame #382	1919bytes	0.672Mbps	0.022838s	0.034163s
+Sent 384 at Aug 21 18:33:38.079964
+Sent 385 at Aug 21 18:33:38.112984
+                                               Analyze frame #383	5428bytes	0.864Mbps	0.050271s	0.033366s
+                                               Analyze frame #384	8710bytes	2.037Mbps	0.034205s	0.032495s
+Sent 386 at Aug 21 18:33:38.145970
+Instruction
+                                               Analyze frame #385	7995bytes	2.141Mbps	0.029868s	0.036813s
+Sent 387 at Aug 21 18:33:38.178955
+Sent 388 at Aug 21 18:33:38.211937
+                                               Analyze frame #386	8106bytes	2.021Mbps	0.032080s	0.042482s
+                                               Analyze frame #387	7160bytes	1.806Mbps	0.031716s	0.029478s
+Sent 389 at Aug 21 18:33:38.244949
+Sent 390 at Aug 21 18:33:38.277962
+                                               Analyze frame #388	8673bytes	1.995Mbps	0.034771s	0.040618s
+                                               Analyze frame #389	8182bytes	2.054Mbps	0.031865s	0.035480s
+Sent 391 at Aug 21 18:33:38.310987
+                                               Analyze frame #390	7498bytes	2.291Mbps	0.026186s	0.035271s
+Sent 392 at Aug 21 18:33:38.344001
+Sent 393 at Aug 21 18:33:38.376939
+Sent 394 at Aug 21 18:33:38.409940
+                                               Analyze frame #391	10300bytes	1.876Mbps	0.043918s	0.064798s
+                                               Analyze frame #392	7630bytes	2.203Mbps	0.027707s	0.056464s
+                                               Analyze frame #393	7545bytes	2.095Mbps	0.028813s	0.024509s
+Instruction
+Sent 395 at Aug 21 18:33:38.442962
+                                               Analyze frame #394	8151bytes	1.495Mbps	0.043630s	0.025070s
+Sent 396 at Aug 21 18:33:38.476012
+Sent 397 at Aug 21 18:33:38.508957
+                                               Analyze frame #395	10626bytes	1.980Mbps	0.042926s	0.039756s
+                                               Analyze frame #396	8607bytes	2.114Mbps	0.032575s	0.032879s
+Sent 398 at Aug 21 18:33:38.541929
+                                               Analyze frame #397	7882bytes	1.975Mbps	0.031930s	0.038342s
+Sent 399 at Aug 21 18:33:38.574961
+                                               Analyze frame #398	6011bytes	1.744Mbps	0.027566s	0.029930s
+Sent 400 at Aug 21 18:33:38.607967
+Sent 401 at Aug 21 18:33:38.640995
+                                               Analyze frame #399	7143bytes	1.681Mbps	0.033989s	0.043257s
+                                               Analyze frame #400	6631bytes	1.550Mbps	0.034227s	0.026216s
+Sent 402 at Aug 21 18:33:38.673957
+                                               Analyze frame #401	7244bytes	1.881Mbps	0.030817s	0.037506s
+Sent 403 at Aug 21 18:33:38.706937
+                                               Analyze frame #402	6341bytes	1.923Mbps	0.026376s	0.030762s
+Sent 404 at Aug 21 18:33:38.739944
+Sent 405 at Aug 21 18:33:38.772957
+                                               Analyze frame #403	5885bytes	1.401Mbps	0.033613s	0.040200s
+                                               Analyze frame #404	5463bytes	1.311Mbps	0.033331s	0.038928s
+Sent 406 at Aug 21 18:33:38.805999
+                                               Analyze frame #405	5543bytes	1.335Mbps	0.033224s	0.033069s
+Sent 407 at Aug 21 18:33:38.838975
+                                               Analyze frame #406	8079bytes	2.320Mbps	0.027864s	0.029113s
+Sent 408 at Aug 21 18:33:38.871999
+Sent 409 at Aug 21 18:33:38.904941
+                                               Analyze frame #407	5919bytes	1.538Mbps	0.030797s	0.051240s
+                                               Analyze frame #408	6186bytes	1.854Mbps	0.026695s	0.037752s
+Instruction
+Sent 410 at Aug 21 18:33:38.937944
+                                               Analyze frame #409	6039bytes	1.841Mbps	0.026237s	0.040147s
+Sent 411 at Aug 21 18:33:38.970969
+                                               Analyze frame #410	8392bytes	1.824Mbps	0.036811s	0.030356s
+Sent 412 at Aug 21 18:33:39.003964
+Sent 413 at Aug 21 18:33:39.036944
+                                               Analyze frame #411	5750bytes	1.378Mbps	0.033376s	0.047137s
+Sent 414 at Aug 21 18:33:39.069953
+                                               Analyze frame #412	5914bytes	1.040Mbps	0.045508s	0.027546s
+Sent 415 at Aug 21 18:33:39.102950
+                                               Analyze frame #413	5852bytes	1.091Mbps	0.042928s	0.028655s
+                                               Analyze frame #414	6041bytes	1.700Mbps	0.028428s	0.033056s
+Sent 416 at Aug 21 18:33:39.135967
+                                               Analyze frame #415	5494bytes	1.509Mbps	0.029130s	0.044344s
+Sent 417 at Aug 21 18:33:39.168963
+                                               Analyze frame #416	5598bytes	1.688Mbps	0.026528s	0.031357s
+Instruction
+Sent 418 at Aug 21 18:33:39.202016
+Sent 419 at Aug 21 18:33:39.234954
+Sent 420 at Aug 21 18:33:39.267976
+                                               Analyze frame #417	9617bytes	1.062Mbps	0.072446s	0.033813s
+                                               Analyze frame #418	10623bytes	1.981Mbps	0.042899s	0.031002s
+Sent 421 at Aug 21 18:33:39.300993
+                                               Analyze frame #419	9033bytes	1.485Mbps	0.048666s	0.026913s
+Sent 422 at Aug 21 18:33:39.333955
+                                               Analyze frame #420	5090bytes	1.270Mbps	0.032063s	0.052013s
+                                               Analyze frame #421	9645bytes	2.500Mbps	0.030869s	0.041537s
+Sent 423 at Aug 21 18:33:39.366943
+Sent 424 at Aug 21 18:33:39.399983
+                                               Analyze frame #422	8729bytes	1.699Mbps	0.041101s	0.038272s
+Sent 425 at Aug 21 18:33:39.432937
+                                               Analyze frame #423	9192bytes	2.127Mbps	0.034567s	0.049746s
+Sent 426 at Aug 21 18:33:39.465955
+                                               Analyze frame #424	9641bytes	1.756Mbps	0.043925s	0.032631s
+                                               Analyze frame #425	9451bytes	2.367Mbps	0.031947s	0.038602s
+Sent 427 at Aug 21 18:33:39.498939
+                                               Analyze frame #426	7248bytes	1.954Mbps	0.029669s	0.036505s
+Sent 428 at Aug 21 18:33:39.531959
+Sent 429 at Aug 21 18:33:39.564951
+                                               Analyze frame #427	7794bytes	2.097Mbps	0.029735s	0.046040s
+Sent 430 at Aug 21 18:33:39.597962
+                                               Analyze frame #428	7514bytes	1.405Mbps	0.042776s	0.036837s
+Sent 431 at Aug 21 18:33:39.630947
+                                               Analyze frame #429	7202bytes	1.144Mbps	0.050367s	0.024806s
+Sent 432 at Aug 21 18:33:39.663948
+                                               Analyze frame #430	6521bytes	1.582Mbps	0.032981s	0.049704s
+Sent 433 at Aug 21 18:33:39.696943
+                                               Analyze frame #431	6562bytes	0.975Mbps	0.053829s	0.046306s
+                                               Analyze frame #432	7879bytes	1.515Mbps	0.041615s	0.031641s
+Sent 434 at Aug 21 18:33:39.729947
+Sent 435 at Aug 21 18:33:39.762924
+                                               Analyze frame #433	9237bytes	1.850Mbps	0.039943s	0.042631s
+Sent 436 at Aug 21 18:33:39.795952
+                                               Analyze frame #434	13762bytes	1.809Mbps	0.060863s	0.031628s
+Sent 437 at Aug 21 18:33:39.828962
+                                               Analyze frame #435	11681bytes	1.883Mbps	0.049620s	0.038975s
+Sent 438 at Aug 21 18:33:39.861919
+                                               Analyze frame #436	12330bytes	1.493Mbps	0.066086s	0.037035s
+Sent 439 at Aug 21 18:33:39.894949
+Instruction
+                                               Analyze frame #437	9724bytes	1.670Mbps	0.046577s	0.055968s
+Sent 440 at Aug 21 18:33:39.927970
+                                               Analyze frame #438	6703bytes	1.266Mbps	0.042369s	0.044449s
+Sent 441 at Aug 21 18:33:39.960959
+                                               Analyze frame #439	7098bytes	1.332Mbps	0.042645s	0.031652s
+                                               Analyze frame #440	11803bytes	2.124Mbps	0.044456s	0.023882s
+Sent 442 at Aug 21 18:33:39.993958
+Sent 443 at Aug 21 18:33:40.026949
+                                               Analyze frame #441	7303bytes	1.368Mbps	0.042716s	0.034373s
+Sent 444 at Aug 21 18:33:40.059944
+                                               Analyze frame #442	7688bytes	1.825Mbps	0.033704s	0.049391s
+                                               Analyze frame #443	7350bytes	1.864Mbps	0.031538s	0.033825s
+Sent 445 at Aug 21 18:33:40.092942
+                                               Analyze frame #444	6980bytes	1.657Mbps	0.033703s	0.034679s
+Sent 446 at Aug 21 18:33:40.125952
+Sent 447 at Aug 21 18:33:40.158950
+                                               Analyze frame #445	5849bytes	1.532Mbps	0.030553s	0.050744s
+Sent 448 at Aug 21 18:33:40.191943
+                                               Analyze frame #446	5640bytes	1.156Mbps	0.039031s	0.037437s
+                                               Analyze frame #447	5736bytes	1.641Mbps	0.027960s	0.029600s
+Instruction
+Sent 449 at Aug 21 18:33:40.224973
+                                               Analyze frame #448	5387bytes	1.536Mbps	0.028052s	0.039608s
+Sent 450 at Aug 21 18:33:40.257953
+Instruction
+                                               Analyze frame #449	6148bytes	1.292Mbps	0.038069s	0.033198s
+Sent 451 at Aug 21 18:33:40.290967
+Sent 452 at Aug 21 18:33:40.323948
+                                               Analyze frame #450	5295bytes	1.292Mbps	0.032794s	0.040427s
+                                               Analyze frame #451	7945bytes	1.403Mbps	0.045294s	0.021810s
+Sent 453 at Aug 21 18:33:40.356930
+                                               Analyze frame #452	5567bytes	1.736Mbps	0.025648s	0.036907s
+Instruction
+Sent 454 at Aug 21 18:33:40.389935
+Sent 455 at Aug 21 18:33:40.422937
+                                               Analyze frame #453	5670bytes	1.582Mbps	0.028680s	0.061508s
+Sent 456 at Aug 21 18:33:40.455947
+                                               Analyze frame #454	5516bytes	1.462Mbps	0.030185s	0.051010s
+                                               Analyze frame #455	4894bytes	1.261Mbps	0.031040s	0.037005s
+Sent 457 at Aug 21 18:33:40.488947
+                                               Analyze frame #456	5379bytes	1.574Mbps	0.027335s	0.038271s
+Sent 458 at Aug 21 18:33:40.521944
+                                               Analyze frame #457	5146bytes	1.655Mbps	0.024878s	0.034430s
+Sent 459 at Aug 21 18:33:40.554947
+Sent 460 at Aug 21 18:33:40.587970
+                                               Analyze frame #458	8038bytes	1.081Mbps	0.059463s	0.035258s
+                                               Analyze frame #459	5723bytes	1.662Mbps	0.027551s	0.034208s
+Sent 461 at Aug 21 18:33:40.620936
+                                               Analyze frame #460	5589bytes	1.690Mbps	0.026449s	0.036669s
+Sent 462 at Aug 21 18:33:40.653943
+                                               Analyze frame #461	5976bytes	1.760Mbps	0.027156s	0.031324s
+Sent 463 at Aug 21 18:33:40.686940
+                                               Analyze frame #462	5817bytes	1.365Mbps	0.034093s	0.029391s
+Sent 464 at Aug 21 18:33:40.719976
+Sent 465 at Aug 21 18:33:40.752950
+                                               Analyze frame #463	5378bytes	1.185Mbps	0.036305s	0.037749s
+                                               Analyze frame #464	4953bytes	1.490Mbps	0.026592s	0.045643s
+Sent 466 at Aug 21 18:33:40.785924
+Instruction
+                                               Analyze frame #465	4740bytes	1.192Mbps	0.031815s	0.034925s
+Sent 467 at Aug 21 18:33:40.818969
+                                               Analyze frame #466	8545bytes	1.777Mbps	0.038477s	0.031697s
+Sent 468 at Aug 21 18:33:40.851941
+Sent 469 at Aug 21 18:33:40.884936
+                                               Analyze frame #467	6081bytes	1.507Mbps	0.032276s	0.039899s
+                                               Analyze frame #468	5668bytes	1.374Mbps	0.032995s	0.030995s
+Sent 470 at Aug 21 18:33:40.917920
+                                               Analyze frame #469	5306bytes	1.623Mbps	0.026161s	0.028556s
+Sent 471 at Aug 21 18:33:40.950967
+                                               Analyze frame #470	5471bytes	1.004Mbps	0.043593s	0.019989s
+Sent 472 at Aug 21 18:33:40.983947
+                                               Analyze frame #471	5854bytes	1.733Mbps	0.027028s	0.038942s
+Instruction
+Sent 473 at Aug 21 18:33:41.016983
+                                               Analyze frame #472	5868bytes	1.846Mbps	0.025426s	0.041575s
+Sent 474 at Aug 21 18:33:41.049976
+                                               Analyze frame #473	5166bytes	1.483Mbps	0.027866s	0.033297s
+Sent 475 at Aug 21 18:33:41.082950
+Instruction
+Sent 476 at Aug 21 18:33:41.115940
+                                               Analyze frame #474	5305bytes	1.257Mbps	0.033771s	0.055624s
+                                               Analyze frame #475	5372bytes	1.737Mbps	0.024746s	0.041453s
+Sent 477 at Aug 21 18:33:41.148936
+                                               Analyze frame #476	5007bytes	1.215Mbps	0.032969s	0.037548s
+Sent 478 at Aug 21 18:33:41.182006
+                                               Analyze frame #477	5622bytes	1.400Mbps	0.032116s	0.039388s
+Sent 479 at Aug 21 18:33:41.214959
+                                               Analyze frame #478	9246bytes	1.594Mbps	0.046408s	0.028020s
+Sent 480 at Aug 21 18:33:41.247942
+Sent 481 at Aug 21 18:33:41.280940
+                                               Analyze frame #479	10966bytes	2.743Mbps	0.031977s	0.048561s
+Instruction
+Sent 482 at Aug 21 18:33:41.314006
+                                               Analyze frame #480	12711bytes	2.130Mbps	0.047738s	0.044794s
+Sent 483 at Aug 21 18:33:41.346946
+                                               Analyze frame #481	12459bytes	3.266Mbps	0.030516s	0.046773s
+Sent 484 at Aug 21 18:33:41.379958
+                                               Analyze frame #482	10603bytes	2.396Mbps	0.035397s	0.038156s
+                                               Analyze frame #483	7980bytes	2.172Mbps	0.029387s	0.037031s
+Sent 485 at Aug 21 18:33:41.412946
+Sent 486 at Aug 21 18:33:41.445964
+                                               Analyze frame #484	7394bytes	2.118Mbps	0.027924s	0.046578s
+Sent 487 at Aug 21 18:33:41.478971
+                                               Analyze frame #485	8282bytes	1.590Mbps	0.041669s	0.033161s
+                                               Analyze frame #486	7003bytes	1.980Mbps	0.028291s	0.032311s
+Sent 488 at Aug 21 18:33:41.511958
+                                               Analyze frame #487	8151bytes	2.394Mbps	0.027236s	0.031935s
+Sent 489 at Aug 21 18:33:41.544961
+Sent 490 at Aug 21 18:33:41.577962
+                                               Analyze frame #488	7047bytes	2.029Mbps	0.027791s	0.047386s
+Sent 491 at Aug 21 18:33:41.610961
+                                               Analyze frame #489	8953bytes	2.089Mbps	0.034286s	0.048153s
+                                               Analyze frame #490	8877bytes	2.379Mbps	0.029853s	0.041444s
+Sent 492 at Aug 21 18:33:41.643944
+Sent 493 at Aug 21 18:33:41.676959
+                                               Analyze frame #491	11333bytes	2.623Mbps	0.034570s	0.061916s
+Sent 494 at Aug 21 18:33:41.709936
+                                               Analyze frame #492	13404bytes	2.548Mbps	0.042077s	0.040131s
+Sent 495 at Aug 21 18:33:41.742942
+                                               Analyze frame #493	17201bytes	4.109Mbps	0.033488s	0.064209s
+Sent 496 at Aug 21 18:33:41.775943
+                                               Analyze frame #494	12307bytes	2.817Mbps	0.034945s	0.064277s
+                                               Analyze frame #495	12150bytes	2.879Mbps	0.033759s	0.034651s
+Sent 497 at Aug 21 18:33:41.808944
+Sent 498 at Aug 21 18:33:41.841955
+                                               Analyze frame #496	13056bytes	3.241Mbps	0.032225s	0.050276s
+Instruction
+                                               Analyze frame #497	10893bytes	2.236Mbps	0.038966s	0.029586s
+Sent 499 at Aug 21 18:33:41.874966
+                                               Analyze frame #498	11130bytes	2.202Mbps	0.040431s	0.034173s
+Sent 500 at Aug 21 18:33:41.907984
+Instruction
+                                               Analyze frame #499	11750bytes	3.068Mbps	0.030638s	0.040562s
+Sent 501 at Aug 21 18:33:41.940970
+Sent 502 at Aug 21 18:33:41.973961
+                                               Analyze frame #500	14798bytes	2.333Mbps	0.050735s	0.032476s
+Instruction
+                                               Analyze frame #501	11302bytes	2.698Mbps	0.033515s	0.036465s
+Sent 503 at Aug 21 18:33:42.006957
+Sent 504 at Aug 21 18:33:42.039946
+                                               Analyze frame #502	10986bytes	2.023Mbps	0.043445s	0.029041s
+                                               Analyze frame #503	7830bytes	1.845Mbps	0.033951s	0.035519s
+Sent 505 at Aug 21 18:33:42.072943
+Sent 506 at Aug 21 18:33:42.105956
+                                               Analyze frame #504	6188bytes	1.201Mbps	0.041209s	0.044079s
+                                               Analyze frame #505	6891bytes	1.882Mbps	0.029297s	0.033136s
+Sent 507 at Aug 21 18:33:42.138938
+Sent 508 at Aug 21 18:33:42.171945
+                                               Analyze frame #506	8685bytes	1.591Mbps	0.043683s	0.031763s
+Sent 509 at Aug 21 18:33:42.204949
+                                               Analyze frame #507	6780bytes	1.510Mbps	0.035909s	0.038809s
+                                               Analyze frame #508	6568bytes	2.038Mbps	0.025787s	0.032739s
+Sent 510 at Aug 21 18:33:42.237947
+Sent 511 at Aug 21 18:33:42.270957
+                                               Analyze frame #509	6139bytes	1.323Mbps	0.037119s	0.057201s
+Sent 512 at Aug 21 18:33:42.303949
+                                               Analyze frame #510	6190bytes	1.177Mbps	0.042080s	0.031341s
+                                               Analyze frame #511	9241bytes	2.497Mbps	0.029604s	0.039905s
+Sent 513 at Aug 21 18:33:42.336944
+                                               Analyze frame #512	5611bytes	1.185Mbps	0.037869s	0.030607s
+Sent 514 at Aug 21 18:33:42.369940
+Sent 515 at Aug 21 18:33:42.403016
+Sent 516 at Aug 21 18:33:42.435934
+Sent 517 at Aug 21 18:33:42.468974
+                                               Analyze frame #513	5261bytes	1.253Mbps	0.033603s	0.128988s
+                                               Analyze frame #514	5211bytes	1.208Mbps	0.034500s	0.099925s
+Sent 518 at Aug 21 18:33:42.501942
+                                               Analyze frame #515	5293bytes	1.599Mbps	0.026481s	0.077481s
+                                               Analyze frame #516	4571bytes	1.084Mbps	0.033733s	0.041068s
+                                               Analyze frame #517	4678bytes	1.259Mbps	0.029717s	0.029529s
+Instruction
+Sent 519 at Aug 21 18:33:42.534950
+Instruction
+Sent 520 at Aug 21 18:33:42.567960
+                                               Analyze frame #518	4264bytes	1.230Mbps	0.027723s	0.047289s
+                                               Analyze frame #519	4793bytes	1.257Mbps	0.030493s	0.027971s
+Sent 521 at Aug 21 18:33:42.600947
+                                               Analyze frame #520	3653bytes	1.138Mbps	0.025671s	0.042818s
+Sent 522 at Aug 21 18:33:42.633950
+                                               Analyze frame #521	3787bytes	1.016Mbps	0.029810s	0.029089s
+Sent 523 at Aug 21 18:33:42.666952
+                                               Analyze frame #522	3735bytes	1.133Mbps	0.026384s	0.036104s
+Sent 524 at Aug 21 18:33:42.699951
+                                               Analyze frame #523	3380bytes	0.851Mbps	0.031774s	0.033353s
+Sent 525 at Aug 21 18:33:42.732943
+                                               Analyze frame #524	3405bytes	1.074Mbps	0.025366s	0.033115s
+Sent 526 at Aug 21 18:33:42.765922
+                                               Analyze frame #525	2961bytes	0.710Mbps	0.033386s	0.032048s
+Sent 527 at Aug 21 18:33:42.798942
+Sent 528 at Aug 21 18:33:42.831976
+                                               Analyze frame #526	5986bytes	1.272Mbps	0.037643s	0.036535s
+                                               Analyze frame #527	2871bytes	0.961Mbps	0.023892s	0.039268s
+Sent 529 at Aug 21 18:33:42.865001
+                                               Analyze frame #528	2712bytes	0.889Mbps	0.024411s	0.034556s
+Sent 530 at Aug 21 18:33:42.898006
+                                               Analyze frame #529	3016bytes	0.844Mbps	0.028600s	0.035145s
+Sent 531 at Aug 21 18:33:42.930880
+                                               Analyze frame #530	5995bytes	1.675Mbps	0.028627s	0.029575s
+Sent 532 at Aug 21 18:33:42.963937
+                                               Analyze frame #531	3258bytes	0.706Mbps	0.036942s	0.028659s
+Sent 533 at Aug 21 18:33:42.996934
+                                               Analyze frame #532	3156bytes	1.032Mbps	0.024458s	0.037986s
+Sent 534 at Aug 21 18:33:43.029950
+                                               Analyze frame #533	3015bytes	0.975Mbps	0.024728s	0.040429s
+Sent 535 at Aug 21 18:33:43.062955
+                                               Analyze frame #534	3034bytes	1.022Mbps	0.023754s	0.028676s
+Sent 536 at Aug 21 18:33:43.095960
+Sent 537 at Aug 21 18:33:43.128965
+                                               Analyze frame #535	3113bytes	0.840Mbps	0.029658s	0.039838s
+                                               Analyze frame #536	3090bytes	0.872Mbps	0.028356s	0.033992s
+Sent 538 at Aug 21 18:33:43.161965
+                                               Analyze frame #537	2986bytes	0.965Mbps	0.024744s	0.035212s
+Instruction
+Sent 539 at Aug 21 18:33:43.194975
+Sent 540 at Aug 21 18:33:43.227958
+                                               Analyze frame #538	3109bytes	0.617Mbps	0.040312s	0.033069s
+                                               Analyze frame #539	2908bytes	0.899Mbps	0.025868s	0.035211s
+Sent 541 at Aug 21 18:33:43.260943
+                                               Analyze frame #540	2742bytes	0.942Mbps	0.023295s	0.043117s
+Sent 542 at Aug 21 18:33:43.293951
+Sent 543 at Aug 21 18:33:43.326935
+                                               Analyze frame #541	8922bytes	1.863Mbps	0.038322s	0.035197s
+                                               Analyze frame #542	3942bytes	1.298Mbps	0.024303s	0.031877s
+Sent 544 at Aug 21 18:33:43.359935
+Sent 545 at Aug 21 18:33:43.392954
+                                               Analyze frame #543	4242bytes	0.641Mbps	0.052965s	0.028531s
+                                               Analyze frame #544	3656bytes	1.162Mbps	0.025165s	0.032119s
+Sent 546 at Aug 21 18:33:43.425943
+                                               Analyze frame #545	3717bytes	1.154Mbps	0.025770s	0.032773s
+Sent 547 at Aug 21 18:33:43.458970
+                                               Analyze frame #546	3292bytes	0.799Mbps	0.032977s	0.032204s
+Sent 548 at Aug 21 18:33:43.491940
+                                               Analyze frame #547	3905bytes	0.807Mbps	0.038690s	0.020364s
+Sent 549 at Aug 21 18:33:43.524950
+Sent 550 at Aug 21 18:33:43.557943
+                                               Analyze frame #548	3326bytes	0.840Mbps	0.031669s	0.038150s
+                                               Analyze frame #549	3627bytes	1.190Mbps	0.024385s	0.029287s
+Sent 551 at Aug 21 18:33:43.590955
+                                               Analyze frame #550	2650bytes	0.940Mbps	0.022546s	0.031001s
+Sent 552 at Aug 21 18:33:43.623951
+                                               Analyze frame #551	3427bytes	1.117Mbps	0.024543s	0.040807s
+Sent 553 at Aug 21 18:33:43.656872
+                                               Analyze frame #552	3185bytes	1.158Mbps	0.022001s	0.032711s
+Sent 554 at Aug 21 18:33:43.689960
+                                               Analyze frame #553	3063bytes	0.891Mbps	0.027504s	0.039932s
+                                               Analyze frame #554	5667bytes	1.364Mbps	0.033230s	0.048193s
+Sent 555 at Aug 21 18:33:43.722959
+Sent 556 at Aug 21 18:33:44.090982
+Sent 557 at Aug 21 18:33:44.118951
+                                               Analyze frame #555	324245bytes	6.515Mbps	0.398157s	0.021253s
+Instruction
+Sent 558 at Aug 21 18:33:44.151970
+                                               Analyze frame #556	2176bytes	0.541Mbps	0.032163s	0.037264s
+Sent 559 at Aug 21 18:33:44.184972
+                                               Analyze frame #557	2894bytes	0.974Mbps	0.023780s	0.051737s
+Sent 560 at Aug 21 18:33:44.217965
+                                               Analyze frame #558	5183bytes	1.214Mbps	0.034141s	0.041306s
+Instruction
+Sent 561 at Aug 21 18:33:44.251131
+                                               Analyze frame #559	6157bytes	1.833Mbps	0.026877s	0.047466s
+Sent 562 at Aug 21 18:33:44.283968
+                                               Analyze frame #560	8042bytes	1.819Mbps	0.035360s	0.039283s
+Sent 563 at Aug 21 18:33:44.316960
+                                               Analyze frame #561	8555bytes	1.944Mbps	0.035204s	0.053114s
+Sent 564 at Aug 21 18:33:44.349934
+                                               Analyze frame #562	9084bytes	1.861Mbps	0.039060s	0.040362s
+                                               Analyze frame #563	9381bytes	2.639Mbps	0.028441s	0.032778s
+Sent 565 at Aug 21 18:33:44.382959
+Sent 566 at Aug 21 18:33:44.415947
+                                               Analyze frame #564	10226bytes	2.768Mbps	0.029555s	0.049654s
+                                               Analyze frame #565	9573bytes	2.439Mbps	0.031400s	0.042926s
+Sent 567 at Aug 21 18:33:44.448983
+Sent 568 at Aug 21 18:33:44.481950
+                                               Analyze frame #566	10745bytes	3.078Mbps	0.027927s	0.055436s
+                                               Analyze frame #567	9910bytes	2.106Mbps	0.037652s	0.029205s
+Sent 569 at Aug 21 18:33:44.514964
+Sent 570 at Aug 21 18:33:44.547959
+Sent 571 at Aug 21 18:33:44.581002
+                                               Analyze frame #568	11190bytes	2.849Mbps	0.031424s	0.077866s
+                                               Analyze frame #569	10774bytes	2.643Mbps	0.032607s	0.049938s
+Sent 572 at Aug 21 18:33:44.613932
+                                               Analyze frame #570	11526bytes	2.496Mbps	0.036946s	0.041419s
+Instruction
+Sent 573 at Aug 21 18:33:44.647001
+                                               Analyze frame #571	9575bytes	2.475Mbps	0.030953s	0.049134s
+                                               Analyze frame #572	11358bytes	2.698Mbps	0.033683s	0.032386s
+Instruction
+Sent 574 at Aug 21 18:33:44.680050
+                                               Analyze frame #573	10438bytes	2.365Mbps	0.035307s	0.033194s
+Sent 575 at Aug 21 18:33:44.712927
+                                               Analyze frame #574	12153bytes	2.316Mbps	0.041976s	0.031534s
+Sent 576 at Aug 21 18:33:44.746000
+Sent 577 at Aug 21 18:33:44.778987
+                                               Analyze frame #575	10387bytes	2.313Mbps	0.035922s	0.045536s
+Sent 578 at Aug 21 18:33:44.811944
+                                               Analyze frame #576	12441bytes	2.843Mbps	0.035013s	0.050001s
+                                               Analyze frame #577	11139bytes	2.301Mbps	0.038735s	0.030695s
+Sent 579 at Aug 21 18:33:44.844945
+Sent 580 at Aug 21 18:33:44.877897
+                                               Analyze frame #578	14913bytes	3.151Mbps	0.037865s	0.049388s
+Sent 581 at Aug 21 18:33:44.910964
+                                               Analyze frame #579	10318bytes	1.426Mbps	0.057903s	0.034454s
+                                               Analyze frame #580	12085bytes	2.781Mbps	0.034759s	0.031787s
+Sent 582 at Aug 21 18:33:44.943948
+                                               Analyze frame #581	11168bytes	2.839Mbps	0.031466s	0.038730s
+Sent 583 at Aug 21 18:33:44.976942
+Sent 584 at Aug 21 18:33:45.010005
+                                               Analyze frame #582	12506bytes	2.528Mbps	0.039574s	0.041786s
+Sent 585 at Aug 21 18:33:45.042959
+                                               Analyze frame #583	10646bytes	2.434Mbps	0.034992s	0.050118s
+Sent 586 at Aug 21 18:33:45.075955
+                                               Analyze frame #584	12503bytes	2.081Mbps	0.048055s	0.034142s
+                                               Analyze frame #585	10627bytes	2.139Mbps	0.039741s	0.033438s
+Sent 587 at Aug 21 18:33:45.108946
+                                               Analyze frame #586	11781bytes	2.984Mbps	0.031582s	0.042737s
+Sent 588 at Aug 21 18:33:45.141954
+Instruction
+                                               Analyze frame #587	10912bytes	2.737Mbps	0.031889s	0.038745s
+Sent 589 at Aug 21 18:33:45.174975
+Sent 590 at Aug 21 18:33:45.207939
+                                               Analyze frame #588	12628bytes	2.698Mbps	0.037442s	0.042036s
+Sent 591 at Aug 21 18:33:45.240977
+                                               Analyze frame #589	11167bytes	2.306Mbps	0.038741s	0.053862s
+Instruction
+                                               Analyze frame #590	12590bytes	2.922Mbps	0.034467s	0.036849s
+Sent 592 at Aug 21 18:33:45.274016
+Sent 593 at Aug 21 18:33:45.306981
+                                               Analyze frame #591	11488bytes	1.878Mbps	0.048939s	0.041652s
+                                               Analyze frame #592	12881bytes	2.805Mbps	0.036742s	0.033242s
+Sent 594 at Aug 21 18:33:45.339938
+                                               Analyze frame #593	10996bytes	2.969Mbps	0.029629s	0.036070s
+Sent 595 at Aug 21 18:33:45.372847
+Instruction
+Sent 596 at Aug 21 18:33:45.405994
+                                               Analyze frame #594	12650bytes	2.540Mbps	0.039848s	0.039605s
+                                               Analyze frame #595	11337bytes	2.605Mbps	0.034818s	0.027745s
+Sent 597 at Aug 21 18:33:45.438953
+                                               Analyze frame #596	12388bytes	2.323Mbps	0.042666s	0.027758s
+Sent 598 at Aug 21 18:33:45.471970
+Sent 599 at Aug 21 18:33:45.504971
+Sent 600 at Aug 21 18:33:45.537957
+Sent 601 at Aug 21 18:33:45.570940
+                                               Analyze frame #597	11498bytes	0.847Mbps	0.108655s	0.032461s
+                                               Analyze frame #598	12825bytes	1.285Mbps	0.079846s	0.035571s
+                                               Analyze frame #599	11051bytes	1.744Mbps	0.050700s	0.032275s
+Sent 602 at Aug 21 18:33:45.603931
+                                               Analyze frame #600	12758bytes	2.155Mbps	0.047359s	0.043818s
+Sent 603 at Aug 21 18:33:45.636965
+                                               Analyze frame #601	11063bytes	1.873Mbps	0.047259s	0.038390s
+                                               Analyze frame #602	14785bytes	2.668Mbps	0.044328s	0.029139s
+Sent 604 at Aug 21 18:33:45.669963
+Sent 605 at Aug 21 18:33:45.702940
+                                               Analyze frame #603	11218bytes	1.892Mbps	0.047435s	0.028115s
+                                               Analyze frame #604	13493bytes	3.121Mbps	0.034590s	0.030870s
+Sent 606 at Aug 21 18:33:45.735920
+Sent 607 at Aug 21 18:33:45.768952
+                                               Analyze frame #605	11540bytes	1.957Mbps	0.047174s	0.029176s
+Sent 608 at Aug 21 18:33:45.801960
+                                               Analyze frame #606	13445bytes	2.621Mbps	0.041042s	0.037751s
+                                               Analyze frame #607	11990bytes	3.335Mbps	0.028765s	0.039470s
+Sent 609 at Aug 21 18:33:45.834922
+Sent 610 at Aug 21 18:33:45.867902
+                                               Analyze frame #608	13765bytes	2.257Mbps	0.048796s	0.035892s
+Instruction
+Sent 611 at Aug 21 18:33:45.900952
+                                               Analyze frame #609	12091bytes	3.388Mbps	0.028546s	0.055235s
+                                               Analyze frame #610	13768bytes	3.209Mbps	0.034328s	0.031361s
+Sent 612 at Aug 21 18:33:45.933986
+                                               Analyze frame #611	12654bytes	3.130Mbps	0.032342s	0.032863s
+Sent 613 at Aug 21 18:33:45.966922
+Sent 614 at Aug 21 18:33:45.999926
+                                               Analyze frame #612	14013bytes	2.618Mbps	0.042828s	0.035510s
+Instruction
+                                               Analyze frame #613	12558bytes	2.414Mbps	0.041614s	0.028780s
+Sent 615 at Aug 21 18:33:46.032933
+                                               Analyze frame #614	14290bytes	3.004Mbps	0.038050s	0.029481s
+Sent 616 at Aug 21 18:33:46.065923
+Sent 617 at Aug 21 18:33:46.098937
+                                               Analyze frame #615	36120bytes	4.139Mbps	0.069817s	0.033352s
+                                               Analyze frame #616	9642bytes	1.939Mbps	0.039780s	0.031405s
+Sent 618 at Aug 21 18:33:46.131942
+Sent 619 at Aug 21 18:33:46.164935
+                                               Analyze frame #617	12014bytes	2.820Mbps	0.034077s	0.047481s
+                                               Analyze frame #618	13133bytes	2.303Mbps	0.045624s	0.029850s
+Sent 620 at Aug 21 18:33:46.198021
+                                               Analyze frame #619	12229bytes	2.913Mbps	0.033580s	0.034408s
+Sent 621 at Aug 21 18:33:46.230927
+Sent 622 at Aug 21 18:33:46.263945
+                                               Analyze frame #620	13449bytes	2.267Mbps	0.047458s	0.044022s
+Sent 623 at Aug 21 18:33:46.296942
+                                               Analyze frame #621	12416bytes	1.668Mbps	0.059563s	0.048751s
+                                               Analyze frame #622	13361bytes	2.603Mbps	0.041067s	0.035434s
+Sent 624 at Aug 21 18:33:46.329946
+                                               Analyze frame #623	12283bytes	2.669Mbps	0.036823s	0.038154s
+Sent 625 at Aug 21 18:33:46.362928
+Sent 626 at Aug 21 18:33:46.395940
+                                               Analyze frame #624	14094bytes	3.476Mbps	0.032439s	0.050215s
+Sent 627 at Aug 21 18:33:46.428946
+                                               Analyze frame #625	12592bytes	2.326Mbps	0.043308s	0.038198s
+Sent 628 at Aug 21 18:33:46.461944
+                                               Analyze frame #626	15623bytes	3.651Mbps	0.034235s	0.045913s
+Sent 629 at Aug 21 18:33:46.494945
+                                               Analyze frame #627	11910bytes	3.088Mbps	0.030856s	0.044460s
+                                               Analyze frame #628	12891bytes	3.300Mbps	0.031247s	0.042115s
+Sent 630 at Aug 21 18:33:46.527941
+Sent 631 at Aug 21 18:33:46.560949
+                                               Analyze frame #629	12183bytes	3.135Mbps	0.031087s	0.046482s
+Sent 632 at Aug 21 18:33:46.593941
+                                               Analyze frame #630	13328bytes	2.754Mbps	0.038719s	0.043875s
+                                               Analyze frame #631	10617bytes	3.150Mbps	0.026965s	0.037141s
+Instruction
+Sent 633 at Aug 21 18:33:46.626932
+Sent 634 at Aug 21 18:33:46.659976
+                                               Analyze frame #632	12985bytes	3.273Mbps	0.031742s	0.049587s
+                                               Analyze frame #633	11250bytes	2.547Mbps	0.035333s	0.034329s
+Sent 635 at Aug 21 18:33:46.692981
+Sent 636 at Aug 21 18:33:46.725962
+                                               Analyze frame #634	12868bytes	3.025Mbps	0.034036s	0.056505s
+                                               Analyze frame #635	11138bytes	2.339Mbps	0.038091s	0.035401s
+Sent 637 at Aug 21 18:33:46.759001
+                                               Analyze frame #636	12546bytes	2.986Mbps	0.033608s	0.031611s
+Sent 638 at Aug 21 18:33:46.791977
+                                               Analyze frame #637	11200bytes	3.229Mbps	0.027747s	0.032718s
+Sent 639 at Aug 21 18:33:46.824963
+Sent 640 at Aug 21 18:33:46.857961
+                                               Analyze frame #638	12306bytes	2.628Mbps	0.037467s	0.042772s
+Instruction
+                                               Analyze frame #639	11047bytes	2.993Mbps	0.029523s	0.038079s
+Sent 641 at Aug 21 18:33:46.891019
+Instruction
+Sent 642 at Aug 21 18:33:46.923965
+                                               Analyze frame #640	12556bytes	2.921Mbps	0.034389s	0.043000s
+Sent 643 at Aug 21 18:33:46.956962
+                                               Analyze frame #641	10697bytes	2.608Mbps	0.032819s	0.047196s
+Instruction
+Sent 644 at Aug 21 18:33:46.990177
+                                               Analyze frame #642	12253bytes	1.723Mbps	0.056881s	0.043142s
+Sent 645 at Aug 21 18:33:47.022945
+                                               Analyze frame #643	11302bytes	2.460Mbps	0.036760s	0.037872s
+                                               Analyze frame #644	11984bytes	3.156Mbps	0.030381s	0.039897s
+Sent 646 at Aug 21 18:33:47.055990
+                                               Analyze frame #645	10798bytes	3.114Mbps	0.027743s	0.036714s
+Instruction
+Sent 647 at Aug 21 18:33:47.089009
+Sent 648 at Aug 21 18:33:47.121963
+                                               Analyze frame #646	11575bytes	2.662Mbps	0.034785s	0.049748s
+                                               Analyze frame #647	10889bytes	2.430Mbps	0.035848s	0.029228s
+Instruction
+Sent 649 at Aug 21 18:33:47.155036
+                                               Analyze frame #648	12171bytes	3.239Mbps	0.030058s	0.040339s
+Sent 650 at Aug 21 18:33:47.187945
+                                               Analyze frame #649	11576bytes	2.921Mbps	0.031702s	0.032735s
+Sent 651 at Aug 21 18:33:47.220936
+                                               Analyze frame #650	13900bytes	3.423Mbps	0.032485s	0.038589s
+Sent 652 at Aug 21 18:33:47.253927
+Sent 653 at Aug 21 18:33:47.286980
+                                               Analyze frame #651	10753bytes	2.387Mbps	0.036040s	0.042282s
+Instruction
+Sent 654 at Aug 21 18:33:47.319973
+                                               Analyze frame #652	12189bytes	1.643Mbps	0.059360s	0.040903s
+                                               Analyze frame #653	10698bytes	2.700Mbps	0.031701s	0.035560s
+Sent 655 at Aug 21 18:33:47.352957
+                                               Analyze frame #654	12417bytes	3.259Mbps	0.030481s	0.037205s
+Sent 656 at Aug 21 18:33:47.385954
+                                               Analyze frame #655	11039bytes	3.080Mbps	0.028672s	0.035776s
+Sent 657 at Aug 21 18:33:47.418953
+                                               Analyze frame #656	12284bytes	2.439Mbps	0.040287s	0.032968s
+Sent 658 at Aug 21 18:33:47.452007
+Sent 659 at Aug 21 18:33:47.485047
+                                               Analyze frame #657	10480bytes	2.242Mbps	0.037401s	0.038345s
+                                               Analyze frame #658	12496bytes	3.277Mbps	0.030506s	0.031857s
+Sent 660 at Aug 21 18:33:47.517992
+                                               Analyze frame #659	10632bytes	1.988Mbps	0.042781s	0.022360s
+Instruction
+Sent 661 at Aug 21 18:33:47.551007
+                                               Analyze frame #660	12510bytes	3.293Mbps	0.030391s	0.035838s
+Sent 662 at Aug 21 18:33:47.583976
+Sent 663 at Aug 21 18:33:47.616967
+                                               Analyze frame #661	10061bytes	2.525Mbps	0.031873s	0.041565s
+Sent 664 at Aug 21 18:33:47.649990
+                                               Analyze frame #662	12025bytes	2.770Mbps	0.034729s	0.045607s
+                                               Analyze frame #663	10716bytes	3.105Mbps	0.027606s	0.035787s
+Sent 665 at Aug 21 18:33:47.682968
+                                               Analyze frame #664	12440bytes	2.288Mbps	0.043495s	0.031919s
+Sent 666 at Aug 21 18:33:47.716025
+                                               Analyze frame #665	10861bytes	3.038Mbps	0.028599s	0.038643s
+Sent 667 at Aug 21 18:33:47.748966
+                                               Analyze frame #666	12422bytes	3.050Mbps	0.032582s	0.030519s
+Sent 668 at Aug 21 18:33:47.781982
+                                               Analyze frame #667	10674bytes	3.084Mbps	0.027690s	0.039527s
+Sent 669 at Aug 21 18:33:47.814964
+Sent 670 at Aug 21 18:33:47.847951
+                                               Analyze frame #668	12816bytes	3.273Mbps	0.031326s	0.046087s
+Sent 671 at Aug 21 18:33:47.880959
+                                               Analyze frame #669	10821bytes	1.583Mbps	0.054681s	0.029837s
+Sent 672 at Aug 21 18:33:47.914004
+                                               Analyze frame #670	12339bytes	2.113Mbps	0.046714s	0.044630s
+Instruction
+                                               Analyze frame #671	10571bytes	2.016Mbps	0.041949s	0.031534s
+Sent 673 at Aug 21 18:33:47.946998
+                                               Analyze frame #672	11960bytes	3.326Mbps	0.028768s	0.035367s
+Sent 674 at Aug 21 18:33:47.979996
+                                               Analyze frame #673	11580bytes	2.475Mbps	0.037436s	0.043015s
+Sent 675 at Aug 21 18:33:48.012953
+Sent 676 at Aug 21 18:33:48.045983
+                                               Analyze frame #674	14044bytes	2.731Mbps	0.041147s	0.040816s
+Sent 677 at Aug 21 18:33:48.078934
+                                               Analyze frame #675	38256bytes	5.579Mbps	0.054857s	0.039686s
+Sent 678 at Aug 21 18:33:48.111939
+                                               Analyze frame #676	8856bytes	1.511Mbps	0.046888s	0.044400s
+Instruction
+                                               Analyze frame #677	11585bytes	2.289Mbps	0.040482s	0.032758s
+Sent 679 at Aug 21 18:33:48.144955
+Sent 680 at Aug 21 18:33:48.177960
+Sent 681 at Aug 21 18:33:48.210999
+Sent 682 at Aug 21 18:33:48.243944
+Sent 683 at Aug 21 18:33:48.276979
+                                               Analyze frame #678	11411bytes	2.691Mbps	0.033921s	0.138569s
+                                               Analyze frame #679	10519bytes	2.516Mbps	0.033449s	0.106053s
+                                               Analyze frame #680	11447bytes	1.391Mbps	0.065821s	0.044198s
+                                               Analyze frame #681	10393bytes	1.795Mbps	0.046310s	0.035130s
+                                               Analyze frame #682	11471bytes	2.502Mbps	0.036677s	0.027512s
+Sent 684 at Aug 21 18:33:48.309947
+                                               Analyze frame #683	10047bytes	1.588Mbps	0.050612s	0.023918s
+Sent 685 at Aug 21 18:33:48.342996
+                                               Analyze frame #684	11323bytes	2.241Mbps	0.040414s	0.033874s
+Sent 686 at Aug 21 18:33:48.376062
+                                               Analyze frame #685	10408bytes	2.734Mbps	0.030454s	0.038971s
+Sent 687 at Aug 21 18:33:48.408973
+                                               Analyze frame #686	11471bytes	2.912Mbps	0.031515s	0.033804s
+Sent 688 at Aug 21 18:33:48.441916
+                                               Analyze frame #687	10821bytes	2.511Mbps	0.034472s	0.031428s
+Sent 689 at Aug 21 18:33:48.474915
+                                               Analyze frame #688	11472bytes	2.241Mbps	0.040949s	0.032923s
+Sent 690 at Aug 21 18:33:48.507999
+                                               Analyze frame #689	10306bytes	2.950Mbps	0.027947s	0.033221s
+Instruction
+Sent 691 at Aug 21 18:33:48.541009
+                                               Analyze frame #690	12124bytes	3.136Mbps	0.030930s	0.037391s
+Sent 692 at Aug 21 18:33:48.573987
+                                               Analyze frame #691	9837bytes	2.399Mbps	0.032808s	0.032405s
+Sent 693 at Aug 21 18:33:48.606974
+Sent 694 at Aug 21 18:33:48.639974
+                                               Analyze frame #692	11619bytes	3.022Mbps	0.030762s	0.046706s
+Sent 695 at Aug 21 18:33:48.672950
+                                               Analyze frame #693	10985bytes	1.775Mbps	0.049497s	0.031758s
+                                               Analyze frame #694	12445bytes	3.443Mbps	0.028919s	0.035538s
+Sent 696 at Aug 21 18:33:48.705987
+                                               Analyze frame #695	10830bytes	2.330Mbps	0.037180s	0.030250s
+Sent 697 at Aug 21 18:33:48.738953
+                                               Analyze frame #696	12929bytes	3.057Mbps	0.033829s	0.031824s
+Sent 698 at Aug 21 18:33:48.771931
+Sent 699 at Aug 21 18:33:48.804973
+                                               Analyze frame #697	11361bytes	3.204Mbps	0.028368s	0.052175s
+Instruction
+                                               Analyze frame #698	14841bytes	2.670Mbps	0.044461s	0.028663s
+Sent 700 at Aug 21 18:33:48.838037
+                                               Analyze frame #699	10587bytes	2.931Mbps	0.028895s	0.032381s
+Instruction
+Sent 701 at Aug 21 18:33:48.871263
+                                               Analyze frame #700	12601bytes	2.921Mbps	0.034513s	0.039868s
+Sent 702 at Aug 21 18:33:48.903979
+                                               Analyze frame #701	11676bytes	2.069Mbps	0.045142s	0.020830s
+Sent 703 at Aug 21 18:33:48.936979
+Sent 704 at Aug 21 18:33:48.969968
+                                               Analyze frame #702	13334bytes	3.109Mbps	0.034307s	0.041030s
+                                               Analyze frame #703	11429bytes	3.229Mbps	0.028315s	0.030036s
+Sent 705 at Aug 21 18:33:49.002930
+                                               Analyze frame #704	13277bytes	2.829Mbps	0.037543s	0.027860s
+Sent 706 at Aug 21 18:33:49.035953
+                                               Analyze frame #705	11506bytes	2.266Mbps	0.040626s	0.032728s
+Sent 707 at Aug 21 18:33:49.068977
+                                               Analyze frame #706	13413bytes	2.956Mbps	0.036302s	0.028757s
+Sent 708 at Aug 21 18:33:49.101987
+                                               Analyze frame #707	11406bytes	3.227Mbps	0.028275s	0.034228s
+Sent 709 at Aug 21 18:33:49.134973
+                                               Analyze frame #708	13187bytes	2.979Mbps	0.035415s	0.037881s
+Sent 710 at Aug 21 18:33:49.167950
+Sent 711 at Aug 21 18:33:49.201004
+                                               Analyze frame #709	12166bytes	3.394Mbps	0.028675s	0.048739s
+Sent 712 at Aug 21 18:33:49.233960
+                                               Analyze frame #710	13568bytes	2.193Mbps	0.049498s	0.026088s
+                                               Analyze frame #711	12167bytes	2.506Mbps	0.038848s	0.026339s
+Sent 713 at Aug 21 18:33:49.266941
+                                               Analyze frame #712	13443bytes	3.372Mbps	0.031892s	0.036235s
+Sent 714 at Aug 21 18:33:49.299966
+                                               Analyze frame #713	11944bytes	3.406Mbps	0.028050s	0.032792s
+Sent 715 at Aug 21 18:33:49.332962
+                                               Analyze frame #714	13776bytes	3.612Mbps	0.030511s	0.028062s
+Sent 716 at Aug 21 18:33:49.366008
+Sent 717 at Aug 21 18:33:49.398959
+                                               Analyze frame #715	11954bytes	2.733Mbps	0.034986s	0.040425s
+                                               Analyze frame #716	13569bytes	3.335Mbps	0.032549s	0.032955s
+Instruction
+Sent 718 at Aug 21 18:33:49.431976
+                                               Analyze frame #717	12218bytes	3.322Mbps	0.029421s	0.043831s
+Sent 719 at Aug 21 18:33:49.464965
+                                               Analyze frame #718	13608bytes	3.561Mbps	0.030567s	0.031801s
+Sent 720 at Aug 21 18:33:49.497955
+                                               Analyze frame #719	11661bytes	2.959Mbps	0.031525s	0.035365s
+Sent 721 at Aug 21 18:33:49.530954
+                                               Analyze frame #720	13217bytes	3.481Mbps	0.030375s	0.038058s
+Sent 722 at Aug 21 18:33:49.563975
+                                               Analyze frame #721	11812bytes	2.576Mbps	0.036685s	0.028609s
+Sent 723 at Aug 21 18:33:49.596973
+                                               Analyze frame #722	14604bytes	3.017Mbps	0.038730s	0.032573s
+Sent 724 at Aug 21 18:33:49.629996
+                                               Analyze frame #723	11299bytes	3.077Mbps	0.029377s	0.041980s
+Sent 725 at Aug 21 18:33:49.662970
+                                               Analyze frame #724	13074bytes	3.394Mbps	0.030816s	0.038728s
+Sent 726 at Aug 21 18:33:49.695960
+Sent 727 at Aug 21 18:33:49.729013
+                                               Analyze frame #725	11525bytes	2.433Mbps	0.037892s	0.036519s
+Sent 728 at Aug 21 18:33:49.762004
+                                               Analyze frame #726	13119bytes	3.523Mbps	0.029787s	0.045343s
+Sent 729 at Aug 21 18:33:49.794946
+                                               Analyze frame #727	11577bytes	1.732Mbps	0.053470s	0.033995s
+                                               Analyze frame #728	12851bytes	2.826Mbps	0.036382s	0.038004s
+Sent 730 at Aug 21 18:33:49.827970
+                                               Analyze frame #729	10825bytes	3.170Mbps	0.027321s	0.046251s
+Sent 731 at Aug 21 18:33:49.860974
+                                               Analyze frame #730	12444bytes	3.388Mbps	0.029385s	0.040791s
+Sent 732 at Aug 21 18:33:49.893957
+Instruction
+                                               Analyze frame #731	10867bytes	3.098Mbps	0.028063s	0.043429s
+Sent 733 at Aug 21 18:33:49.926975
+                                               Analyze frame #732	12220bytes	2.995Mbps	0.032641s	0.030967s
+Sent 734 at Aug 21 18:33:49.959969
+                                               Analyze frame #733	10570bytes	2.964Mbps	0.028528s	0.041005s
+Sent 735 at Aug 21 18:33:49.992970
+                                               Analyze frame #734	12141bytes	3.434Mbps	0.028287s	0.040032s
+Sent 736 at Aug 21 18:33:50.025928
+Sent 737 at Aug 21 18:33:50.058987
+Sent 738 at Aug 21 18:33:50.091959
+                                               Analyze frame #735	40465bytes	5.705Mbps	0.056739s	0.057705s
+                                               Analyze frame #736	8117bytes	2.457Mbps	0.026434s	0.055103s
+Sent 739 at Aug 21 18:33:50.124981
+                                               Analyze frame #737	11307bytes	2.513Mbps	0.035992s	0.038269s
+                                               Analyze frame #738	11147bytes	3.038Mbps	0.029357s	0.036209s
+Sent 740 at Aug 21 18:33:50.157938
+                                               Analyze frame #739	9642bytes	1.903Mbps	0.040533s	0.032989s
+Sent 741 at Aug 21 18:33:50.190980
+                                               Analyze frame #740	10911bytes	2.220Mbps	0.039319s	0.025669s
+Sent 742 at Aug 21 18:33:50.223962
+                                               Analyze frame #741	9922bytes	2.855Mbps	0.027799s	0.040810s
+Sent 743 at Aug 21 18:33:50.256958
+Sent 744 at Aug 21 18:33:50.289966
+                                               Analyze frame #742	10996bytes	3.158Mbps	0.027856s	0.045568s
+Sent 745 at Aug 21 18:33:50.322988
+                                               Analyze frame #743	9741bytes	2.665Mbps	0.029238s	0.046292s
+Sent 746 at Aug 21 18:33:50.355978
+                                               Analyze frame #744	10905bytes	2.566Mbps	0.034002s	0.041334s
+Instruction
+Sent 747 at Aug 21 18:33:50.388987
+                                               Analyze frame #745	10115bytes	2.750Mbps	0.029430s	0.044216s
+                                               Analyze frame #746	12343bytes	3.299Mbps	0.029932s	0.035452s
+Sent 748 at Aug 21 18:33:50.421950
+Sent 749 at Aug 21 18:33:50.454976
+                                               Analyze frame #747	9309bytes	2.098Mbps	0.035491s	0.041967s
+Sent 750 at Aug 21 18:33:50.487926
+                                               Analyze frame #748	11142bytes	2.536Mbps	0.035152s	0.042291s
+                                               Analyze frame #749	9601bytes	2.678Mbps	0.028685s	0.033142s
+Sent 751 at Aug 21 18:33:50.520964
+                                               Analyze frame #750	11304bytes	2.557Mbps	0.035363s	0.034142s
+Sent 752 at Aug 21 18:33:50.553956
+                                               Analyze frame #751	8716bytes	2.437Mbps	0.028609s	0.029901s
+Sent 753 at Aug 21 18:33:50.586959
+Sent 754 at Aug 21 18:33:50.619974
+                                               Analyze frame #752	10586bytes	2.419Mbps	0.035013s	0.040400s
+Sent 755 at Aug 21 18:33:50.653005
+                                               Analyze frame #753	10493bytes	2.299Mbps	0.036519s	0.040657s
+                                               Analyze frame #754	11984bytes	3.347Mbps	0.028648s	0.040843s
+Sent 756 at Aug 21 18:33:50.685994
+Sent 757 at Aug 21 18:33:50.718958
+                                               Analyze frame #755	11498bytes	2.923Mbps	0.031470s	0.049304s
+                                               Analyze frame #756	12498bytes	2.564Mbps	0.038989s	0.034221s
+Sent 758 at Aug 21 18:33:50.751965
+Sent 759 at Aug 21 18:33:50.784946
+                                               Analyze frame #757	11895bytes	1.724Mbps	0.055209s	0.038052s
+                                               Analyze frame #758	12897bytes	2.931Mbps	0.035201s	0.033251s
+Sent 760 at Aug 21 18:33:50.817958
+                                               Analyze frame #759	12003bytes	2.601Mbps	0.036920s	0.035198s
+Sent 761 at Aug 21 18:33:50.850944
+Sent 762 at Aug 21 18:33:50.883961
+                                               Analyze frame #760	13249bytes	3.721Mbps	0.028487s	0.050548s
+Sent 763 at Aug 21 18:33:50.916956
+                                               Analyze frame #761	12393bytes	2.634Mbps	0.037637s	0.044533s
+Instruction
+                                               Analyze frame #762	13720bytes	3.600Mbps	0.030486s	0.038320s
+Sent 764 at Aug 21 18:33:50.949965
+                                               Analyze frame #763	13087bytes	3.290Mbps	0.031824s	0.037222s
+Sent 765 at Aug 21 18:33:50.983052
+                                               Analyze frame #764	13783bytes	3.636Mbps	0.030322s	0.035951s
+Sent 766 at Aug 21 18:33:51.015943
+Sent 767 at Aug 21 18:33:51.048958
+                                               Analyze frame #765	13357bytes	3.044Mbps	0.035100s	0.041143s
+Sent 768 at Aug 21 18:33:51.081949
+                                               Analyze frame #766	13870bytes	3.529Mbps	0.031445s	0.047571s
+Sent 769 at Aug 21 18:33:51.114960
+                                               Analyze frame #767	13555bytes	3.081Mbps	0.035191s	0.052198s
+Sent 770 at Aug 21 18:33:51.147961
+                                               Analyze frame #768	14065bytes	2.782Mbps	0.040443s	0.041101s
+                                               Analyze frame #769	13827bytes	3.679Mbps	0.030069s	0.036230s
+Sent 771 at Aug 21 18:33:51.180950
+                                               Analyze frame #770	17148bytes	4.207Mbps	0.032610s	0.032926s
+Sent 772 at Aug 21 18:33:51.213928
+                                               Analyze frame #771	13962bytes	3.325Mbps	0.033593s	0.041490s
+Sent 773 at Aug 21 18:33:51.246959
+Sent 774 at Aug 21 18:33:51.279958
+                                               Analyze frame #772	14573bytes	3.019Mbps	0.038622s	0.040778s
+Sent 775 at Aug 21 18:33:51.312948
+                                               Analyze frame #773	14660bytes	2.854Mbps	0.041090s	0.043054s
+                                               Analyze frame #774	15587bytes	3.404Mbps	0.036629s	0.030788s
+Sent 776 at Aug 21 18:33:51.345965
+                                               Analyze frame #775	14803bytes	3.611Mbps	0.032792s	0.042738s
+Sent 777 at Aug 21 18:33:51.379000
+                                               Analyze frame #776	15911bytes	4.024Mbps	0.031632s	0.033502s
+Sent 778 at Aug 21 18:33:51.411988
+                                               Analyze frame #777	14787bytes	3.782Mbps	0.031282s	0.041019s
+Sent 779 at Aug 21 18:33:51.444952
+                                               Analyze frame #778	16053bytes	3.053Mbps	0.042070s	0.031615s
+Sent 780 at Aug 21 18:33:51.477988
+                                               Analyze frame #779	15235bytes	3.954Mbps	0.030823s	0.035774s
+Sent 781 at Aug 21 18:33:51.510945
+Sent 782 at Aug 21 18:33:51.544004
+                                               Analyze frame #780	15617bytes	3.931Mbps	0.031785s	0.045150s
+                                               Analyze frame #781	15761bytes	3.984Mbps	0.031651s	0.035988s
+Sent 783 at Aug 21 18:33:51.576957
+                                               Analyze frame #782	15950bytes	4.057Mbps	0.031453s	0.043982s
+Sent 784 at Aug 21 18:33:51.609955
+Sent 785 at Aug 21 18:33:51.642953
+                                               Analyze frame #783	15097bytes	3.774Mbps	0.031999s	0.048411s
+                                               Analyze frame #784	15902bytes	3.991Mbps	0.031879s	0.035891s
+Sent 786 at Aug 21 18:33:51.675954
+                                               Analyze frame #785	14836bytes	2.822Mbps	0.042061s	0.032717s
+Sent 787 at Aug 21 18:33:51.709087
+                                               Analyze frame #786	15522bytes	4.042Mbps	0.030721s	0.042292s
+Sent 788 at Aug 21 18:33:51.741946
+                                               Analyze frame #787	14429bytes	3.264Mbps	0.035368s	0.033926s
+Sent 789 at Aug 21 18:33:51.774957
+                                               Analyze frame #788	15732bytes	3.430Mbps	0.036688s	0.028822s
+Sent 790 at Aug 21 18:33:51.807968
+Sent 791 at Aug 21 18:33:51.840985
+                                               Analyze frame #789	14781bytes	3.816Mbps	0.030990s	0.045511s
+Sent 792 at Aug 21 18:33:51.873995
+                                               Analyze frame #790	15089bytes	3.245Mbps	0.037202s	0.045189s
+Sent 793 at Aug 21 18:33:51.906946
+                                               Analyze frame #791	14413bytes	2.577Mbps	0.044744s	0.031454s
+Instruction
+Sent 794 at Aug 21 18:33:51.939990
+                                               Analyze frame #792	14813bytes	3.567Mbps	0.033218s	0.048931s
+                                               Analyze frame #793	13528bytes	3.145Mbps	0.034407s	0.035799s
+Sent 795 at Aug 21 18:33:51.972979
+                                               Analyze frame #794	17893bytes	3.977Mbps	0.035997s	0.035020s
+Sent 796 at Aug 21 18:33:52.005920
+Sent 797 at Aug 21 18:33:52.038946
+                                               Analyze frame #795	42863bytes	6.758Mbps	0.050741s	0.036878s
+                                               Analyze frame #796	8807bytes	2.403Mbps	0.029315s	0.028907s
+Instruction
+Sent 798 at Aug 21 18:33:52.071961
+Instruction
+Sent 799 at Aug 21 18:33:52.104970
+                                               Analyze frame #797	10962bytes	1.974Mbps	0.044432s	0.033032s
+                                               Analyze frame #798	11028bytes	3.129Mbps	0.028198s	0.032829s
+Sent 800 at Aug 21 18:33:52.137948
+                                               Analyze frame #799	11243bytes	2.765Mbps	0.032531s	0.041892s
+Sent 801 at Aug 21 18:33:52.170967
+Sent 802 at Aug 21 18:33:52.203963
+                                               Analyze frame #800	11957bytes	3.192Mbps	0.029971s	0.052391s
+Sent 803 at Aug 21 18:33:52.236950
+                                               Analyze frame #801	12030bytes	3.127Mbps	0.030774s	0.051285s
+Sent 804 at Aug 21 18:33:52.269949
+                                               Analyze frame #802	12875bytes	2.650Mbps	0.038873s	0.041609s
+                                               Analyze frame #803	11780bytes	2.540Mbps	0.037104s	0.042297s
+                                               Analyze frame #804	13098bytes	2.695Mbps	0.038882s	0.030330s
+Sent 805 at Aug 21 18:33:52.302943
+Sent 806 at Aug 21 18:33:52.390529
+Sent 807 at Aug 21 18:33:52.401919
+Sent 808 at Aug 21 18:33:52.434947
+                                               Analyze frame #805	102671bytes	6.642Mbps	0.123670s	0.046365s
+                                               Analyze frame #806	8290bytes	1.557Mbps	0.042608s	0.039866s
+                                               Analyze frame #807	9762bytes	2.163Mbps	0.036103s	0.035000s
+Sent 809 at Aug 21 18:33:52.467949
+Instruction
+Sent 810 at Aug 21 18:33:52.501033
+                                               Analyze frame #808	11557bytes	2.911Mbps	0.031765s	0.043685s
+                                               Analyze frame #809	10961bytes	2.456Mbps	0.035702s	0.029645s
+Sent 811 at Aug 21 18:33:52.533984
+                                               Analyze frame #810	11656bytes	3.204Mbps	0.029103s	0.040938s
+Sent 812 at Aug 21 18:33:52.566958
+                                               Analyze frame #811	10580bytes	2.767Mbps	0.030588s	0.033243s
+Sent 813 at Aug 21 18:33:52.599998
+                                               Analyze frame #812	10530bytes	2.386Mbps	0.035307s	0.030332s
+Sent 814 at Aug 21 18:33:52.632929
+                                               Analyze frame #813	8622bytes	2.606Mbps	0.026469s	0.034007s
+Sent 815 at Aug 21 18:33:52.665994
+                                               Analyze frame #814	9169bytes	2.333Mbps	0.031435s	0.032133s
+Sent 816 at Aug 21 18:33:52.698975
+                                               Analyze frame #815	7740bytes	2.395Mbps	0.025850s	0.041509s
+Sent 817 at Aug 21 18:33:52.731961
+                                               Analyze frame #816	8943bytes	2.661Mbps	0.026889s	0.040510s
+Sent 818 at Aug 21 18:33:52.765023
+                                               Analyze frame #817	7170bytes	1.856Mbps	0.030903s	0.035274s
+Sent 819 at Aug 21 18:33:52.797952
+Sent 820 at Aug 21 18:33:52.830933
+                                               Analyze frame #818	9559bytes	2.054Mbps	0.037234s	0.043913s
+                                               Analyze frame #819	7184bytes	2.249Mbps	0.025558s	0.031580s
+Sent 821 at Aug 21 18:33:52.863923
+                                               Analyze frame #820	8171bytes	2.085Mbps	0.031358s	0.029638s
+Sent 822 at Aug 21 18:33:52.896955
+Sent 823 at Aug 21 18:33:52.929994
+                                               Analyze frame #821	6942bytes	1.676Mbps	0.033141s	0.040317s
+                                               Analyze frame #822	8123bytes	2.372Mbps	0.027392s	0.027860s
+Sent 824 at Aug 21 18:33:52.962953
+                                               Analyze frame #823	6724bytes	1.616Mbps	0.033295s	0.036147s
+Sent 825 at Aug 21 18:33:52.995946
+                                               Analyze frame #824	8257bytes	2.591Mbps	0.025490s	0.029743s
+Sent 826 at Aug 21 18:33:53.028950
+                                               Analyze frame #825	6984bytes	2.242Mbps	0.024926s	0.038530s
+Sent 827 at Aug 21 18:33:53.061949
+Sent 828 at Aug 21 18:33:53.094994
+                                               Analyze frame #826	8334bytes	1.694Mbps	0.039354s	0.034158s
+                                               Analyze frame #827	7191bytes	2.353Mbps	0.024445s	0.031702s
+Sent 829 at Aug 21 18:33:53.127950
+Sent 830 at Aug 21 18:33:53.161012
+                                               Analyze frame #828	7882bytes	2.320Mbps	0.027180s	0.046220s
+                                               Analyze frame #829	6886bytes	2.132Mbps	0.025840s	0.031620s
+Instruction
+Sent 831 at Aug 21 18:33:53.193934
+                                               Analyze frame #830	8358bytes	1.715Mbps	0.038980s	0.026265s
+Sent 832 at Aug 21 18:33:53.226941
+                                               Analyze frame #831	7045bytes	2.361Mbps	0.023870s	0.030347s
+Sent 833 at Aug 21 18:33:53.259950
+                                               Analyze frame #832	8132bytes	2.112Mbps	0.030800s	0.033666s
+Sent 834 at Aug 21 18:33:53.292988
+                                               Analyze frame #833	6801bytes	1.986Mbps	0.027402s	0.031012s
+Sent 835 at Aug 21 18:33:53.325984
+                                               Analyze frame #834	7637bytes	2.320Mbps	0.026339s	0.036712s
+Sent 836 at Aug 21 18:33:53.358923
+Sent 837 at Aug 21 18:33:53.392000
+                                               Analyze frame #835	7041bytes	1.396Mbps	0.040347s	0.033900s
+                                               Analyze frame #836	8076bytes	2.418Mbps	0.026719s	0.041774s
+Sent 838 at Aug 21 18:33:53.424945
+Instruction
+Sent 839 at Aug 21 18:33:53.457982
+                                               Analyze frame #837	6643bytes	1.680Mbps	0.031632s	0.043887s
+Sent 840 at Aug 21 18:33:53.490949
+                                               Analyze frame #838	8169bytes	1.902Mbps	0.034360s	0.039099s
+                                               Analyze frame #839	6810bytes	2.095Mbps	0.026000s	0.034503s
+Sent 841 at Aug 21 18:33:53.523996
+Sent 842 at Aug 21 18:33:53.556983
+                                               Analyze frame #840	8191bytes	1.626Mbps	0.040297s	0.033055s
+                                               Analyze frame #841	6393bytes	1.978Mbps	0.025856s	0.030118s
+Sent 843 at Aug 21 18:33:53.589945
+                                               Analyze frame #842	9062bytes	2.498Mbps	0.029016s	0.040209s
+Sent 844 at Aug 21 18:33:53.622948
+                                               Analyze frame #843	6755bytes	2.153Mbps	0.025099s	0.027147s
+Sent 845 at Aug 21 18:33:53.655946
+                                               Analyze frame #844	8124bytes	2.400Mbps	0.027075s	0.041460s
+Sent 846 at Aug 21 18:33:53.688939
+                                               Analyze frame #845	6768bytes	1.227Mbps	0.044128s	0.021372s
+Sent 847 at Aug 21 18:33:53.721935
+Sent 848 at Aug 21 18:33:53.754947
+                                               Analyze frame #846	8181bytes	2.419Mbps	0.027057s	0.055290s
+                                               Analyze frame #847	6516bytes	2.174Mbps	0.023976s	0.033531s
+Sent 849 at Aug 21 18:33:53.787951
+                                               Analyze frame #848	8210bytes	2.235Mbps	0.029393s	0.032181s
+Sent 850 at Aug 21 18:33:53.820945
+                                               Analyze frame #849	6594bytes	1.976Mbps	0.026696s	0.038345s
+Sent 851 at Aug 21 18:33:53.853980
+                                               Analyze frame #850	8280bytes	2.391Mbps	0.027705s	0.029754s
+Sent 852 at Aug 21 18:33:53.886933
+                                               Analyze frame #851	6495bytes	1.598Mbps	0.032514s	0.022373s
+Sent 853 at Aug 21 18:33:53.919946
+Sent 854 at Aug 21 18:33:53.952937
+                                               Analyze frame #852	8374bytes	1.665Mbps	0.040225s	0.034693s
+                                               Analyze frame #853	6570bytes	1.974Mbps	0.026629s	0.030016s
+Sent 855 at Aug 21 18:33:53.985986
+Sent 856 at Aug 21 18:33:54.018936
+                                               Analyze frame #854	8191bytes	2.340Mbps	0.028007s	0.045200s
+Sent 857 at Aug 21 18:33:54.051932
+                                               Analyze frame #855	26989bytes	4.171Mbps	0.051768s	0.035349s
+                                               Analyze frame #856	8022bytes	2.588Mbps	0.024798s	0.030628s
+Sent 858 at Aug 21 18:33:54.084943
+                                               Analyze frame #857	8022bytes	1.994Mbps	0.032191s	0.028009s
+Sent 859 at Aug 21 18:33:54.118004
+Sent 860 at Aug 21 18:33:54.150946
+                                               Analyze frame #858	7717bytes	1.240Mbps	0.049791s	0.036399s
+                                               Analyze frame #859	7039bytes	2.300Mbps	0.024485s	0.036949s
+Sent 861 at Aug 21 18:33:54.183932
+                                               Analyze frame #860	8237bytes	2.016Mbps	0.032687s	0.033477s
+Sent 862 at Aug 21 18:33:54.216947
+Sent 863 at Aug 21 18:33:54.249949
+                                               Analyze frame #861	7118bytes	1.640Mbps	0.034712s	0.041368s
+                                               Analyze frame #862	7710bytes	2.183Mbps	0.028251s	0.030216s
+Sent 864 at Aug 21 18:33:54.282949
+                                               Analyze frame #863	7009bytes	1.573Mbps	0.035643s	0.031805s
+Sent 865 at Aug 21 18:33:54.315950
+Sent 866 at Aug 21 18:33:54.348939
+                                               Analyze frame #864	7934bytes	1.728Mbps	0.036731s	0.037484s
+                                               Analyze frame #865	6449bytes	1.498Mbps	0.034439s	0.030997s
+Sent 867 at Aug 21 18:33:54.381950
+                                               Analyze frame #866	9610bytes	2.189Mbps	0.035122s	0.035484s
+Sent 868 at Aug 21 18:33:54.414948
+Sent 869 at Aug 21 18:33:54.447945
+                                               Analyze frame #867	6639bytes	1.560Mbps	0.034056s	0.039401s
+Sent 870 at Aug 21 18:33:54.480960
+                                               Analyze frame #868	7625bytes	1.905Mbps	0.032029s	0.046924s
+Sent 871 at Aug 21 18:33:54.514009
+                                               Analyze frame #869	6881bytes	1.487Mbps	0.037022s	0.038423s
+Instruction
+Sent 872 at Aug 21 18:33:54.546956
+                                               Analyze frame #870	7979bytes	1.954Mbps	0.032664s	0.041785s
+Sent 873 at Aug 21 18:33:54.579947
+                                               Analyze frame #871	6832bytes	1.590Mbps	0.034378s	0.038990s
+                                               Analyze frame #872	7605bytes	1.907Mbps	0.031896s	0.032496s
+Sent 874 at Aug 21 18:33:54.612907
+                                               Analyze frame #873	6880bytes	1.803Mbps	0.030534s	0.040508s
+Sent 875 at Aug 21 18:33:54.645945
+                                               Analyze frame #874	7949bytes	1.842Mbps	0.034525s	0.031118s
+Instruction
+Sent 876 at Aug 21 18:33:54.678936
+                                               Analyze frame #875	6954bytes	1.690Mbps	0.032928s	0.032235s
+Sent 877 at Aug 21 18:33:54.711921
+                                               Analyze frame #876	8151bytes	2.532Mbps	0.025749s	0.034618s
+Sent 878 at Aug 21 18:33:54.744944
+                                               Analyze frame #877	6652bytes	1.458Mbps	0.036499s	0.031376s
+Sent 879 at Aug 21 18:33:54.777932
+                                               Analyze frame #878	8008bytes	2.393Mbps	0.026772s	0.039239s
+Sent 880 at Aug 21 18:33:54.811003
+Sent 881 at Aug 21 18:33:54.843929
+                                               Analyze frame #879	6878bytes	1.597Mbps	0.034450s	0.054366s
+                                               Analyze frame #880	8147bytes	2.400Mbps	0.027157s	0.030462s
+Sent 882 at Aug 21 18:33:54.876935
+                                               Analyze frame #881	6891bytes	1.514Mbps	0.036407s	0.028740s
+Sent 883 at Aug 21 18:33:54.909926
+                                               Analyze frame #882	8029bytes	2.339Mbps	0.027460s	0.027950s
+Sent 884 at Aug 21 18:33:54.942984
+                                               Analyze frame #883	6953bytes	1.599Mbps	0.034789s	0.031434s
+Sent 885 at Aug 21 18:33:54.975950
+                                               Analyze frame #884	8078bytes	2.403Mbps	0.026892s	0.042463s
+Sent 886 at Aug 21 18:33:55.008985
+                                               Analyze frame #885	7170bytes	1.988Mbps	0.028855s	0.031699s
+Sent 887 at Aug 21 18:33:55.041925
+                                               Analyze frame #886	8408bytes	1.901Mbps	0.035382s	0.028166s
+Sent 888 at Aug 21 18:33:55.074961
+Sent 889 at Aug 21 18:33:55.107943
+                                               Analyze frame #887	7217bytes	2.257Mbps	0.025586s	0.048373s
+                                               Analyze frame #888	8137bytes	1.987Mbps	0.032769s	0.031876s
+Sent 890 at Aug 21 18:33:55.140927
+                                               Analyze frame #889	6674bytes	1.955Mbps	0.027310s	0.042215s
+Sent 891 at Aug 21 18:33:55.173932
+                                               Analyze frame #890	10034bytes	2.955Mbps	0.027163s	0.043219s
+Sent 892 at Aug 21 18:33:55.206946
+Sent 893 at Aug 21 18:33:55.239941
+                                               Analyze frame #891	6920bytes	1.530Mbps	0.036174s	0.036391s
+                                               Analyze frame #892	8215bytes	2.582Mbps	0.025453s	0.030037s
+Sent 894 at Aug 21 18:33:55.272942
+                                               Analyze frame #893	7074bytes	1.803Mbps	0.031387s	0.033820s
+Sent 895 at Aug 21 18:33:55.305939
+                                               Analyze frame #894	8169bytes	2.189Mbps	0.029855s	0.033312s
+Sent 896 at Aug 21 18:33:55.338921
+                                               Analyze frame #895	7063bytes	2.130Mbps	0.026533s	0.043903s
+Sent 897 at Aug 21 18:33:55.371949
+                                               Analyze frame #896	8022bytes	2.542Mbps	0.025247s	0.041980s
+Sent 898 at Aug 21 18:33:55.404936
+                                               Analyze frame #897	6935bytes	1.743Mbps	0.031824s	0.033749s
+Sent 899 at Aug 21 18:33:55.437929
+Instruction
+Sent 900 at Aug 21 18:33:55.470988
+                                               Analyze frame #898	7943bytes	1.319Mbps	0.048158s	0.043411s
+                                               Analyze frame #899	7000bytes	1.852Mbps	0.030233s	0.037184s
+Sent 901 at Aug 21 18:33:55.503929
+Instruction
+Sent 902 at Aug 21 18:33:55.536965
+                                               Analyze frame #900	8270bytes	2.039Mbps	0.032443s	0.041533s
+Sent 903 at Aug 21 18:33:55.569904
+                                               Analyze frame #901	7221bytes	1.831Mbps	0.031553s	0.040814s
+                                               Analyze frame #902	7837bytes	2.045Mbps	0.030664s	0.029016s
+Sent 904 at Aug 21 18:33:55.602943
+Sent 905 at Aug 21 18:33:55.635946
+                                               Analyze frame #903	7143bytes	1.290Mbps	0.044303s	0.039916s
+                                               Analyze frame #904	8286bytes	1.878Mbps	0.035293s	0.036441s
+Sent 906 at Aug 21 18:33:55.668949
+Sent 907 at Aug 21 18:33:55.701923
+                                               Analyze frame #905	7041bytes	1.784Mbps	0.031581s	0.039709s
+Sent 908 at Aug 21 18:33:55.734943
+                                               Analyze frame #906	8252bytes	1.887Mbps	0.034983s	0.038508s
+Sent 909 at Aug 21 18:33:55.767942
+                                               Analyze frame #907	6781bytes	2.154Mbps	0.025187s	0.052269s
+                                               Analyze frame #908	8405bytes	2.275Mbps	0.029550s	0.040465s
+Sent 910 at Aug 21 18:33:55.800943
+Sent 911 at Aug 21 18:33:55.833943
+                                               Analyze frame #909	7033bytes	1.923Mbps	0.029253s	0.053966s
+Sent 912 at Aug 21 18:33:55.866917
+                                               Analyze frame #910	8434bytes	1.608Mbps	0.041952s	0.032506s
+                                               Analyze frame #911	6980bytes	2.153Mbps	0.025935s	0.038627s
+Sent 913 at Aug 21 18:33:55.899931
+                                               Analyze frame #912	8423bytes	1.916Mbps	0.035162s	0.030409s
+Sent 914 at Aug 21 18:33:55.932954
+                                               Analyze frame #913	6627bytes	2.017Mbps	0.026285s	0.029924s
+Sent 915 at Aug 21 18:33:55.965942
+                                               Analyze frame #914	10448bytes	2.282Mbps	0.036630s	0.029318s
+Sent 916 at Aug 21 18:33:55.998938
+Sent 917 at Aug 21 18:33:56.031942
+                                               Analyze frame #915	23169bytes	4.231Mbps	0.043804s	0.029613s
+                                               Analyze frame #916	8345bytes	2.149Mbps	0.031059s	0.035872s
+Sent 918 at Aug 21 18:33:56.064956
+Instruction
+                                               Analyze frame #917	8149bytes	2.488Mbps	0.026202s	0.041391s
+Sent 919 at Aug 21 18:33:56.097958
+                                               Analyze frame #918	8323bytes	2.074Mbps	0.032099s	0.039005s
+Sent 920 at Aug 21 18:33:56.130948
+                                               Analyze frame #919	7396bytes	1.918Mbps	0.030854s	0.031672s
+Instruction
+Sent 921 at Aug 21 18:33:56.163962
+Sent 922 at Aug 21 18:33:56.196940
+                                               Analyze frame #920	8078bytes	1.320Mbps	0.048971s	0.036489s
+                                               Analyze frame #921	6929bytes	1.578Mbps	0.035123s	0.029824s
+Sent 923 at Aug 21 18:33:56.229951
+Sent 924 at Aug 21 18:33:56.262932
+                                               Analyze frame #922	7809bytes	2.195Mbps	0.028462s	0.053697s
+Sent 925 at Aug 21 18:33:56.295940
+                                               Analyze frame #923	6903bytes	1.604Mbps	0.034430s	0.038963s
+Sent 926 at Aug 21 18:33:56.328948
+                                               Analyze frame #924	7839bytes	1.743Mbps	0.035988s	0.040138s
+                                               Analyze frame #925	6504bytes	1.884Mbps	0.027618s	0.031728s
+Instruction
+Sent 927 at Aug 21 18:33:56.361955
+                                               Analyze frame #926	7918bytes	2.251Mbps	0.028145s	0.031043s
+Sent 928 at Aug 21 18:33:56.394942
+                                               Analyze frame #927	6698bytes	2.087Mbps	0.025675s	0.039851s
+Sent 929 at Aug 21 18:33:56.427918
+                                               Analyze frame #928	7917bytes	1.940Mbps	0.032650s	0.033842s
+Sent 930 at Aug 21 18:33:56.460946
+Sent 931 at Aug 21 18:33:56.493941
+                                               Analyze frame #929	6895bytes	1.987Mbps	0.027756s	0.043812s
+Sent 932 at Aug 21 18:33:56.526958
+                                               Analyze frame #930	8106bytes	1.885Mbps	0.034396s	0.040117s
+                                               Analyze frame #931	6851bytes	1.781Mbps	0.030766s	0.033667s
+Sent 933 at Aug 21 18:33:56.559941
+                                               Analyze frame #932	7715bytes	1.452Mbps	0.042506s	0.026875s
+Sent 934 at Aug 21 18:33:56.592946
+                                               Analyze frame #933	6904bytes	2.119Mbps	0.026067s	0.039515s
+Sent 935 at Aug 21 18:33:56.625938
+                                               Analyze frame #934	8401bytes	2.509Mbps	0.026784s	0.031282s
+Sent 936 at Aug 21 18:33:56.658938
+Sent 937 at Aug 21 18:33:56.691930
+                                               Analyze frame #935	7209bytes	1.759Mbps	0.032781s	0.040541s
+                                               Analyze frame #936	8454bytes	2.607Mbps	0.025938s	0.033311s
+Sent 938 at Aug 21 18:33:56.724932
+Sent 939 at Aug 21 18:33:56.757929
+                                               Analyze frame #937	7070bytes	1.431Mbps	0.039534s	0.034012s
+                                               Analyze frame #938	9931bytes	2.667Mbps	0.029793s	0.036737s
+Sent 940 at Aug 21 18:33:56.790942
+                                               Analyze frame #939	7187bytes	2.180Mbps	0.026379s	0.033657s
+Sent 941 at Aug 21 18:33:56.823938
+                                               Analyze frame #940	8494bytes	2.143Mbps	0.031703s	0.034445s
+Sent 942 at Aug 21 18:33:56.856927
+                                               Analyze frame #941	7403bytes	2.216Mbps	0.026721s	0.027760s
+Sent 943 at Aug 21 18:33:56.889937
+Sent 944 at Aug 21 18:33:56.922933
+                                               Analyze frame #942	8905bytes	2.497Mbps	0.028531s	0.049372s
+                                               Analyze frame #943	7336bytes	2.268Mbps	0.025879s	0.023476s
+Sent 945 at Aug 21 18:33:56.955925
+                                               Analyze frame #944	8446bytes	1.643Mbps	0.041123s	0.023895s
+Sent 946 at Aug 21 18:33:56.988920
+                                               Analyze frame #945	7595bytes	2.178Mbps	0.027898s	0.032312s
+Sent 947 at Aug 21 18:33:57.021933
+                                               Analyze frame #946	9146bytes	2.505Mbps	0.029207s	0.041299s
+Sent 948 at Aug 21 18:33:57.054922
+                                               Analyze frame #947	7474bytes	2.334Mbps	0.025613s	0.031187s
+Sent 949 at Aug 21 18:33:57.087929
+Instruction
+Sent 950 at Aug 21 18:33:57.120952
+                                               Analyze frame #948	8438bytes	2.502Mbps	0.026976s	0.054517s
+                                               Analyze frame #949	7356bytes	1.438Mbps	0.040930s	0.025501s
+Sent 951 at Aug 21 18:33:57.153930
+                                               Analyze frame #950	8796bytes	2.164Mbps	0.032517s	0.031447s
+Sent 952 at Aug 21 18:33:57.186936
+                                               Analyze frame #951	7095bytes	2.052Mbps	0.027661s	0.037882s
+Sent 953 at Aug 21 18:33:57.219921
+Sent 954 at Aug 21 18:33:57.252946
+                                               Analyze frame #952	8178bytes	1.755Mbps	0.037274s	0.052230s
+Sent 955 at Aug 21 18:33:57.285942
+                                               Analyze frame #953	7427bytes	2.228Mbps	0.026665s	0.045701s
+                                               Analyze frame #954	8270bytes	2.009Mbps	0.032931s	0.029294s
+Sent 956 at Aug 21 18:33:57.318840
+                                               Analyze frame #955	7017bytes	2.123Mbps	0.026443s	0.030051s
+Sent 957 at Aug 21 18:33:57.351920
+                                               Analyze frame #956	8432bytes	2.475Mbps	0.027251s	0.040049s
+Sent 958 at Aug 21 18:33:57.384926
+Sent 959 at Aug 21 18:33:57.417924
+                                               Analyze frame #957	7094bytes	1.351Mbps	0.042016s	0.032448s
+Sent 960 at Aug 21 18:33:57.450947
+                                               Analyze frame #958	8266bytes	1.838Mbps	0.035983s	0.040223s
+                                               Analyze frame #959	7118bytes	1.623Mbps	0.035095s	0.031260s
+Sent 961 at Aug 21 18:33:57.483946
+Instruction
+Sent 962 at Aug 21 18:33:57.516912
+Sent 963 at Aug 21 18:33:57.549944
+                                               Analyze frame #960	8041bytes	0.651Mbps	0.098816s	0.030712s
+Sent 964 at Aug 21 18:33:57.582943
+                                               Analyze frame #961	7057bytes	0.857Mbps	0.065880s	0.039208s
+                                               Analyze frame #962	9347bytes	2.270Mbps	0.032946s	0.039205s
+                                               Analyze frame #963	7045bytes	1.771Mbps	0.031818s	0.037617s
+Sent 965 at Aug 21 18:33:57.615947
+                                               Analyze frame #964	8096bytes	1.811Mbps	0.035760s	0.029761s
+Sent 966 at Aug 21 18:33:57.648952
+                                               Analyze frame #965	6999bytes	2.042Mbps	0.027414s	0.032997s
+Sent 967 at Aug 21 18:33:57.681930
+                                               Analyze frame #966	8060bytes	1.726Mbps	0.037360s	0.033863s
+Sent 968 at Aug 21 18:33:57.714958
+                                               Analyze frame #967	6766bytes	1.920Mbps	0.028186s	0.034282s
+Sent 969 at Aug 21 18:33:57.747942
+                                               Analyze frame #968	8136bytes	2.267Mbps	0.028713s	0.035330s
+Sent 970 at Aug 21 18:33:57.780923
+                                               Analyze frame #969	6879bytes	1.619Mbps	0.033981s	0.035433s
+Sent 971 at Aug 21 18:33:57.813944
+                                               Analyze frame #970	8150bytes	2.298Mbps	0.028378s	0.042663s
+Sent 972 at Aug 21 18:33:57.846942
+                                               Analyze frame #971	6790bytes	1.850Mbps	0.029365s	0.035936s
+Sent 973 at Aug 21 18:33:57.879947
+Sent 974 at Aug 21 18:33:57.912951
+                                               Analyze frame #972	7922bytes	2.166Mbps	0.029254s	0.044458s
+                                               Analyze frame #973	6874bytes	1.971Mbps	0.027900s	0.039294s
+Sent 975 at Aug 21 18:33:57.945944
+                                               Analyze frame #974	7880bytes	2.118Mbps	0.029762s	0.028563s
+Sent 976 at Aug 21 18:33:57.978928
+Sent 977 at Aug 21 18:33:58.011970
+                                               Analyze frame #975	19629bytes	4.279Mbps	0.036695s	0.037867s
+                                               Analyze frame #976	7716bytes	2.120Mbps	0.029121s	0.022250s
+Sent 978 at Aug 21 18:33:58.044952
+                                               Analyze frame #977	8513bytes	2.445Mbps	0.027854s	0.036624s
+Sent 979 at Aug 21 18:33:58.077915
+                                               Analyze frame #978	8063bytes	1.663Mbps	0.038777s	0.034552s
+Sent 980 at Aug 21 18:33:58.110939
+                                               Analyze frame #979	7462bytes	2.246Mbps	0.026575s	0.030602s
+Sent 981 at Aug 21 18:33:58.144002
+                                               Analyze frame #980	8125bytes	2.353Mbps	0.027627s	0.041165s
+Sent 982 at Aug 21 18:33:58.176928
+Sent 983 at Aug 21 18:33:58.209928
+                                               Analyze frame #981	7148bytes	1.713Mbps	0.033378s	0.039947s
+                                               Analyze frame #982	7987bytes	2.241Mbps	0.028510s	0.032932s
+Sent 984 at Aug 21 18:33:58.242926
+Sent 985 at Aug 21 18:33:58.275965
+                                               Analyze frame #983	6778bytes	1.541Mbps	0.035187s	0.039068s
+                                               Analyze frame #984	7781bytes	2.174Mbps	0.028639s	0.032766s
+Sent 986 at Aug 21 18:33:58.308966
+Instruction
+                                               Analyze frame #985	6623bytes	1.953Mbps	0.027131s	0.043929s
+Sent 987 at Aug 21 18:33:58.342029
+                                               Analyze frame #986	9621bytes	2.615Mbps	0.029431s	0.037872s
+Sent 988 at Aug 21 18:33:58.374993
+Sent 989 at Aug 21 18:33:58.407951
+                                               Analyze frame #987	6882bytes	1.847Mbps	0.029801s	0.047256s
+                                               Analyze frame #988	7309bytes	2.067Mbps	0.028295s	0.044131s
+Sent 990 at Aug 21 18:33:58.440941
+                                               Analyze frame #989	6723bytes	1.997Mbps	0.026933s	0.031361s
+Sent 991 at Aug 21 18:33:58.473940
+                                               Analyze frame #990	7679bytes	2.122Mbps	0.028945s	0.029320s
+Sent 992 at Aug 21 18:33:58.506944
+                                               Analyze frame #991	7100bytes	1.975Mbps	0.028765s	0.033386s
+Sent 993 at Aug 21 18:33:58.539952
+Sent 994 at Aug 21 18:33:58.572994
+                                               Analyze frame #992	7544bytes	2.149Mbps	0.028080s	0.056366s
+                                               Analyze frame #993	7172bytes	2.290Mbps	0.025052s	0.028367s
+Sent 995 at Aug 21 18:33:58.605855
+                                               Analyze frame #994	7963bytes	2.324Mbps	0.027416s	0.035903s
+Sent 996 at Aug 21 18:33:58.638923
+Sent 997 at Aug 21 18:33:58.671990
+                                               Analyze frame #995	7046bytes	1.160Mbps	0.048606s	0.039836s
+                                               Analyze frame #996	7885bytes	2.290Mbps	0.027546s	0.036269s
+Sent 998 at Aug 21 18:33:58.704938
+                                               Analyze frame #997	7338bytes	1.780Mbps	0.032988s	0.026300s
+Sent 999 at Aug 21 18:33:58.737929
+Instruction
+                                               Analyze frame #998	7590bytes	2.228Mbps	0.027259s	0.038929s
+Sent 1000 at Aug 21 18:33:58.770956
