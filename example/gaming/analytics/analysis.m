@@ -1,8 +1,8 @@
-frame = get_xy('test12/frame.dat');
+frame = get_xy('test3/frame.dat');
 
-probe = get_xy('test12/probe.dat');
+probe = get_xy('test3/probe.dat');
 
-xack = get_xy('test12/xack.dat');
+xack = get_xy('test3/xack.dat');
 
 hold on
 plot(frame(:,1),frame(:,2),'r','LineWidth',2)

@@ -42,8 +42,6 @@ var rIndex int64
 var rCnt int
 var clientPingIndex int64
 
-var metricProbeLatency []float64
-
 func NewServerWrapper(addr_data,addr_ping,addr_nack string,dataquic,pingquic,xackquic bool)Wrapper{
   w := Wrapper{}
 	wg := sync.WaitGroup{}
@@ -209,15 +207,12 @@ func (w Wrapper) RunPingClient(){
 		echo_time,_ := time.Parse(time.StampMicro,time.Now().Format(time.StampMicro))
 		probe_latency := echo_time.Sub(sent_time).Seconds()
 		w.pingLatencyChan <- probe_latency
-		metricProbeLatency = append(metricProbeLatency,probe_latency)
 		fmt.Printf("\nGot probe, downlink time %.7f, sent time %s\n",probe_latency,sent_time.Format(time.StampMicro))
 		zero_time,_ := time.Parse(time.StampMicro,time.Time{}.Format(time.StampMicro))
 		milli := sent_time.Sub(zero_time).Seconds()
 		s := fmt.Sprintf("%f\t%f\n",milli,probe_latency)
     w.fp.Write([]byte(s))
 	}
-	m,s := stat.MeanStdDev(metricProbeLatency,nil)
-	fmt.Printf("********Metric:%f,%f*******\n",m,s)
 }
 
 func (w Wrapper) RunNACKServer(){
@@ -226,16 +221,13 @@ func (w Wrapper) RunNACKServer(){
 		_, err := io.ReadFull(w.nack_conn, buf)
 		toolbox.Check(err)
 		meanPingLatency = toolbox.ByteToFloat64(buf)
-		xackSentTime := toolbox.ReadTime(w.nack_conn)
 		rframeIndex = toolbox.ReadInt64(w.nack_conn)
 		serverPingIndex = toolbox.ReadInt64(w.nack_conn)
-		xack_recv_time,_ := time.Parse(time.StampMicro,time.Now().Format(time.StampMicro))
-		xack_recv_time = xack_recv_time.Add(time.Millisecond*config.ServerTimerAdder)
-		xack_latency := xack_recv_time.Sub(xackSentTime).Seconds()
-		fmt.Printf("latency updated to %.5f, recent frame %d, recent ping #%d xack_latency %f\n",meanPingLatency,rframeIndex,serverPingIndex,xack_latency)
+		fmt.Printf("latency updated to %.5f, recent frame %d, recent ping #%d\n",meanPingLatency,rframeIndex,serverPingIndex)
 		zero_time,_ := time.Parse(time.StampMicro,time.Time{}.Format(time.StampMicro))
-		milli := xackSentTime.Sub(zero_time).Seconds()
-		s := fmt.Sprintf("%f\t%f\n",milli,xack_latency)
+		infoUpdateTime,_ := time.Parse(time.StampMicro,time.Now().Add(time.Millisecond*config.ServerTimerAdder).Format(time.StampMicro))
+		milli := infoUpdateTime.Sub(zero_time).Seconds()
+		s := fmt.Sprintf("%f\t%f\n",milli,meanPingLatency)
     w.fp.Write([]byte(s))
 	}
 }
@@ -272,13 +264,9 @@ func (w Wrapper) RunNACKClient(){
 		fmt.Printf("Avg probe latency %.5f at %s\n",toolbox.ByteToFloat64(meanStr),time.Now().Format(time.StampMicro))
 		_,err := w.nack_conn.Write(meanStr)
 		if err!=nil{break}
-		err = toolbox.WriteTime(w.nack_conn,time.Now())
-		if err!=nil{break}
 		toolbox.WriteInt64(w.nack_conn,rIndex)
 		toolbox.WriteInt64(w.nack_conn,clientPingIndex)
 	}
-	m,s := stat.MeanStdDev(metricProbeLatency,nil)
-	fmt.Printf("********Metric:%f,%f*******\n",m,s)
 }
 
 
