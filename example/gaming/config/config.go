@@ -1,14 +1,14 @@
 package config
 
 // time sync
-// const ServerTimerAdder = -5*3600*1000
-const ServerTimerAdder = 0
+const ServerTimerAdder = -5*3600*1000
+// const ServerTimerAdder = 0
 
 // file path
 const FilePath = "/var/www/Bigbunny/"
 
-const SERVIP = "localhost:"
-// const SERVIP = "18.218.55.6:"
+// const SERVIP = "localhost:"
+const SERVIP = "18.218.55.6:"
 // const SERVIP = "10.192.55.9:"
 // const SERVIP = "192.168.101.48:"
 

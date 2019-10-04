@@ -22,8 +22,6 @@ type Wrapper struct {
   nack_conn protocol.Conn
 
 	pingLatencyChan chan float64
-
-	fp *os.File
 }
 
 var meanPingLatency float64
@@ -72,8 +70,6 @@ func NewServerWrapper(addr_data,addr_ping,addr_nack string,dataquic,pingquic,xac
 	}(&wg)
   wg.Wait()
   fmt.Println("server connected")
-	// create file pointer
-	w.fp, _ = os.OpenFile("xack.dat",os.O_CREATE|os.O_WRONLY, 0644)
 	// start ping and nack
 	go w.RunPingServer()
 	go w.RunNACKServer()
@@ -98,8 +94,6 @@ func NewClientWrapper(addr_data,addr_ping,addr_nack string,dataquic,pingquic,xac
 		w.nack_conn = GetTCPClientConn(addr_nack)
 	}
 	w.pingLatencyChan = make(chan float64,1000)
-	// create file pointer
-	w.fp, _ = os.OpenFile("probe.dat",os.O_CREATE|os.O_WRONLY, 0644)
 	go w.RunPingClient()
 	go w.RunNACKClient()
   return w
@@ -193,6 +187,7 @@ func (w Wrapper) RunPingServer(){
 }
 
 func (w Wrapper) RunPingClient(){
+	fp, _ := os.OpenFile("probe.dat",os.O_CREATE|os.O_WRONLY, 0644)
 	ping_sent_time_f, _ := os.OpenFile("ping_sent_time.dat",os.O_CREATE|os.O_WRONLY, 0644)
 	for{
 		buf := make([]byte, 22)
@@ -212,7 +207,7 @@ func (w Wrapper) RunPingClient(){
 		zero_time,_ := time.Parse(time.StampMicro,time.Time{}.Format(time.StampMicro))
 		milli := sent_time.Sub(zero_time).Seconds()
 		s := fmt.Sprintf("%f\t%f\n",milli,probe_latency)
-    w.fp.Write([]byte(s))
+    fp.Write([]byte(s))
 
 		s = fmt.Sprintf("%f\t%f\n",echo_time.Sub(zero_time).Seconds(),sent_time.Sub(zero_time).Seconds())
 		ping_sent_time_f.Write([]byte(s))
@@ -220,6 +215,8 @@ func (w Wrapper) RunPingClient(){
 }
 
 func (w Wrapper) RunNACKServer(){
+	fp, _ := os.OpenFile("xack.dat",os.O_CREATE|os.O_WRONLY, 0644)
+	fp2,_ := os.OpenFile("xack2.dat",os.O_CREATE|os.O_WRONLY, 0644)
 	for {
 		buf := make([]byte, 8)
 		_, err := io.ReadFull(w.nack_conn, buf)
@@ -232,7 +229,9 @@ func (w Wrapper) RunNACKServer(){
 		infoUpdateTime,_ := time.Parse(time.StampMicro,time.Now().Add(time.Millisecond*config.ServerTimerAdder).Format(time.StampMicro))
 		milli := infoUpdateTime.Sub(zero_time).Seconds()
 		s := fmt.Sprintf("%f\t%f\n",milli,meanPingLatency)
-    w.fp.Write([]byte(s))
+    fp.Write([]byte(s))
+		s = fmt.Sprintf("%f\t%d\n",milli,serverPingIndex)
+    fp2.Write([]byte(s))
 	}
 }
 
@@ -245,21 +244,16 @@ func (w Wrapper) RunNACKClient(){
 	for{
 		<-nackTicker.C
 		// analyze ping latency
-		existAbnormal := false
 		var time_slice []float64
 		l := len(w.pingLatencyChan)
 		clientPingIndex += int64(l)
 		for i:=0;i<l;i++{
 			downlink_time := <-w.pingLatencyChan
-			if downlink_time > float64(0.1){
-				fmt.Println("==========Abnormal Ping",downlink_time)
-				existAbnormal = true
-			}
 			time_slice = append(time_slice,downlink_time)
 		}
 		var meanStr []byte
-		if existAbnormal||len(time_slice)==0{
-			meanStr = toolbox.Float64ToByte(100)
+		if len(time_slice)==0{
+			meanStr = toolbox.Float64ToByte(-0.01)
 		}else{
 			mean,_ := stat.MeanStdDev(time_slice,nil)
 			meanStr = toolbox.Float64ToByte(mean)
