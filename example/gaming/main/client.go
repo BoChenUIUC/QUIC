@@ -74,19 +74,17 @@ func main(){
   recvtimeArr := make([]float64,numVideoFiles)
   var totalSize int64
 
-  outName := "QUIC"
-  switch app {
-  case config.Drop:
-    outName = "NewDrop"
-  case config.DumbPrefetch:
-    outName = "QUICDumbPrefetch"
-  case config.Prefetch:
-    outName = "NewPrefetch"
-  }
-
+  frame_sent_time_f, err := os.OpenFile("frame_sent_time.dat",os.O_CREATE|os.O_WRONLY, 0644)
   cnt := 0
   for {
-    // receive a frame
+    // store sent time
+    sTime := toolbox.ReadTime(connection)
+    sTime = sTime.Add(time.Millisecond*config.ServerTimerAdder)
+    rTime,_ := time.Parse(time.StampMicro,time.Now().Format(time.StampMicro))
+    zTime,_ := time.Parse(time.StampMicro,time.Time{}.Format(time.StampMicro))
+    s := fmt.Sprintf("%f\t%f\n",rTime.Sub(zTime).Seconds(),sTime.Sub(zTime).Seconds())
+    frame_sent_time_f.Write([]byte(s))
+      // receive a frame
 		fileSize,frameIndex,err := recvSingleFile(connection)
 
     if int(frameIndex) > numVideoFiles{
@@ -123,23 +121,10 @@ func main(){
 
   // summarize
   fmt.Println("Total transmission size:",totalSize)
-  // numMiss10,avgDelay := AnalyzeRecvtime(recvtimeArr,"trace/"+outName,0.001)
-  avgProbeLatency := totalProbeLatency/float64(numProbes)
-  abrate10 := float64(numAbnormalProbes10)/float64(numProbes)
-  fmt.Println("Probe:",avgProbeLatency,abrate10)
-
-	// file to save latency
-	f, err := os.OpenFile(outName+".dat",os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
-	toolbox.Check(err)
-	defer f.Close()
-
-  s := fmt.Sprintf("%.6f\t%d\t%.3f\n",avgProbeLatency,totalSize,abrate10)
-  _, err = f.Write([]byte(s))
-  toolbox.Check(err)
 }
 
 func AnalyzeRecvtime(arr []float64,m string,tolerance float64)(int,float64){
-  f, err := os.OpenFile(m+".txt",os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+  f, err := os.OpenFile(m+".txt",os.O_CREATE|os.O_WRONLY, 0644)
   if err!=nil{
     panic(err)
   }

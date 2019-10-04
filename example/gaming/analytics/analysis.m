@@ -1,8 +1,15 @@
-frame = get_xy('test3/frame.dat');
+rootdir = "QUIC/";
+frame = get_xy(rootdir + "frame.dat");
+mean(frame(:,2))
+std(frame(:,2))
 
-probe = get_xy('test3/probe.dat');
+probe = get_xy(rootdir + "probe.dat");
 
-xack = get_xy('test3/xack.dat');
+xack  = get_xy(rootdir + "xack.dat");
+xack(xack==100)=-0.01;
+
+dlmwrite(rootdir+"frame_latency.txt",frame)
+dlmwrite(rootdir+"server_avg_latency.txt",xack)
 
 hold on
 plot(frame(:,1),frame(:,2),'r','LineWidth',2)

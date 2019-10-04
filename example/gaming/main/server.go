@@ -160,6 +160,7 @@ func fileSender(conn protocol.Conn, maxNum int, wg *sync.WaitGroup){
     startTime := tuple.Time
     buf, err := ioutil.ReadFile(filename)
   	toolbox.Check(err)
+    toolbox.WriteTime(conn, time.Now())
   	toolbox.WriteInt64(conn, int64(len(buf)))
   	toolbox.WriteInt64(conn, int64(frameIndex))
   	n,err := conn.Write(buf)
@@ -206,7 +207,7 @@ func TimestampServer(){
 	fmt.Println("Tstp client connected")
 
   // create a file to store transmission trace
-  f, err := os.OpenFile("frame.dat",os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+  f, err := os.OpenFile("frame.dat",os.O_CREATE|os.O_WRONLY, 0644)
 
 	for{
 		tranEnd := toolbox.ReadTime(connection)

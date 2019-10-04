@@ -7,10 +7,10 @@ const ServerTimerAdder = 0
 // file path
 const FilePath = "/var/www/Bigbunny/"
 
-// const SERVIP = "localhost:"
-// const SERVIP = "3.14.153.25:"
+const SERVIP = "localhost:"
+// const SERVIP = "18.218.55.6:"
 // const SERVIP = "10.192.55.9:"
-const SERVIP = "192.168.101.48:"
+// const SERVIP = "192.168.101.48:"
 
 // TCP
 const TCPBufSize = 1024
@@ -22,7 +22,7 @@ const TCPTimestampAddr = SERVIP + "8084"
 const QUICAddr = TCPAddr
 
 // new proto settings
-const DataQUIC = false
+const DataQUIC = true
 const PingQUIC = false
 const XACKQUIC = false
 

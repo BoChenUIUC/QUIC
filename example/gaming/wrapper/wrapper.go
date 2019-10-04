@@ -73,7 +73,7 @@ func NewServerWrapper(addr_data,addr_ping,addr_nack string,dataquic,pingquic,xac
   wg.Wait()
   fmt.Println("server connected")
 	// create file pointer
-	w.fp, _ = os.OpenFile("xack.dat",os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	w.fp, _ = os.OpenFile("xack.dat",os.O_CREATE|os.O_WRONLY, 0644)
 	// start ping and nack
 	go w.RunPingServer()
 	go w.RunNACKServer()
@@ -99,7 +99,7 @@ func NewClientWrapper(addr_data,addr_ping,addr_nack string,dataquic,pingquic,xac
 	}
 	w.pingLatencyChan = make(chan float64,1000)
 	// create file pointer
-	w.fp, _ = os.OpenFile("probe.dat",os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	w.fp, _ = os.OpenFile("probe.dat",os.O_CREATE|os.O_WRONLY, 0644)
 	go w.RunPingClient()
 	go w.RunNACKClient()
   return w
@@ -193,6 +193,7 @@ func (w Wrapper) RunPingServer(){
 }
 
 func (w Wrapper) RunPingClient(){
+	ping_sent_time_f, _ := os.OpenFile("ping_sent_time.dat",os.O_CREATE|os.O_WRONLY, 0644)
 	for{
 		buf := make([]byte, 22)
 		_, err := io.ReadFull(w.ping_conn, buf)
@@ -212,6 +213,9 @@ func (w Wrapper) RunPingClient(){
 		milli := sent_time.Sub(zero_time).Seconds()
 		s := fmt.Sprintf("%f\t%f\n",milli,probe_latency)
     w.fp.Write([]byte(s))
+
+		s = fmt.Sprintf("%f\t%f\n",echo_time.Sub(zero_time).Seconds(),sent_time.Sub(zero_time).Seconds())
+		ping_sent_time_f.Write([]byte(s))
 	}
 }
 
