@@ -7,4 +7,18 @@ quic vs dumbprefetch vs drop vs prefetch
 
 
 
+10/22
+we could possibly compare the predicition accuracy from either only past frame statistics and XACK info
 
+better protocol for latency sensitive applications in assym net?
+
+the delayed packets are of less value compared to the common case, so we want to make the prediction accurate.
+
+the feedback at the server is slow so we want to somehow inject more information
+
+baselines: harmonic mean of throughput, 
+
+exp: compare wifi and lte
+
+
+10000pkts,ping interval 5-30ms, xack interval 10- 100ms, rep 5,

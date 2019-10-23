@@ -4,7 +4,7 @@ import (
   "time"
   "fmt"
   "net"
-  "io"
+  // "io"
   "os"
   "sync"
   "strconv"
@@ -40,9 +40,6 @@ func main(){
   frameInfoChan = make(chan struct {int;int64;time.Time},1000)
   instChan = make(chan struct{}, 1000)
   filenameChan = make(chan struct {int;string;time.Time},1000)
-  go TimestampServer()
-  // go InstructionServer()
-  // go RunProbeServerS()
 
   // create connection
   var connection protocol.Conn
@@ -68,8 +65,8 @@ func main(){
 		defer connection.Close()
 		fmt.Println("QUIC open")
 	}else if proto == config.NEWPROTO{
-    connection = wrapper.NewServerWrapper(config.QUICAddr,config.PingSendAddr,config.NACKRecvAddr,
-                                          config.DataQUIC,config.PingQUIC,config.XACKQUIC)
+    connection = wrapper.NewServerWrapper(config.QUICAddr,config.PingSendAddr,config.NACKRecvAddr,config.TimestampAddr,
+                                          config.DataQUIC,config.PingQUIC,config.XACKQUIC,numVideoFiles)
   }
   wg := sync.WaitGroup{}
 	wg.Add(1)
@@ -84,61 +81,28 @@ func ServerStreaming(conn protocol.Conn,mode int){
 	t := time.NewTicker(d)
   defer t.Stop()
 
-  var sentIndex int
 	for i:=1;i<=numVideoFiles;i++{
 		<- t.C
-    // if there is an instruction, the sentIndex should
-    // be set to i-1
-    select{
-    case <- instChan:
-      sentIndex = i-1
-      fmt.Println("Instruction")
-    default:
-    }
     // check the type
     c, ok := conn.(wrapper.Wrapper)
     if ok==false{
-      if mode == config.DumbPrefetch{
-        if sentIndex >= numVideoFiles{
-          continue
-        }
-        sendFile(sentIndex+1)
-        sentIndex += 1
-        if sentIndex<i+prefetchBufSize && sentIndex+1<=numVideoFiles{
-          sendFile(sentIndex+1)
-          sentIndex += 1
-        }
-        continue
-      }else{
-        sendFile(i)
-      }
+      sendFile(i)
       continue
     }
-    // if there is delay, prefetch should stop sending new frames
-    if c.IsDelay()==false{
-      // send one frame
-      // if sent the last frame, continue
-      if sentIndex >= numVideoFiles{
-        continue
-      }
-  		sendFile(sentIndex+1)
-      sentIndex += 1
-      // check whether do prefetching
-      if mode == config.Prefetch && sentIndex<i+prefetchBufSize && sentIndex+1<=numVideoFiles{
-        sendFile(sentIndex+1)
-        sentIndex += 1
-      }
-    }else{
-      // if use drop
-      if mode == config.Drop{
-        sentIndex = i
-        if i==numVideoFiles{
-        	sendFile(sentIndex)
-        }else{
-	        fmt.Println("Drop",sentIndex)
-        }
-      }
-    }
+    // flush all received xack information
+    // make some decisions based on xack info
+    c.GetNetStat()
+    // print send index
+    fp, _ := os.OpenFile("trace.dat",os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+    s := "[SEND]\n"
+    fp.Write([]byte(s))
+    fp.Close()
+    // if there is delay
+    sendFile(i)
+  }
+  c, ok := conn.(wrapper.Wrapper)
+  if ok{
+    c.Wait()
   }
 }
 
@@ -147,7 +111,7 @@ func sendFile(frameIndex int) {
 	fileName := fmt.Sprintf(config.FilePath + "%04d.h264", frameIndex)
   filenameChan <- struct{int;string;time.Time}{frameIndex,fileName,startTime}
 
-  s := fmt.Sprintf("\nSent %d at %s\n",frameIndex,startTime.Format(time.StampMicro))
+  s := fmt.Sprintf("Sent %d at %s\n",frameIndex,startTime.Format(time.StampMicro))
   fmt.Printf(s)
 }
 
@@ -160,106 +124,14 @@ func fileSender(conn protocol.Conn, maxNum int, wg *sync.WaitGroup){
     startTime := tuple.Time
     buf, err := ioutil.ReadFile(filename)
   	toolbox.Check(err)
-    toolbox.WriteTime(conn, time.Now())
+    // toolbox.WriteTime(conn, time.Now())
   	toolbox.WriteInt64(conn, int64(len(buf)))
-  	toolbox.WriteInt64(conn, int64(frameIndex))
-  	n,err := conn.Write(buf)
-  	toolbox.Check(err)
-    frameInfoChan <- struct{int;int64;time.Time}{frameIndex,int64(n),startTime}
+  	conn.Write(buf)
+    frameInfoChan <- struct{int;int64;time.Time}{frameIndex,int64(len(buf)),startTime}
     if frameIndex == maxNum{
       break
     }
   }
   fmt.Println("File sender stops.")
   wg.Done()
-}
-
-func InstructionServer(){
-	fmt.Println("Inst server listening at",config.TCPInstAddr)
-	server, err := net.Listen("tcp", config.TCPInstAddr)
-	toolbox.Check(err)
-	defer server.Close()
-
-	connection, err := server.Accept()
-	toolbox.Check(err)
-	defer connection.Close()
-	fmt.Println("Inst client connected")
-
-  buf := make([]byte,1)
-  for{
-    _, err := io.ReadFull(connection, buf)
-    if err!=nil{
-      break
-    }
-    instChan <- struct{}{}
-  }
-}
-
-func TimestampServer(){
-	fmt.Println("Tstp server listening at",config.TCPTimestampAddr)
-	server, err := net.Listen("tcp", config.TCPTimestampAddr)
-	toolbox.Check(err)
-	defer server.Close()
-
-	connection, err := server.Accept()
-	toolbox.Check(err)
-	defer connection.Close()
-	fmt.Println("Tstp client connected")
-
-  // create a file to store transmission trace
-  f, err := os.OpenFile("frame.dat",os.O_CREATE|os.O_WRONLY, 0644)
-
-	for{
-		tranEnd := toolbox.ReadTime(connection)
-		tzero,_ := time.Parse(time.StampMicro,time.Time{}.Format(time.StampMicro))
-		if tranEnd.Sub(tzero)==0{
-			break
-		}
-
-		tuple := <-frameInfoChan
-    frameIndex := tuple.int
-		tranStart := tuple.Time
-		tranSize := tuple.int64
-
-		tranStart,_ = time.Parse(time.StampMicro,tranStart.Format(time.StampMicro))
-		tranStart = tranStart.Add(time.Millisecond*config.ServerTimerAdder)
-
-		elapsed := tranEnd.Sub(tranStart).Seconds()
-		throughput := float64(tranSize)/elapsed/1000000*8
-
-		tran_ack,_ := time.Parse(time.StampMicro,time.Now().Add(time.Millisecond*config.ServerTimerAdder).Format(time.StampMicro))
-		uplink_time := tran_ack.Sub(tranEnd).Seconds()
-
-		s := fmt.Sprintf("%d\t%dbytes\t%1.3fMbps\t%fs\t%fs",frameIndex,tranSize,throughput,elapsed,uplink_time)
-		fmt.Printf("\n                                          Analyze frame #%s\n",s)
-
-    zero_time,_ := time.Parse(time.StampMicro,time.Time{}.Format(time.StampMicro))
-    milli := tranStart.Sub(zero_time).Seconds()
-		s = fmt.Sprintf("%f\t%f\n",milli,elapsed)
-    f.Write([]byte(s))
-	}
-}
-
-func RunProbeServer(){
-  fmt.Println("Probe server listening at",config.ProbeAddr)
-	listener, err := quic.ListenAddr(config.ProbeAddr, toolbox.GenerateTLSConfig(), nil)
-	toolbox.Check(err)
-	defer listener.Close()
-	sess, err := listener.Accept(context.Background())
-	toolbox.Check(err)
-	defer sess.Close()
-	conn, err := sess.AcceptStream(context.Background())
-	toolbox.Check(err)
-	defer conn.Close()
-	fmt.Println("Probe server is up")
-
-	d := time.Duration(time.Millisecond*config.ProbeInterval)
-	t := time.NewTicker(d)
-	defer t.Stop()
-	for{
-		<-t.C
-		tmp := time.Now().Format(time.StampMicro)
-		_,err := conn.Write([]byte(tmp))
-		toolbox.Check(err)
-	}
 }
