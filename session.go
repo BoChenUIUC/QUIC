@@ -698,7 +698,7 @@ func (s *session) handleUnpackedPacket(packet *unpackedPacket, rcvTime time.Time
 		if s.traceCallback != nil {
 			frames = append(frames, frame)
 		}
-		fmt.Printf("[R#%d]",packet.packetNumber)
+		// fmt.Printf("[R#%d]",packet.packetNumber)
 		if err := s.handleFrame(frame, packet.packetNumber, packet.encryptionLevel); err != nil {
 			return err
 		}
@@ -1170,7 +1170,7 @@ func (s *session) sendPacket() (bool, error) {
 		return false, err
 	}
 	s.sentPacketHandler.SentPacket(packet.ToAckHandlerPacket())
-	fmt.Printf("[S#%d]",packet.header.PacketNumber)
+	// fmt.Printf("[S#%d]",packet.header.PacketNumber)
 	if err := s.sendPackedPacket(packet); err != nil {
 		return false, err
 	}

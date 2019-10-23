@@ -8,7 +8,7 @@ const ServerTimerAdder = -5*3600*1000
 const FilePath = "/var/www/Bigbunny/"
 
 // const SERVIP = "localhost:"
-const SERVIP = "172.31.16.7:"
+const SERVIP = "3.16.41.32:"
 // const SERVIP = "10.192.55.9:"
 // const SERVIP = "192.168.101.48:"
 
