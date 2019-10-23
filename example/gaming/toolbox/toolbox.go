@@ -96,10 +96,13 @@ func RecvFEC(connection protocol.Conn, fileSize int64)[]byte{
 }
 
 
-func ReadLen(connection protocol.Conn, bufLen int)[]byte{
+func ReadLen(connection protocol.Conn, bufLen int)([]byte,error){
 	buf := make([]byte, bufLen)
 	//Get the filesize
-	n,_ :=connection.Read(buf)
+	n,err :=connection.Read(buf)
+	if err!=nil{
+		return buf,err
+	}
 	for {
 		if n==bufLen{
 			break
@@ -110,16 +113,15 @@ func ReadLen(connection protocol.Conn, bufLen int)[]byte{
 		n += n1
 		fmt.Println("Something not right",buf)
 		if err!=nil{
-			panic(err)
+			return buf,nil
 		}
 	}
-	return buf
+	return buf,nil
 }
 
-func WriteFloat64(connection protocol.Conn, val float64){
+func WriteFloat64(connection protocol.Conn, val float64)(error){
 	_, err := connection.Write(Float64ToByte(val))
-	Check(err)
-	return
+	return err
 }
 
 func ReadFloat64(connection protocol.Conn)float64{
@@ -129,28 +131,38 @@ func ReadFloat64(connection protocol.Conn)float64{
 	return ByteToFloat64(float64_buf)
 }
 
-func WriteInt64(connection protocol.Conn,val int64){
+func Int64ToByte(val int64)([]byte){
+	return []byte(FillString(strconv.FormatInt(val, 10), 10))
+}
+
+func WriteInt64(connection protocol.Conn,val int64)(error){
 	valStr := FillString(strconv.FormatInt(val, 10), 10)
 	_,err := connection.Write([]byte(valStr))
-	Check(err)
-	return
+	return err
 }
 
 
-func ReadInt64(connection protocol.Conn) (int64){
+func ReadInt64(connection protocol.Conn) (int64,error){
 	//Create buffer to read in the size of the file
-	buf := ReadLen(connection,10)
+	buf,err := ReadLen(connection,10)
+	if err!=nil{
+		return int64(0),err
+	}
 	//Strip the ':' from the received size, convert it to a int64
 	val,err := strconv.ParseInt(strings.Trim(string(buf), ":"), 10, 64)
-	Check(err)
-	return val
+	if err!=nil{
+		return int64(0),err
+	}
+	return val,nil
 }
 
-func ReadTime(connection protocol.Conn) time.Time{
-	buf := ReadLen(connection,22)
+func ReadTime(connection protocol.Conn) (time.Time,error){
+	buf,err := ReadLen(connection,22)
+	if err!=nil{
+		return time.Time{},err
+	}
 	t,err := time.Parse(time.StampMicro,string(buf))
-	Check(err)
-	return t
+	return t,err
 }
 
 func WriteTime(connection protocol.Conn, t time.Time)error{

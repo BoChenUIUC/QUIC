@@ -5,11 +5,12 @@ import (
 	"io"
 	"os"
 	"time"
+	"strconv"
   "crypto/tls"
 	"sync"
 	"net"
 	"context"
-	"github.com/gonum/stat"
+	// "github.com/gonum/stat"
 	"github.com/lucas-clemente/quic-go/example/gaming/protocol"
 	"github.com/lucas-clemente/quic-go/example/gaming/config"
 	"github.com/lucas-clemente/quic-go/example/gaming/toolbox"
@@ -20,30 +21,36 @@ type Wrapper struct {
 	data_conn protocol.Conn
   ping_conn protocol.Conn
   nack_conn protocol.Conn
+	tstp_conn protocol.Conn
 
 	pingLatencyChan chan float64
+	pingSentTimeChan chan float64
+	frameLatencyChan chan struct {int;float64}
+	frameSentTimeChan chan float64
+	xackBufChan chan string
+	timeChan chan struct {int;time.Time}
+	tstpSigChan chan struct {}
+	numVideoFiles int
+	firstFrameSentTime time.Time
+	firstPingSentTime time.Time
 }
 
-var meanPingLatency float64
-var pingSentTime time.Time
-var rframeIndex int64
-
-var wIndex int64
-var wcnt int
-var frameSentTime time.Time
-var serverPingIndex int64
-
-var lastPingIndex int64
-var indexDup int64
-
-var rIndex int64
-var rCnt int
-var clientPingIndex int64
-
-func NewServerWrapper(addr_data,addr_ping,addr_nack string,dataquic,pingquic,xackquic bool)Wrapper{
-  w := Wrapper{}
+func NewServerWrapper(addr_data,addr_ping,addr_nack,addr_tstp string,dataquic,pingquic,xackquic bool,numvideo int)Wrapper{
+	// write first lines
+	fp, _ := os.OpenFile("trace.dat",os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	defer fp.Close()
+	pingInterval,_ := strconv.Atoi(os.Args[3])
+	xackInterval,_ := strconv.Atoi(os.Args[4])
+	rep,_ := strconv.Atoi(os.Args[5])
+	s := fmt.Sprintf("S\t%d\t%d\t%d\n",pingInterval,xackInterval,rep)
+	fp.Write([]byte(s))
+	w := Wrapper{}
 	wg := sync.WaitGroup{}
-	wg.Add(3)
+	wg.Add(4)
+	go func(wg *sync.WaitGroup){
+		w.tstp_conn = GetTCPServerConn(addr_tstp)
+		wg.Done()
+	}(&wg)
 	go func(wg *sync.WaitGroup){
 		if dataquic{
 			w.data_conn = GetQUICServerConn(addr_data)
@@ -70,14 +77,29 @@ func NewServerWrapper(addr_data,addr_ping,addr_nack string,dataquic,pingquic,xac
 	}(&wg)
   wg.Wait()
   fmt.Println("server connected")
+	w.xackBufChan = make(chan string,1000)
+	w.timeChan = make(chan struct {int;time.Time},1000)
+	w.tstpSigChan = make(chan struct {},1)
+	w.numVideoFiles = numvideo
 	// start ping and nack
+	go w.RunTstpServer()
 	go w.RunPingServer()
-	go w.RunNACKServer()
+	go w.RunXACKServer()
   return w
 }
 
-func NewClientWrapper(addr_data,addr_ping,addr_nack string,dataquic,pingquic,xackquic bool)Wrapper{
+func NewClientWrapper(addr_data,addr_ping,addr_nack,addr_tstp string,dataquic,pingquic,xackquic bool, numvideo int)Wrapper{
+	// write initial lines to file
+	fp, _ := os.OpenFile("latency.dat",os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	defer fp.Close()
+	pingInterval,_ := strconv.Atoi(os.Args[3])
+	xackInterval,_ := strconv.Atoi(os.Args[4])
+	rep,_ := strconv.Atoi(os.Args[5])
+	s := fmt.Sprintf("S\t%d\t%d\t%d\n",pingInterval,xackInterval,rep)
+	fp.Write([]byte(s))
+	// construct wrapper
 	w := Wrapper{}
+	w.tstp_conn = GetTCPClientConn(addr_tstp)
 	if dataquic{
 		w.data_conn = GetQUICClientConn(addr_data)
 	}else{
@@ -94,8 +116,18 @@ func NewClientWrapper(addr_data,addr_ping,addr_nack string,dataquic,pingquic,xac
 		w.nack_conn = GetTCPClientConn(addr_nack)
 	}
 	w.pingLatencyChan = make(chan float64,1000)
+	w.pingSentTimeChan = make(chan float64,1000)
+	w.frameLatencyChan = make(chan struct {int;float64},1000)
+	w.frameSentTimeChan = make(chan float64,1000)
+	w.timeChan = make(chan struct {int;time.Time},1000)
+	w.tstpSigChan = make(chan struct {},1)
+	w.numVideoFiles = numvideo
+	w.firstFrameSentTime = time.Time{}
+	w.firstPingSentTime = time.Time{}
+
+	go w.RunTstpClient()
 	go w.RunPingClient()
-	go w.RunNACKClient()
+	go w.RunXACKClient()
   return w
 }
 
@@ -140,32 +172,37 @@ func GetTCPServerConn(addr string)protocol.Conn{
 }
 
 func GetTCPClientConn(addr string)protocol.Conn{
+	d := time.Duration(time.Millisecond*500)
+	t := time.NewTicker(d)
+  defer t.Stop()
+
 	fmt.Println("TCP Trying to dial",addr)
-	conn, err := net.Dial("tcp", addr)
-	toolbox.Check(err)
-	fmt.Println("connected to",addr)
-	return conn
+	for{
+		<- t.C
+		conn, err := net.Dial("tcp", addr)
+		if err!=nil{
+			fmt.Println("TCP dial failure, try again.")
+		}else{
+			fmt.Println("connected to",addr)
+			return conn
+		}
+	}
+	return nil
 }
 
 func (w Wrapper) Write(p []byte) (int,error){
   n,err := w.data_conn.Write(p)
-  if n == 10{
-  	wcnt += 1
-  }else if wcnt >= 2{
-  	wIndex += 1
-  	wcnt = 2
-  	frameSentTime = time.Now()
-  }
+	if n>10{
+		w.timeChan <- struct{int;time.Time}{n,time.Now()}
+	}
   return n,err
 }
 
 func (w Wrapper) Read(p []byte) (int,error)  {
-	n,err := w.data_conn.Read(p)
-	if n==10{
-		rCnt += 1
-	}else if n!=10 && rCnt==2{
-		rIndex += 1
-		rCnt = 0
+	// n,err := w.data_conn.Read(p)
+	n, err := io.ReadFull(w.data_conn, p)
+	if n>10{
+		w.timeChan <- struct{int;time.Time}{n,time.Now()}
 	}
 	return n,err
 }
@@ -174,114 +211,168 @@ func (w Wrapper) Close() error {
 	return w.data_conn.Close()
 }
 
+func (w Wrapper) Wait(){
+	<-w.tstpSigChan
+}
+
+func (w Wrapper) RunTstpClient(){
+	fp, _ := os.OpenFile("latency.dat",os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	defer fp.Close()
+	for i:=1;i<=w.numVideoFiles;i++{
+		tranStart,err := toolbox.ReadTime(w.tstp_conn)
+		if err!=nil{
+			panic(err)
+		}
+		tranStart = tranStart.Add(time.Millisecond*config.ServerTimerAdder)
+		if w.firstFrameSentTime.IsZero(){
+			w.firstFrameSentTime = tranStart
+		}
+		tuple := <-w.timeChan
+		tranSize := tuple.int
+		tranEnd := tuple.Time
+		tranEnd,_ = time.Parse(time.StampMicro,tranEnd.Format(time.StampMicro))
+
+		elapsed := tranEnd.Sub(tranStart).Seconds()
+		throughput := float64(tranSize)/elapsed/1000000*8
+		w.frameLatencyChan <- struct{int;float64}{tranSize,elapsed}
+		w.frameSentTimeChan <- tranStart.Sub(w.firstFrameSentTime).Seconds()
+
+		s := fmt.Sprintf("%d\t%dbytes\t%1.3fMbps\t%fs",i,tranSize,throughput,elapsed)
+		fmt.Printf("             Analyze frame #%s\n",s)
+
+		s = fmt.Sprintf("%f\n",elapsed)
+		fp.Write([]byte(s))
+	}
+	w.tstp_conn.Close()
+	w.tstpSigChan <- struct {}{}
+}
+
+func (w Wrapper) RunTstpServer(){
+	for i:=1;i<=w.numVideoFiles;i++{
+		tuple := <-w.timeChan
+		tranStart := tuple.Time
+		err := toolbox.WriteTime(w.tstp_conn, tranStart)
+    if err!=nil{
+      panic(err)
+    }
+	}
+	w.tstp_conn.Close()
+	w.tstpSigChan <- struct {}{}
+}
+
 func (w Wrapper) RunPingServer(){
-	d := time.Duration(time.Millisecond*config.PingInterval)
+	pingInterval,_ := strconv.Atoi(os.Args[3])
+	d := time.Millisecond*time.Duration(pingInterval)
 	t := time.NewTicker(d)
 	defer t.Stop()
 	for{
 		<-t.C
 		tmp := time.Now().Format(time.StampMicro)
 		_,err := w.ping_conn.Write([]byte(tmp))
-		toolbox.Check(err)
+		if err!=nil{break}
 	}
 }
 
+
+
 func (w Wrapper) RunPingClient(){
-	fp, _ := os.OpenFile("probe.dat",os.O_CREATE|os.O_WRONLY, 0644)
-	ping_sent_time_f, _ := os.OpenFile("ping_sent_time.dat",os.O_CREATE|os.O_WRONLY, 0644)
 	for{
 		buf := make([]byte, 22)
 		_, err := io.ReadFull(w.ping_conn, buf)
 		if err!=nil{break}
 		sent_time,err := time.Parse(time.StampMicro,string(buf))
-		if err!=nil{
-			fmt.Println("Ping LOST")
-			continue
-		}
+		if err!=nil{break}
 		sent_time = sent_time.Add(time.Millisecond*config.ServerTimerAdder)
+		if w.firstPingSentTime.IsZero(){
+			w.firstPingSentTime = sent_time
+		}
 
 		echo_time,_ := time.Parse(time.StampMicro,time.Now().Format(time.StampMicro))
 		probe_latency := echo_time.Sub(sent_time).Seconds()
 		w.pingLatencyChan <- probe_latency
-		fmt.Printf("\nGot probe, downlink time %.7f, sent time %s\n",probe_latency,sent_time.Format(time.StampMicro))
-		zero_time,_ := time.Parse(time.StampMicro,time.Time{}.Format(time.StampMicro))
-		milli := sent_time.Sub(zero_time).Seconds()
-		s := fmt.Sprintf("%f\t%f\n",milli,probe_latency)
-    fp.Write([]byte(s))
-
-		s = fmt.Sprintf("%f\t%f\n",echo_time.Sub(zero_time).Seconds(),sent_time.Sub(zero_time).Seconds())
-		ping_sent_time_f.Write([]byte(s))
+		w.pingSentTimeChan <- sent_time.Sub(w.firstPingSentTime).Seconds()
 	}
 }
 
-func (w Wrapper) RunNACKServer(){
-	fp, _ := os.OpenFile("xack.dat",os.O_CREATE|os.O_WRONLY, 0644)
-	fp2,_ := os.OpenFile("xack2.dat",os.O_CREATE|os.O_WRONLY, 0644)
+func (w Wrapper) RunXACKServer(){
 	for {
-		buf := make([]byte, 8)
-		_, err := io.ReadFull(w.nack_conn, buf)
-		toolbox.Check(err)
-		meanPingLatency = toolbox.ByteToFloat64(buf)
-		rframeIndex = toolbox.ReadInt64(w.nack_conn)
-		serverPingIndex = toolbox.ReadInt64(w.nack_conn)
-		fmt.Printf("latency updated to %.5f, recent frame %d, recent ping #%d\n",meanPingLatency,rframeIndex,serverPingIndex)
-		zero_time,_ := time.Parse(time.StampMicro,time.Time{}.Format(time.StampMicro))
-		infoUpdateTime,_ := time.Parse(time.StampMicro,time.Now().Add(time.Millisecond*config.ServerTimerAdder).Format(time.StampMicro))
-		milli := infoUpdateTime.Sub(zero_time).Seconds()
-		s := fmt.Sprintf("%f\t%f\n",milli,meanPingLatency)
-    fp.Write([]byte(s))
-		s = fmt.Sprintf("%f\t%d\n",milli,serverPingIndex)
-    fp2.Write([]byte(s))
+		buf := "[XACK]\n"
+		l,err := toolbox.ReadInt64(w.nack_conn)
+		if err!=nil{return}
+		if l>0{
+			buf += fmt.Sprintf("[PROBE]%d\n",l)
+			for i:=0;i<int(l);i++{
+				probeLatency := toolbox.ReadFloat64(w.nack_conn)
+				sentSinceEpoch := toolbox.ReadFloat64(w.nack_conn)
+				buf = fmt.Sprintf("%s%f\t%f\n",buf,probeLatency,sentSinceEpoch)
+			}
+		}
+		l,err = toolbox.ReadInt64(w.nack_conn)
+		if err!=nil{return}
+		if l>0{
+			buf += fmt.Sprintf("[FRAME]%d\n",l)
+			for i:=0;i<int(l);i++{
+				size,err := toolbox.ReadInt64(w.nack_conn)
+				if err!=nil{return}
+				frameLatency := toolbox.ReadFloat64(w.nack_conn)
+				sentSinceEpoch := toolbox.ReadFloat64(w.nack_conn)
+				buf = fmt.Sprintf("%s%d\t%f\t%f\n",buf,size,frameLatency,sentSinceEpoch)
+			}
+		}
+		w.xackBufChan <- buf
 	}
 }
 
-
-func (w Wrapper) RunNACKClient(){
+func (w Wrapper) RunXACKClient(){
+	xackInterval,_ := strconv.Atoi(os.Args[4])
 	var nackTicker *time.Ticker
-	d := time.Duration(time.Millisecond*config.XACKInterval)
-
+	d := time.Millisecond*time.Duration(xackInterval)
 	nackTicker = time.NewTicker(d)
 	for{
 		<-nackTicker.C
-		// analyze ping latency
-		var time_slice []float64
+		// probe Information
 		l := len(w.pingLatencyChan)
-		clientPingIndex += int64(l)
+		err := toolbox.WriteInt64(w.nack_conn,int64(l))
+		if err!=nil{
+			return
+		}
 		for i:=0;i<l;i++{
-			downlink_time := <-w.pingLatencyChan
-			time_slice = append(time_slice,downlink_time)
+			downlink_time := <- w.pingLatencyChan
+			sentSinceEpoch := <- w.pingSentTimeChan
+			err = toolbox.WriteFloat64(w.nack_conn,downlink_time)
+			if err!=nil{return}
+			err = toolbox.WriteFloat64(w.nack_conn,sentSinceEpoch)
+			if err!=nil{return}
 		}
-		var meanStr []byte
-		if len(time_slice)==0{
-			meanStr = toolbox.Float64ToByte(-0.01)
-		}else{
-			mean,_ := stat.MeanStdDev(time_slice,nil)
-			meanStr = toolbox.Float64ToByte(mean)
+		// frame information
+		l = len(w.frameLatencyChan)
+		err = toolbox.WriteInt64(w.nack_conn,int64(l))
+		if err!=nil{
+			return
 		}
-		fmt.Println(time_slice)
-		fmt.Printf("Avg probe latency %.5f at %s\n",toolbox.ByteToFloat64(meanStr),time.Now().Format(time.StampMicro))
-		_,err := w.nack_conn.Write(meanStr)
-		if err!=nil{break}
-		toolbox.WriteInt64(w.nack_conn,rIndex)
-		toolbox.WriteInt64(w.nack_conn,clientPingIndex)
+		for i:=0;i<l;i++{
+			tuple := <-w.frameLatencyChan
+			frameLatency := tuple.float64
+			size := tuple.int
+			sentSinceEpoch := <-w.frameSentTimeChan
+			err = toolbox.WriteInt64(w.nack_conn,int64(size))
+			if err!=nil{return}
+			err = toolbox.WriteFloat64(w.nack_conn,frameLatency)
+			if err!=nil{return}
+			err = toolbox.WriteFloat64(w.nack_conn,sentSinceEpoch)
+			if err!=nil{return}
+		}
 	}
 }
 
-
-func (w Wrapper) IsDelay()bool{
-	fmt.Printf("Judge from mean latency %.5f, ping #%d, latest sent frame %d, received frame %d\n",meanPingLatency,serverPingIndex,wIndex,rframeIndex)
-	if serverPingIndex == lastPingIndex{
-		indexDup += 1
-	}else{
-		indexDup = 1
+func (w Wrapper) GetNetStat()int{
+	fp, _ := os.OpenFile("trace.dat",os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	defer fp.Close()
+	l := len(w.xackBufChan)
+	for i:=0;i<l;i++{
+		s := <-w.xackBufChan
+    fp.Write([]byte(s))
 	}
-	if indexDup >= 3{
-		return true
-	}
-	lastPingIndex = serverPingIndex
-
-	if meanPingLatency > 0.1{
-		return true
-	}
-	return false
+	os.Stdout.Sync()
+	return 0
 }

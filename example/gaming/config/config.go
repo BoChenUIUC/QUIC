@@ -8,7 +8,7 @@ const ServerTimerAdder = -5*3600*1000
 const FilePath = "/var/www/Bigbunny/"
 
 // const SERVIP = "localhost:"
-const SERVIP = "18.218.55.6:"
+const SERVIP = "172.31.16.7:"
 // const SERVIP = "10.192.55.9:"
 // const SERVIP = "192.168.101.48:"
 
@@ -16,7 +16,7 @@ const SERVIP = "18.218.55.6:"
 const TCPBufSize = 1024
 const TCPAddr = SERVIP + "8080"
 const TCPInstAddr = SERVIP + "8081"
-const TCPTimestampAddr = SERVIP + "8084"
+const TimestampAddr = SERVIP + "8084"
 
 // QUIC
 const QUICAddr = TCPAddr
@@ -29,14 +29,14 @@ const XACKQUIC = false
 // ping
 const PingSendAddr = SERVIP + "8082"
 const PingRecvAddr = SERVIP + "8083"
-const PingInterval = 10
+// const PingInterval = 10
 
 // nack
 const NACKRecvAddr = SERVIP + "8085"
-const XACKInterval = 30
+// const XACKInterval = 30
 
 // probe
-const ProbeInterval = 11
+// const ProbeInterval = 11
 const ProbeAddr = SERVIP + "8086"
 
 // choice of protocol
