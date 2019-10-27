@@ -296,7 +296,7 @@ func (w Wrapper) RunPingClient(){
 
 func (w Wrapper) RunXACKServer(){
 	for {
-		buf := "[XACK]\n"
+		buf := ""
 		l,err := toolbox.ReadInt64(w.nack_conn)
 		if err!=nil{return}
 		if l>0{
